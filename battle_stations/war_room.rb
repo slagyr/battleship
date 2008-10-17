@@ -11,9 +11,9 @@ war_room :id => "war_room#{@number}" do
         row_header :text => letter, :styles => "cell header"
       end
     end
-    sectors do
+    sectors :id => "war_room#{@number}_sectors" do
       100.times do |i|
-        sector :id => "war_room#{@number}_#{letter}_#{i}", :styles => "cell"
+        sector :styles => "cell"
       end
     end
   end

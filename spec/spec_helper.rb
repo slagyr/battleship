@@ -4,32 +4,25 @@ require File.expand_path(File.dirname(__FILE__) + "/../../limelight/lib/init")
 require 'limelight/scene'
 require 'limelight/producer'
 
-Limelight::Main.initializeContext
-
-#module Limelight
-#  module UI
-#    module Model
-#      class Frame
-#        def open
-#
-#        end
-#      end
-#    end
-#  end
-#end
+$producer = nil
 
 module Spec
   module Example
     class ExampleGroup
 
-
-      def load_scene(name)
-        Limelight::Production.clear_index
-        producer = Limelight::Producer.new(File.expand_path(File.dirname(__FILE__) + "/../"))
-        producer.load
-        return producer.open_scene(name, producer.theater["default"])
+      after(:suite) do
+        $producer.theater.stages.each { |stage| stage.close }
       end
-      
+
+      def producer
+        if $producer.nil?
+          Limelight::Main.initializeContext
+          $producer = Limelight::Producer.new(File.expand_path(File.dirname(__FILE__) + "/../"))
+          $producer.load
+        end
+        return $producer
+      end
+
     end
   end
 end

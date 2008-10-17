@@ -2,17 +2,8 @@ require File.expand_path(File.dirname(__FILE__) + "/../spec_helper")
 
 describe "Ship Status" do
 
-  before(:all) do
-    @producer = Limelight::Producer.new(File.expand_path(File.dirname(__FILE__) + "/../../"))
-    @producer.load
-  end
-
-  after(:all) do
-    @producer.theater.stages.each { |stage| stage.close }
-  end
-
   before(:each) do
-    @scene = @producer.open_scene("battle_stations", @producer.theater["default"])
+    @scene = producer.open_scene("battle_stations", producer.theater["default"])
     @carrier_status = @scene.find("war_room1_carrier_status")
   end
 

@@ -119,3 +119,7 @@ status_title {
 ship_image {
   height 20
 }
+
+ship {
+  float :on
+}
