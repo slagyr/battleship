@@ -7,12 +7,16 @@ module ShipStatus
   attr_accessor :damage
 
   def damaged(percent)
-    if(percent <= 50)
+    @damage = percent
+    if percent == 0
+      style.background_color = "transparent"
+      style.gradient = "off"
+    elsif percent <= 50
       style.background_color = "red"
       style.gradient_penetration = (percent * 2).to_s
       style.gradient = "on"
       style.gradient_angle = "0"
-    elsif(percent < 100)
+    elsif percent < 100
       style.background_color = "transparent"
       style.secondary_background_color = "red"
       style.gradient_penetration = ((100-percent) * 2).to_s

@@ -1,5 +1,7 @@
 war_room :id => "war_room#{@number}" do
   war_room_title :text => "Fleet ##{@number}"
+  commander_name :id => "war_room#{@number}_commander", :text => "Anonymous"
+
 
   map do
     cell :text => " "

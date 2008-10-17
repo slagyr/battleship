@@ -16,20 +16,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/spec_helper.rb" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship.ipr" afterPath="$PROJECT_DIR$/battleship.ipr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battle_stations/war_room.rb" afterPath="$PROJECT_DIR$/battle_stations/war_room.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/battle_stations/war_room_spec.rb" afterPath="$PROJECT_DIR$/spec/battle_stations/war_room_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battle_stations/players/ship_status.rb" afterPath="$PROJECT_DIR$/battle_stations/players/ship_status.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/battle_stations/sectors_spec.rb" afterPath="$PROJECT_DIR$/spec/battle_stations/sectors_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battle_stations/styles.rb" afterPath="$PROJECT_DIR$/battle_stations/styles.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship.iws" afterPath="$PROJECT_DIR$/battleship.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/battle_stations/ship_status_spec.rb" afterPath="$PROJECT_DIR$/spec/battle_stations/ship_status_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stages.rb" afterPath="$PROJECT_DIR$/stages.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battle_stations/war_room.rb" afterPath="$PROJECT_DIR$/battle_stations/war_room.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/patrolship.png" afterPath="$PROJECT_DIR$/images/patrolship.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/patrolship.psd" afterPath="$PROJECT_DIR$/images/patrolship.psd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/destroyer.png" afterPath="$PROJECT_DIR$/images/destroyer.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battle_stations/players/war_room.rb" afterPath="$PROJECT_DIR$/battle_stations/players/war_room.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battle_stations/players/sectors.rb" afterPath="$PROJECT_DIR$/battle_stations/players/sectors.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/destroyer.psd" afterPath="$PROJECT_DIR$/images/destroyer.psd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/battle_stations/ship_status_spec.rb" afterPath="$PROJECT_DIR$/spec/battle_stations/ship_status_spec.rb" />
     </list>
     <ignored path="battleship.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -92,10 +86,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="stages.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stages.rb">
+      <file leaf-file-name="props.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/battle_stations/props.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="14" selection-start="271" selection-end="278" vertical-scroll-proportion="0.24131627">
+            <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -104,34 +98,25 @@
       <file leaf-file-name="war_room.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/battle_stations/war_room.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="15" selection-start="472" selection-end="472" vertical-scroll-proportion="0.32906765">
+            <state line="22" column="8" selection-start="601" selection-end="601" vertical-scroll-proportion="0.43875685">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ship_status.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/battle_stations/players/ship_status.rb">
+      <file leaf-file-name="war_room_spec.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spec/battle_stations/war_room_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="28" selection-start="612" selection-end="612" vertical-scroll-proportion="0.48263255">
+            <state line="34" column="7" selection-start="1051" selection-end="1051" vertical-scroll-proportion="0.6489945">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ship_status_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/battle_stations/ship_status_spec.rb">
+      <file leaf-file-name="war_room.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/battle_stations/players/war_room.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="6" selection-start="304" selection-end="304" vertical-scroll-proportion="0.2632541">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sectors_spec.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spec/battle_stations/sectors_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="16" selection-start="2485" selection-end="2485" vertical-scroll-proportion="0.89031076">
+            <state line="22" column="17" selection-start="628" selection-end="628" vertical-scroll-proportion="0.48263255">
               <folding />
             </state>
           </provider>
@@ -140,16 +125,25 @@
       <file leaf-file-name="sectors.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/battle_stations/players/sectors.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="44" selection-start="411" selection-end="411" vertical-scroll-proportion="0.32906765">
+            <state line="20" column="78" selection-start="574" selection-end="574" vertical-scroll-proportion="0.43875685">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="spec_helper.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
+      <file leaf-file-name="ship_status_spec.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/battle_stations/ship_status_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="120" selection-start="214" selection-end="214" vertical-scroll-proportion="0.19744058">
+            <state line="24" column="23" selection-start="759" selection-end="759" vertical-scroll-proportion="0.36380255">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ship_status.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/battle_stations/players/ship_status.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="21" selection-start="145" selection-end="145" vertical-scroll-proportion="0.19744058">
               <folding />
             </state>
           </provider>
@@ -158,7 +152,7 @@
       <file leaf-file-name="styles.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/battle_stations/styles.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="21" selection-start="1590" selection-end="1595" vertical-scroll-proportion="1.8866545">
+            <state line="31" column="141" selection-start="838" selection-end="838" vertical-scroll-proportion="0.21937843">
               <folding />
             </state>
           </provider>
@@ -332,8 +326,8 @@
     <RUBY_DOC NAME="DEFAULTS" VALUE="true" />
     <RUBY_DOC NAME="NUMBER" VALUE="0" />
   </component>
-  <component name="RunManager" selected="RSpec.sectors_spec">
-    <tempConfiguration default="false" name="sectors_spec" type="RSpecRunConfigurationType" factoryName="RSpec">
+  <component name="RunManager" selected="RSpec.war_room_spec">
+    <tempConfiguration default="false" name="war_room_spec" type="RSpecRunConfigurationType" factoryName="RSpec">
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/spec/battle_stations" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="MODULE_NAME" VALUE="battleship" />
@@ -342,7 +336,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
       <envs />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/battle_stations/sectors_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/battle_stations/war_room_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="[none]" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
@@ -453,7 +447,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
     </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="RSpec.sectors_spec" />
+      <item index="0" class="java.lang.String" itemvalue="RSpec.war_room_spec" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -515,7 +509,7 @@
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="15" />
       <window_info id="RDoc" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="0" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="1" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" order="1" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="9" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="2" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
@@ -599,16 +593,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/images/carrier.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/battleship.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/submarine.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -619,23 +603,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/battle_stations/props.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stages.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="14" selection-start="271" selection-end="278" vertical-scroll-proportion="0.24131627">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/battle_stations/players/ship_status.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="28" selection-start="612" selection-end="612" vertical-scroll-proportion="0.48263255">
           <folding />
         </state>
       </provider>
@@ -661,6 +631,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/spec/battle_stations/sectors_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="16" selection-start="2485" selection-end="2485" vertical-scroll-proportion="0.89031076">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="120" selection-start="214" selection-end="214" vertical-scroll-proportion="0.19744058">
@@ -668,37 +645,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/battle_stations/styles.rb">
+    <entry file="file://$PROJECT_DIR$/battle_stations/props.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="21" selection-start="1590" selection-end="1595" vertical-scroll-proportion="1.8866545">
+        <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/battle_stations/war_room.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="15" selection-start="472" selection-end="472" vertical-scroll-proportion="0.32906765">
+        <state line="22" column="8" selection-start="601" selection-end="601" vertical-scroll-proportion="0.43875685">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/battle_stations/styles.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="141" selection-start="838" selection-end="838" vertical-scroll-proportion="0.21937843">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/battle_stations/players/ship_status.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="21" selection-start="145" selection-end="145" vertical-scroll-proportion="0.19744058">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/battle_stations/ship_status_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="6" selection-start="304" selection-end="304" vertical-scroll-proportion="0.2632541">
+        <state line="24" column="23" selection-start="759" selection-end="759" vertical-scroll-proportion="0.36380255">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/battle_stations/players/sectors.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="44" selection-start="411" selection-end="411" vertical-scroll-proportion="0.32906765">
+        <state line="20" column="78" selection-start="574" selection-end="574" vertical-scroll-proportion="0.43875685">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/battle_stations/sectors_spec.rb">
+    <entry file="file://$PROJECT_DIR$/battle_stations/players/war_room.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="16" selection-start="2485" selection-end="2485" vertical-scroll-proportion="0.89031076">
+        <state line="22" column="17" selection-start="628" selection-end="628" vertical-scroll-proportion="0.48263255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/battle_stations/war_room_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="7" selection-start="1051" selection-end="1051" vertical-scroll-proportion="0.6489945">
           <folding />
         </state>
       </provider>

@@ -16,6 +16,11 @@ module Sectors
     cell(x, y).style.background_color = "red"
   end
 
+  def reset
+    self.find_by_name("ship").each { |ship| self.remove(ship) }
+    self.children.each { |child| child.style.background_color = "transparent" }
+  end
+
   private
 
   def cell(x, y)

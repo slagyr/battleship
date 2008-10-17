@@ -20,6 +20,7 @@ describe "Ship Status" do
     @carrier_status.style.gradient_penetration.should == "40%"
     @carrier_status.style.gradient_angle.should == "0"
     @carrier_status.style.gradient.should == "on"
+    @carrier_status.damage.should == 20
   end
 
   it "should have a default damage of 0%" do
@@ -39,6 +40,7 @@ describe "Ship Status" do
     @carrier_status.style.gradient_penetration.should == "100%"
     @carrier_status.style.gradient_angle.should == "0"
     @carrier_status.style.gradient.should == "on"
+    @carrier_status.damage.should == 50
   end
 
   it "should mark damage with 70%" do
@@ -50,6 +52,7 @@ describe "Ship Status" do
     @carrier_status.style.gradient_penetration.should == "60%"
     @carrier_status.style.gradient_angle.should == "180"
     @carrier_status.style.gradient.should == "on"
+    @carrier_status.damage.should == 70
   end
 
   it "should mark full damage" do
@@ -57,6 +60,16 @@ describe "Ship Status" do
 
     @carrier_status.style.background_color.should == "#ff0000ff"
     @carrier_status.style.gradient.should == "off"
+    @carrier_status.damage.should == 100
+  end
+
+  it "should mark no damage" do
+    @carrier_status.damaged(50)
+    @carrier_status.damaged(0)
+
+    @carrier_status.style.background_color.should == "#00000000"
+    @carrier_status.style.gradient.should == "off"
+    @carrier_status.damage.should == 0
   end
 
 end

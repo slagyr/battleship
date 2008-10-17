@@ -34,9 +34,17 @@ war_room {
 
 war_room_title {
   font_face "Krungthep"
-  font_size 30
+  font_size 25
   text_color :white
   horizontal_alignment :center    
+  width "100%"
+}
+
+commander_name {
+  font_face "Krungthep"
+  font_size 30
+  text_color :white
+  horizontal_alignment :center
   width "100%"
 }
 
