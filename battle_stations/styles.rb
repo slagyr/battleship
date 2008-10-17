@@ -4,6 +4,10 @@
 # For more information see: http://limelightwiki.8thlight.com/index.php/A_Cook%27s_Tour_of_Limelight#Styling_with_styles.rb
 # For a complete listing of style attributes see: http://limelightwiki.8thlight.com/index.php/Style_Attributes
 
+cell_width = 40
+sectors_width = cell_width * 10 + 1
+map_width = cell_width * 11 + 1
+
 battle_stations {
   background_color :black
   secondary_background_color :gray
@@ -11,7 +15,7 @@ battle_stations {
   gradient :on
   horizontal_alignment :center
 #  vertical_alignment :center
-  width 1000
+  width 1200
   height 600
 }
 
@@ -24,7 +28,7 @@ title {
 }
 
 war_room {
-  width 500
+  width 600
   horizontal_alignment :center
 }
 
@@ -37,21 +41,21 @@ war_room_title {
 }
 
 map {
-  width 441
-  height 441
+  width map_width
+  height map_width
 }
 
 cell {
-  width 40
-  height 40
+  width cell_width
+  height cell_width
 }
 
 column_header {
 }
 
 row_headers {
-  width 40
-  height 401
+  width cell_width
+  height sectors_width
 }
 
 row_header {
@@ -66,8 +70,8 @@ header {
 }
 
 sectors {
-  width 401
-  height 401
+  width sectors_width
+  height sectors_width
   border_color :green
   left_border_width 1
   top_border_width 1
@@ -83,4 +87,35 @@ sector {
   border_color :green
   right_border_width 1
   bottom_border_width 1
+}
+
+status {
+  top_padding 0
+  width 100
+  height map_width
+}
+
+status_height = map_width / 5
+ship_status {
+  width "100%"
+  height status_height
+  top_margin status_height - 40
+  left_margin 2
+  vertical_alignment :center
+  horizontal_alignment :center
+
+  background_color :transparent
+  secondary_background_color :transparent
+}
+
+status_title {
+  width "100%"
+  horizontal_alignment :center
+  font_face "Krungthep"
+  font_size 12
+  text_color :white
+}
+
+ship_image {
+  height 20
 }
