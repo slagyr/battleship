@@ -40,17 +40,17 @@ describe Battleship::Game do
   it "should place all the ships" do
     @game.prepare
 
-    @game.grid1["A1"].should be(@game.fleet1[:carrier])
-    @game.grid1["B1"].should be(@game.fleet1[:battleship])
-    @game.grid1["C1"].should be(@game.fleet1[:destroyer])
-    @game.grid1["D1"].should be(@game.fleet1[:submarine])
-    @game.grid1["E1"].should be(@game.fleet1[:patrolship])
+    @game.grid1["A1"].ship.should be(@game.fleet1[:carrier])
+    @game.grid1["B1"].ship.should be(@game.fleet1[:battleship])
+    @game.grid1["C1"].ship.should be(@game.fleet1[:destroyer])
+    @game.grid1["D1"].ship.should be(@game.fleet1[:submarine])
+    @game.grid1["E1"].ship.should be(@game.fleet1[:patrolship])
 
-    @game.grid2["A1"].should be(@game.fleet2[:carrier])
-    @game.grid2["B1"].should be(@game.fleet2[:battleship])
-    @game.grid2["C1"].should be(@game.fleet2[:destroyer])
-    @game.grid2["D1"].should be(@game.fleet2[:submarine])
-    @game.grid2["E1"].should be(@game.fleet2[:patrolship])
+    @game.grid2["A1"].ship.should be(@game.fleet2[:carrier])
+    @game.grid2["B1"].ship.should be(@game.fleet2[:battleship])
+    @game.grid2["C1"].ship.should be(@game.fleet2[:destroyer])
+    @game.grid2["D1"].ship.should be(@game.fleet2[:submarine])
+    @game.grid2["E1"].ship.should be(@game.fleet2[:patrolship])
   end
 
   it "should update the war_rooms when placing ships" do
@@ -103,5 +103,11 @@ describe Battleship::Game do
     @war_room2.ship_statuses[:submarine].damage.should == 100
     @war_room2.ship_statuses[:patrolship].damage.should == 100
   end
-  
+
+  #Disqualifications
+    # ship placements
+    # invalid attack
+    # repeated attack
+
+  #how do you indicate winner?
 end

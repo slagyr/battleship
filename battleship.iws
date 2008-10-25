@@ -31,10 +31,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/patrolship.psd" afterPath="$PROJECT_DIR$/images/patrolship.psd" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/battleship/grid_spec.rb" afterPath="$PROJECT_DIR$/spec/battleship/grid_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/destroyer.png" afterPath="$PROJECT_DIR$/images/destroyer.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battle_stations/players/war_room.rb" afterPath="$PROJECT_DIR$/battle_stations/players/war_room.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/battleship/simple_player.rb" afterPath="$PROJECT_DIR$/lib/battleship/simple_player.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/battleship/ship_spec.rb" afterPath="$PROJECT_DIR$/spec/battleship/ship_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/battleship/game.rb" afterPath="$PROJECT_DIR$/lib/battleship/game.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/battleship/ship_spec.rb" afterPath="$PROJECT_DIR$/spec/battleship/ship_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/battleship/simple_player.rb" afterPath="$PROJECT_DIR$/lib/battleship/simple_player.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battle_stations/players/war_room.rb" afterPath="$PROJECT_DIR$/battle_stations/players/war_room.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/destroyer.psd" afterPath="$PROJECT_DIR$/images/destroyer.psd" />
     </list>
     <ignored path="battleship.iws" />
@@ -101,16 +101,16 @@
       <file leaf-file-name="game.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/battleship/game.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="42" selection-start="532" selection-end="532" vertical-scroll-proportion="0.3071298">
+            <state line="53" column="21" selection-start="1189" selection-end="1189" vertical-scroll-proportion="0.6142596">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game_spec.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="game_spec.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/battleship/game_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="103" column="20" selection-start="4479" selection-end="4479" vertical-scroll-proportion="0.9561243">
+            <state line="111" column="30" selection-start="4696" selection-end="4696" vertical-scroll-proportion="0.8464351">
               <folding />
             </state>
           </provider>
@@ -119,34 +119,7 @@
       <file leaf-file-name="mock_war_room.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/battleship/mock_war_room.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="13" selection-start="210" selection-end="210" vertical-scroll-proportion="-0.17550275">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sectors.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/battle_stations/players/sectors.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="53" selection-start="295" selection-end="295" vertical-scroll-proportion="0.21937843">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ship_status.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/battle_stations/players/ship_status.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="war_room.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/battle_stations/players/war_room.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="7" selection-start="498" selection-end="498" vertical-scroll-proportion="0.3071298">
+            <state line="16" column="13" selection-start="210" selection-end="210" vertical-scroll-proportion="0.3510055">
               <folding />
             </state>
           </provider>
@@ -155,7 +128,7 @@
       <file leaf-file-name="grid.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/battleship/grid.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="92" selection-start="1126" selection-end="1126" vertical-scroll-proportion="0.72394884">
+            <state line="47" column="42" selection-start="1308" selection-end="1338" vertical-scroll-proportion="0.416819">
               <folding />
             </state>
           </provider>
@@ -164,7 +137,16 @@
       <file leaf-file-name="grid_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/battleship/grid_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="22" selection-start="4530" selection-end="4530" vertical-scroll-proportion="0.81954885">
+            <state line="123" column="88" selection-start="5481" selection-end="5481" vertical-scroll-proportion="0.7969925">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="battleship_exceptions.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/battleship/battleship_exceptions.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="31" selection-start="521" selection-end="521" vertical-scroll-proportion="0.59232175">
               <folding />
             </state>
           </provider>
@@ -671,13 +653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/battleship/battleship_exceptions.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="18" selection-start="481" selection-end="481" vertical-scroll-proportion="0.50457036">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/battle_stations/sectors_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="83" selection-start="69" selection-end="69" vertical-scroll-proportion="0.021937843">
@@ -706,9 +681,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/battle_stations/players/sectors.rb">
+    <entry file="file://$PROJECT_DIR$/battle_stations/players/war_room.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="53" selection-start="295" selection-end="295" vertical-scroll-proportion="0.21937843">
+        <state line="27" column="0" selection-start="685" selection-end="685" vertical-scroll-proportion="0.59232175">
           <folding />
         </state>
       </provider>
@@ -720,44 +695,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/battleship/grid.rb">
+    <entry file="file://$PROJECT_DIR$/battle_stations/players/sectors.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="92" selection-start="1126" selection-end="1126" vertical-scroll-proportion="0.72394884">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/battleship/grid_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="22" selection-start="4530" selection-end="4530" vertical-scroll-proportion="0.81954885">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/battleship/game.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="42" selection-start="532" selection-end="532" vertical-scroll-proportion="0.3071298">
+        <state line="10" column="53" selection-start="295" selection-end="295" vertical-scroll-proportion="0.21937843">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/battleship/mock_war_room.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="210" selection-end="210" vertical-scroll-proportion="-0.17550275">
+        <state line="16" column="13" selection-start="210" selection-end="210" vertical-scroll-proportion="0.3510055">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/battleship/grid.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="42" selection-start="1308" selection-end="1338" vertical-scroll-proportion="0.416819">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/battleship/battleship_exceptions.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="31" selection-start="521" selection-end="521" vertical-scroll-proportion="0.59232175">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/battleship/grid_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="88" selection-start="5481" selection-end="5481" vertical-scroll-proportion="0.7969925">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/battleship/game.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="21" selection-start="1189" selection-end="1189" vertical-scroll-proportion="0.6142596">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/battleship/game_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="20" selection-start="4479" selection-end="4479" vertical-scroll-proportion="0.9561243">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/battle_stations/players/war_room.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="7" selection-start="498" selection-end="498" vertical-scroll-proportion="0.3071298">
+        <state line="111" column="30" selection-start="4696" selection-end="4696" vertical-scroll-proportion="0.8464351">
           <folding />
         </state>
       </provider>

@@ -2,6 +2,12 @@ require 'battleship/battleship_exceptions'
 
 module Battleship
 
+  class Sector
+
+    attr_accessor :ship, :attacked
+
+  end
+
   class Grid
 
     CoordinatesRegex = /([A-J])(10|[1-9])/
@@ -36,20 +42,29 @@ module Battleship
       @view.place_ship(ship.name, orientation.downcase.to_sym, start_index % 10, start_index / 10)
     end
 
+    def attack(coordinates)
+      index = to_index(coordinates)
+      sector = @sectors[index]
+      raise SectorAlreadyAttackedException.new(coordinates) if sector.attacked
+      sector.attacked = true
+      sector.ship.nil? ? @view.miss(index % 10, index / 10) : @view.hit(index % 10, index / 10)
+      return sector.ship
+    end
+
     def [](coordinates)
       return @sectors[to_index(coordinates)]
     end
 
     def clear
-      @sectors = Array.new(100)
+      @sectors = Array.new(100) { Sector.new }
       @view.reset
     end
 
     private ###############################################
 
     def []=(index, ship)
-      raise SectorOccupiedException.new(@sectors[index]) if @sectors[index]
-      @sectors[index] = ship
+      raise SectorOccupiedException.new(@sectors[index].ship) if @sectors[index].ship
+      @sectors[index].ship = ship
     end
 
     def to_index(coordinates)

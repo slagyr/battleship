@@ -19,37 +19,37 @@ describe Battleship::Grid do
   it "should place a horizontal carrier" do
     @grid.place(@carrier, "A1 horizontal")
 
-    @grid["A1"].should == @carrier
-    @grid["A2"].should == @carrier
-    @grid["A3"].should == @carrier
-    @grid["A4"].should == @carrier
-    @grid["A5"].should == @carrier
+    @grid["A1"].ship.should == @carrier
+    @grid["A2"].ship.should == @carrier
+    @grid["A3"].ship.should == @carrier
+    @grid["A4"].ship.should == @carrier
+    @grid["A5"].ship.should == @carrier
   end
 
   it "should place a vertical carrier" do
     @grid.place(@carrier, "A1 vertical")
 
-    @grid["A1"].should == @carrier
-    @grid["B1"].should == @carrier
-    @grid["C1"].should == @carrier
-    @grid["D1"].should == @carrier
-    @grid["E1"].should == @carrier
+    @grid["A1"].ship.should == @carrier
+    @grid["B1"].ship.should == @carrier
+    @grid["C1"].ship.should == @carrier
+    @grid["D1"].ship.should == @carrier
+    @grid["E1"].ship.should == @carrier
   end
 
   it "should place a horizontal patrolship" do
     @grid.place(@patrolship, "A1 horizontal")
 
-    @grid["A1"].should == @patrolship
-    @grid["A2"].should == @patrolship
-    @grid["A3"].should == nil
+    @grid["A1"].ship.should == @patrolship
+    @grid["A2"].ship.should == @patrolship
+    @grid["A3"].ship.should == nil
   end
 
   it "should place a vertical carrier" do
     @grid.place(@patrolship, "A1 vertical")
 
-    @grid["A1"].should == @patrolship
-    @grid["B1"].should == @patrolship
-    @grid["C1"].should == nil
+    @grid["A1"].ship.should == @patrolship
+    @grid["B1"].ship.should == @patrolship
+    @grid["C1"].ship.should == nil
   end
 
   it "should raise an exception with invalid placements" do
@@ -93,6 +93,35 @@ describe Battleship::Grid do
     @view.placements.length.should == 2
     @view.placements[0].should == { :type => "carrier", :orientation => :horizontal, :x => 0, :y => 0 }
     @view.placements[1].should == { :type => "patrolship", :orientation => :vertical, :x => 3, :y => 5 }
+  end
+
+  it "should be able to attack a square" do
+    @grid.place(@carrier, "A1 horizontal")
+
+    @grid.attack("F5").should == nil
+    @grid.attack("A3").should == @carrier
+
+    @grid["A3"].attacked.should == true
+    @grid["F5"].attacked.should == true
+  end
+
+  it "should upodate the view when a sector is attacked" do
+    @grid.place(@carrier, "A1 horizontal")
+
+    @grid.attack("F5").should == nil
+    @grid.attack("A3").should == @carrier
+
+    @view.misses.length.should == 1
+    @view.misses[0].should == [4, 5]
+
+    @view.hits.length.should == 1
+    @view.hits[0].should == [2, 0]
+  end
+
+  it "should raise an exception when attacking a previously attacked sector" do
+    @grid.attack("A1")
+
+    lambda { @grid.attack("A1") }.should raise_error(Battleship::SectorAlreadyAttackedException, "Sector A1 has already been attacked")
   end
 
 end

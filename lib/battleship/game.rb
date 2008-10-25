@@ -44,17 +44,20 @@ module Battleship
       if @current_attacker == @player1
         @attacked_grid = @grid2
         @attacked_fleet = @fleet2
+        @attacked_war_room = @war_room2
       else
         @attacked_grid = @grid1
         @attacked_fleet = @fleet1
+        @attacked_war_room = @war_room1
       end
     end
 
     def play_turn
       target = @current_attacker.next_target
-      ship = @attacked_grid[target]
+      ship = @attacked_grid.attack(target)
       if ship
         ship.hit!
+        @attacked_war_room.ship_statuses[ship.name.to_sym].damaged(ship.damage)
         if ship.sunk? && all_ships_sunk?(@attacked_fleet)
           declare_winner(@current_attacker)
         end

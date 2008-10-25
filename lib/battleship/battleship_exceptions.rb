@@ -24,4 +24,13 @@ module Battleship
     end
 
   end
+
+  class SectorAlreadyAttackedException < BattleshipException
+
+    def initialize(coordinates)
+      super("Sector #{coordinates} has already been attacked")
+    end
+
+  end
+
 end
