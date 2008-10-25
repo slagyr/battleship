@@ -7,7 +7,10 @@ module Battleship
     CoordinatesRegex = /([A-J])(10|[1-9])/
     PlacementRegex = /([A-J]([1-9]|10)) (HORIZONTAL|VERTICAL)/
 
-    def initialize
+    attr_reader :view
+
+    def initialize(view)
+      @view = view
       clear
     end
 
@@ -17,7 +20,7 @@ module Battleship
       coordinates = match[1]
       orientation = match[3]
 
-      index = to_index(coordinates)
+      start_index = index = to_index(coordinates)
       begin
         self[index] = ship
         (ship.length - 1).times do
@@ -29,6 +32,8 @@ module Battleship
       rescue SectorOccupiedException => soe
         raise InvalidPlacementException.new("#{placement}: The #{ship.name} would overlap the #{soe.ship.name}")
       end
+
+      @view.place_ship(ship.name, orientation.downcase.to_sym, start_index % 10, start_index / 10)
     end
 
     def [](coordinates)
@@ -37,6 +42,7 @@ module Battleship
 
     def clear
       @sectors = Array.new(100)
+      @view.reset
     end
 
     private ###############################################

@@ -60,6 +60,36 @@ describe Battleship::Ship do
     ship.sunk?.should == true
   end
 
+  it "should calculate damage for a carrier" do
+    ship = Battleship::Carrier.new
+
+    ship.damage.should == 0
+    ship.hit!
+    ship.damage.should == 20
+    ship.hit!
+    ship.damage.should == 40
+    ship.hit!
+    ship.damage.should == 60
+    ship.hit!
+    ship.damage.should == 80
+    ship.hit!
+    ship.damage.should == 100
+  end
+
+  it "should calculate damage for a battleship" do
+    ship = Battleship::Battleship.new
+
+    ship.damage.should == 0
+    ship.hit!
+    ship.damage.should == 25
+    ship.hit!
+    ship.damage.should == 50
+    ship.hit!
+    ship.damage.should == 75
+    ship.hit!
+    ship.damage.should == 100
+  end
+
 
 
 end

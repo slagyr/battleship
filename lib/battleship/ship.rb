@@ -2,7 +2,7 @@ module Battleship
 
   class Ship
 
-    attr_reader :length, :name
+    attr_reader :length, :name, :life
 
     def initialize(length, name)
       @length = length
@@ -16,6 +16,10 @@ module Battleship
 
     def sunk?
       return @life == 0
+    end
+
+    def damage
+      return (((@length - @life).to_f / @length.to_f) * 100.0).to_i
     end
 
   end

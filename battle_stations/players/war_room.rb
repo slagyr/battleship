@@ -5,13 +5,15 @@ module WarRoom
   end
 
   def ship_statuses
-    statuses = {}
-    statuses[:carrier] = scene.find("#{id}_carrier_status")
-    statuses[:battleship] = scene.find("#{id}_battleship_status")
-    statuses[:destroyer] = scene.find("#{id}_destroyer_status")
-    statuses[:submarine] = scene.find("#{id}_submarine_status")
-    statuses[:patrolship] = scene.find("#{id}_patrolship_status")
-    return statuses
+    if @statuses.nil?
+      @statuses = {}
+      @statuses[:carrier] = scene.find("#{id}_carrier_status")
+      @statuses[:battleship] = scene.find("#{id}_battleship_status")
+      @statuses[:destroyer] = scene.find("#{id}_destroyer_status")
+      @statuses[:submarine] = scene.find("#{id}_submarine_status")
+      @statuses[:patrolship] = scene.find("#{id}_patrolship_status")
+    end
+    return @statuses
   end
 
   def sectors

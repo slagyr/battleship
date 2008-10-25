@@ -1,13 +1,19 @@
 require File.expand_path(File.dirname(__FILE__) + "/../spec_helper")
 require 'battleship/grid'
 require 'battleship/ship'
+require 'battleship/mock_war_room'
 
 describe Battleship::Grid do
 
   before(:each) do
-    @grid = Battleship::Grid.new
+    @view = Battleship::MockSectors.new
+    @grid = Battleship::Grid.new(@view)
     @carrier = Battleship::Carrier.new
     @patrolship = Battleship::Patrolship.new
+  end
+
+  it "should have a view" do
+    @grid.view.should be(@view)
   end
 
   it "should place a horizontal carrier" do
@@ -78,6 +84,15 @@ describe Battleship::Grid do
     lambda { @grid.place(@patrolship, "E7 Horizontal") }.should raise_error(Battleship::InvalidPlacementException, "E7 Horizontal: The patrolship would overlap the carrier")
     lambda { @grid.place(@patrolship, "E3 Vertical") }.should raise_error(Battleship::InvalidPlacementException, "E3 Vertical: The patrolship would overlap the carrier")
     lambda { @grid.place(@patrolship, "E5 Vertical") }.should raise_error(Battleship::InvalidPlacementException, "E5 Vertical: The patrolship would overlap the carrier")
+  end
+
+  it "should update the view when placing ships" do
+    @grid.place(@carrier, "A1 horizontal")
+    @grid.place(@patrolship, "F4 VERtical")
+
+    @view.placements.length.should == 2
+    @view.placements[0].should == { :type => "carrier", :orientation => :horizontal, :x => 0, :y => 0 }
+    @view.placements[1].should == { :type => "patrolship", :orientation => :vertical, :x => 3, :y => 5 }
   end
 
 end
