@@ -2,9 +2,10 @@ require File.expand_path(File.dirname(__FILE__) + "/../spec_helper")
 
 describe "Sectors" do
 
+  uses_scene :battle_stations
+
   before(:each) do
-    @scene = producer.open_scene("battle_stations", producer.theater["default"])
-    @sectors = @scene.find("war_room1_sectors")
+    @sectors = scene.find("war_room1_sectors")
   end
 
   after(:each) do
