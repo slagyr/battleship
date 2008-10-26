@@ -20,9 +20,18 @@ module WarRoom
     return scene.find("#{id}_sectors")
   end
 
+  def victory!
+    build { cover :text => "Victory!", :text_color => "green", :border_color => "green" }
+  end
+
+  def defeat!
+    build { cover :text => "Defeat", :text_color => "red", :border_color => "red"  }
+  end
+
   def reset
     ship_statuses.values.each { |status| status.damaged(0) }
     sectors.reset
+    find_by_name("cover").each { |cover| remove(cover) }
   end
 
 end

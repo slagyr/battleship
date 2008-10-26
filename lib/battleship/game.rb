@@ -79,6 +79,13 @@ module Battleship
     def declare_winner(player)
       @winner = player
       @game_over = true
+      if @winner == @player1
+        @war_room1.victory!
+        @war_room2.defeat!
+      else
+        @war_room1.defeat!
+        @war_room2.victory!
+      end
     end
 
     def place_ships_for(fleet, grid, player)

@@ -29,6 +29,7 @@ title {
 
 war_room {
   width 600
+  height 530
   horizontal_alignment :center
 }
 
@@ -130,4 +131,21 @@ ship_image {
 
 ship {
   float :on
+}
+
+cover {
+  width "100%"
+  height "100%"
+  float :on
+  x 0
+  y 0
+  background_color :"#0009"
+  border_width 3
+  rounded_corner_radius 10
+  left_margin 5
+  right_margin 5
+  horizontal_alignment :center
+  vertical_alignment :center
+  font_face "Krungthep"
+  font_size 55
 }

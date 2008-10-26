@@ -38,7 +38,7 @@ module Battleship
 
   class MockWarRoom
 
-    attr_reader :commander
+    attr_reader :commander, :result
 
     def initialize
       @statuses = {}
@@ -48,7 +48,7 @@ module Battleship
       @statuses[:submarine] = MockShipStatus.new
       @statuses[:patrolship] = MockShipStatus.new
 
-      @sectors = MockSectors.new 
+      @sectors = MockSectors.new
     end
 
     def commander=(name)
@@ -61,6 +61,14 @@ module Battleship
 
     def sectors
       return @sectors
+    end
+
+    def victory!
+      @result = :victory
+    end
+
+    def defeat!
+      @result = :defeat
     end
 
   end

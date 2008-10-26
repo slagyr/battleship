@@ -111,6 +111,14 @@ describe Battleship::Game do
     @war_room2.commander.should == "Player 2"
   end
 
+  it "should display results" do
+    @game.prepare
+    @game.play
+
+    @war_room1.result.should == :victory
+    @war_room2.result.should == :defeat
+  end
+
   #Disqualifications
     # ship placements
     # invalid attack

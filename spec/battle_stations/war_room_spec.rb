@@ -33,17 +33,37 @@ describe "War Room" do
     sectors.should == @scene.find("war_room1_sectors")
   end
 
+  it "should show win" do
+    @war_room.victory!
+
+    sleep(5)
+
+    @war_room.find_by_name("cover").length.should == 1
+    @war_room.find_by_name("cover")[0].text.should == "Victory!"
+  end
+
+  it "should show loss" do
+    @war_room.defeat!
+
+    sleep(5)
+
+    @war_room.find_by_name("cover").length.should == 1
+    @war_room.find_by_name("cover")[0].text.should == "Defeat"
+  end
+
   it "should reset" do
     @war_room.ship_statuses.values.each { |status| status.damaged(50) }
     @war_room.sectors.place_ship(:carrier, :horizontal, 5, 5)
     5.times { |i| @war_room.sectors.miss(0, i) }
     5.times { |i| @war_room.sectors.hit(1, i) }
+    @war_room.victory!
 
     @war_room.reset
 
     @war_room.ship_statuses.values.each { |status| status.damage.should == 0 }
     @war_room.sectors.children.length.should == 100
     @war_room.sectors.children.each { |sector| sector.style.background_color.should == "#00000000" }
+    @war_room.find_by_name("cover").length.should == 0
   end
 
 end
