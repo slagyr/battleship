@@ -6,14 +6,17 @@ module Sectors
     self.build do
       ship options
     end
+    sleep(0.25)
   end
 
   def miss(x, y)
     cell(x, y).style.background_color = "white"
+    sleep(0.25)
   end
 
   def hit(x, y)
     cell(x, y).style.background_color = "red"
+    sleep(0.25)
   end
 
   def reset
@@ -24,7 +27,7 @@ module Sectors
   private
 
   def cell(x, y)
-    return children[x*10 + y]
+    return children[x + y * 10]
   end
 
 end

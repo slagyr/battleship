@@ -6,13 +6,37 @@
 
 welcome {
   background_color :black
-  horizontal_alignment :center
-  vertical_alignment :center
-  width "100%"
-  height "100%"
+  background_image "images/title_cover.png"
+  background_image_fill_strategy :static
+  width 740
+  height 800
 }
 
-root {
-  text_color :white
-  font_size 18
+options {
+  width "100%"
+  height "100%"
+  top_margin 400
+  left_margin 100
+  right_margin 100
+  horizontal_alignment :center
+  vertical_alignment :center
+}
+
+option {
+  width "100%"
+  margin 20
+  horizontal_alignment :center
+  rounded_corner_radius 15
+
+  text_color "#5cc31e"
+  font_face :arial
+  font_size 40
+  
+  hover {
+    background_color :red
+    secondary_background_color :transparent
+    gradient_angle 0
+    gradient_penetration 100
+    gradient :on
+  }
 }

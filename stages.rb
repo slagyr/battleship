@@ -10,7 +10,7 @@
 #  end
 
 stage "default" do
-  default_scene "battle_stations"
+  default_scene "welcome"
   title "Limelight"
   location [200, 25]
   size [800, 800]

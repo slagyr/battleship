@@ -104,6 +104,13 @@ describe Battleship::Game do
     @war_room2.ship_statuses[:patrolship].damage.should == 100
   end
 
+  it "should set the commander at the beggining of the game" do
+    @game.prepare
+
+    @war_room1.commander.should == "Player 1"
+    @war_room2.commander.should == "Player 2"
+  end
+
   #Disqualifications
     # ship placements
     # invalid attack

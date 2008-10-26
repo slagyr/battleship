@@ -3,7 +3,7 @@
 
 # If your production is using external ruby source code that will be required in player modules, you may
 # add the path to $: here.
-#$: << File.expand_path(File.dirname(__FILE__) + "/lib")
+$: << File.expand_path(File.dirname(__FILE__) + "/lib")
 
 # Acquires a reference to the production.
 production = Limelight::Production["."]
