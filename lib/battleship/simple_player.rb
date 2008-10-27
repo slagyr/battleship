@@ -40,12 +40,27 @@ module Battleship
       return target
     end
 
+    def target_result(coordinates, was_hit, ship_sunk)
+      @targets[coordinates] = [was_hit, ship_sunk]
+    end
+
+    def enemy_targeting(coordinates)
+      @enemy_targeted_sectors << coordinates
+    end
+
+    def game_over(result, disqualification_reason=nil)
+      @result = result
+      @disqualification_reason = disqualification_reason
+    end
+
     # Non API methods #####################################
 
-    attr_reader :opponent
+    attr_reader :opponent, :targets, :enemy_targeted_sectors, :result, :disqualification_reason
 
     def initialize(name="SimplePlayer")
       @name = name
+      @targets = {}
+      @enemy_targeted_sectors = []
       reset
     end
 

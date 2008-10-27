@@ -156,5 +156,46 @@ describe Battleship::Game do
     @game.winner.should == @player1
     @game.disqualification_reason.should == "The player targeted an invalid sector.  Sector F5 has already been attacked."
   end
+
+  it "should let players know if they hit or miss" do
+    @game.prepare
+    @game.play
+
+    @player1.targets["A1"].should == [true, nil]
+    @player1.targets["A2"].should == [true, nil]
+    @player1.targets["A3"].should == [true, nil]
+    @player1.targets["A4"].should == [true, nil]
+    @player1.targets["A5"].should == [true, :carrier]
+    @player1.targets["A6"].should == [false, nil]
+  end
+
+  it "should inform players of attackers targets" do
+    @game.prepare
+    @game.play                                      
+
+    @player2.enemy_targeted_sectors[0...15].should == %w{ A1 A2 A3 A4 A5 A6 A7 A8 A9 A10 B1 B2 B3 B4 B5 }
+  end
+
+  it "should inform players of game results" do
+    @game.prepare
+    @game.play
+
+    @player1.result.should == :victory
+    @player2.result.should == :defeat
+    @player1.disqualification_reason.should == nil
+    @player2.disqualification_reason.should == nil
+  end
+
+  it "should inform players of disqualifications" do
+    @player2.stub!(:next_target).and_return("F5")
+
+    @game.prepare
+    @game.play
+
+    @player1.result.should == :victory
+    @player2.result.should == :disqualified
+    @player1.disqualification_reason.should == "The player targeted an invalid sector.  Sector F5 has already been attacked."
+    @player2.disqualification_reason.should == "The player targeted an invalid sector.  Sector F5 has already been attacked."
+  end
   
 end
