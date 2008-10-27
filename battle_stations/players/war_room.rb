@@ -21,11 +21,28 @@ module WarRoom
   end
 
   def victory!
-    build { cover :text => "Victory!", :text_color => "green", :border_color => "green" }
+    build do
+      cover :border_color => "green" do
+        cover_header :text => "Victory!", :text_color => "green"  
+      end
+    end
   end
 
   def defeat!
-    build { cover :text => "Defeat", :text_color => "red", :border_color => "red"  }
+    build do
+      cover :border_color => "red"  do
+        cover_header :text => "Defeat", :text_color => "red"
+      end
+    end
+  end
+
+  def disqualified!(reason)
+    build do
+      cover :border_color => "red" do
+        cover_header :text => "Disqualified", :text_color => "red"
+        cover_text :text => reason, :text_color => "red"
+      end
+    end
   end
 
   def reset

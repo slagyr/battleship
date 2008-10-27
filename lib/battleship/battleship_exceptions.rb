@@ -4,6 +4,9 @@ module Battleship
   end
 
   class InvalidSectorException < BattleshipException
+    def initialize(coordinates)
+      super("Invalid coordinates: #{coordinates}")
+    end
   end
 
   class InvalidPlacementFormatException < BattleshipException

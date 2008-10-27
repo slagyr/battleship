@@ -71,6 +71,10 @@ module Battleship
       @result = :defeat
     end
 
+    def disqualified!(reason)
+      @result = "disqualified:#{reason}"
+    end
+
   end
 
 end

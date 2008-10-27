@@ -115,6 +115,7 @@ ship_status {
 
   background_color :transparent
   secondary_background_color :transparent
+  rounded_corner_radius 3
 }
 
 status_title {
@@ -146,6 +147,16 @@ cover {
   right_margin 5
   horizontal_alignment :center
   vertical_alignment :center
+}
+
+cover_header {
+  width "100%"
+  horizontal_alignment :center
   font_face "Krungthep"
   font_size 55
+}
+
+cover_text {
+  font_face "Krungthep"
+  font_size 18
 }

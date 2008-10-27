@@ -17,10 +17,9 @@
   <component name="ChangeListManager">
     <list default="true" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/battleship/mock_war_room.rb" afterPath="$PROJECT_DIR$/lib/battleship/mock_war_room.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/spec_helper.rb" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battle_stations/war_room.rb" afterPath="$PROJECT_DIR$/battle_stations/war_room.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/battle_stations/war_room_spec.rb" afterPath="$PROJECT_DIR$/spec/battle_stations/war_room_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/battleship/game_spec.rb" afterPath="$PROJECT_DIR$/spec/battleship/game_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/battle_stations/war_room_spec.rb" afterPath="$PROJECT_DIR$/spec/battle_stations/war_room_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/battleship/battleship_exceptions.rb" afterPath="$PROJECT_DIR$/lib/battleship/battleship_exceptions.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battle_stations/styles.rb" afterPath="$PROJECT_DIR$/battle_stations/styles.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship.iws" afterPath="$PROJECT_DIR$/battleship.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battle_stations/players/war_room.rb" afterPath="$PROJECT_DIR$/battle_stations/players/war_room.rb" />
@@ -87,10 +86,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="war_room.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/battle_stations/players/war_room.rb">
+      <file leaf-file-name="game_spec.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spec/battleship/game_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="587" selection-end="587" vertical-scroll-proportion="0.5096525">
+            <state line="158" column="2" selection-start="6240" selection-end="6240" vertical-scroll-proportion="0.8610039">
               <folding />
             </state>
           </provider>
@@ -99,34 +98,7 @@
       <file leaf-file-name="mock_war_room.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/battleship/mock_war_room.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="35" selection-start="607" selection-end="607" vertical-scroll-proportion="0.23552124">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="war_room_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/battle_stations/war_room_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="82" selection-start="1526" selection-end="1526" vertical-scroll-proportion="0.53667957">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spec_helper.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="291" selection-end="291" vertical-scroll-proportion="0.16216215">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/battle_stations/styles.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="149" column="13" selection-start="2549" selection-end="2549" vertical-scroll-proportion="0.8378378">
+            <state line="74" column="38" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.8378378">
               <folding />
             </state>
           </provider>
@@ -135,34 +107,52 @@
       <file leaf-file-name="game.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/battleship/game.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="18" selection-start="2050" selection-end="2050" vertical-scroll-proportion="0.74517375">
+            <state line="82" column="73" selection-start="2124" selection-end="2124" vertical-scroll-proportion="0.6525096">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/battleship/game_spec.rb">
+      <file leaf-file-name="battleship_exceptions.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/battleship/battleship_exceptions.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="10" selection-start="4760" selection-end="4760" vertical-scroll-proportion="0.7471042">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="props.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/battle_stations/props.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="72" selection-start="180" selection-end="180" vertical-scroll-proportion="0.06949807">
+            <state line="7" column="34" selection-start="185" selection-end="185" vertical-scroll-proportion="0.16216215">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="war_room.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/battle_stations/war_room.rb">
+        <entry file="file://$PROJECT_DIR$/battle_stations/players/war_room.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="36" selection-start="201" selection-end="201" vertical-scroll-proportion="0.115830116">
+            <state line="41" column="43" selection-start="1021" selection-end="1021" vertical-scroll-proportion="0.58301157">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="styles.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="styles.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/battle_stations/styles.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="153" column="30" selection-start="2601" selection-end="2601" vertical-scroll-proportion="0.72200775">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="war_room_spec.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/battle_stations/war_room_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="63" column="153" selection-start="1784" selection-end="1784" vertical-scroll-proportion="0.6525096">
               <folding />
             </state>
           </provider>
@@ -258,6 +248,28 @@
         </PATH_ELEMENT>
         <PATH_ELEMENT>
           <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/spec" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="battleship" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="battleship" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/spec" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/spec/battle_stations" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -379,6 +391,49 @@
         <option name="Make" value="true" />
       </method>
     </tempConfiguration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+    </configuration>
+    <configuration default="true" type="RubyRunConfigurationType" factoryName="Ruby script">
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="MODULE_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application" enabled="false" merge="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -398,35 +453,21 @@
       </option>
       <envs />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-    </configuration>
-    <configuration default="true" type="RubyRunConfigurationType" factoryName="Ruby script">
-      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="MODULE_NAME" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+    <configuration default="true" type="RubyRunConfigurationType" factoryName="Ruby test">
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="MODULE_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
       <envs />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_CLASS_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="INHERITANCE_CHECK_DISABLED" VALUE="false" />
     </configuration>
     <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
@@ -445,35 +486,6 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUN_SPECS_SEPARATELY" VALUE="false" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_COLOURED_OUTPUT_ENABLED" VALUE="true" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-    </configuration>
-    <configuration default="true" type="RubyRunConfigurationType" factoryName="Ruby test">
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="MODULE_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_CLASS_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="INHERITANCE_CHECK_DISABLED" VALUE="false" />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application" enabled="false" merge="false">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
     </configuration>
     <list size="1">
       <item index="0" class="java.lang.String" itemvalue="RSpec.game_spec" />
@@ -531,7 +543,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1680" height="1024" extended-state="6" />
+    <frame x="0" y="22" width="1680" height="1024" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="0" />
@@ -622,20 +634,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/welcome/styles.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="144" selection-start="919" selection-end="919" vertical-scroll-proportion="0.7806216">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/battle_stations/players/battle_stations.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="29" selection-start="125" selection-end="125" vertical-scroll-proportion="0.13162705">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/welcome/props.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="188" selection-end="188" vertical-scroll-proportion="0.10968921">
@@ -671,13 +669,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/battle_stations/props.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="72" selection-start="180" selection-end="180" vertical-scroll-proportion="0.06949807">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="0" selection-start="291" selection-end="291" vertical-scroll-proportion="0.16216215">
@@ -685,51 +676,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/battle_stations/props.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="72" selection-start="180" selection-end="180" vertical-scroll-proportion="0.06949807">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/battle_stations/war_room.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="36" selection-start="201" selection-end="201" vertical-scroll-proportion="0.115830116">
+        <state line="43" column="103" selection-start="1631" selection-end="1631" vertical-scroll-proportion="0.996139">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/battle_stations/players/war_room.rb">
+    <entry file="file://$PROJECT_DIR$/styles.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="587" selection-end="587" vertical-scroll-proportion="0.5096525">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/battleship/mock_war_room.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="35" selection-start="607" selection-end="607" vertical-scroll-proportion="0.23552124">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/battle_stations/war_room_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="82" selection-start="1526" selection-end="1526" vertical-scroll-proportion="0.53667957">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/battleship/game_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="10" selection-start="4760" selection-end="4760" vertical-scroll-proportion="0.7471042">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/battleship/game.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="18" selection-start="2050" selection-end="2050" vertical-scroll-proportion="0.74517375">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/battle_stations/styles.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="149" column="13" selection-start="2549" selection-end="2549" vertical-scroll-proportion="0.8378378">
+        <state line="153" column="30" selection-start="2601" selection-end="2601" vertical-scroll-proportion="0.72200775">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/battle_stations/war_room_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="153" selection-start="1784" selection-end="1784" vertical-scroll-proportion="0.6525096">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/battle_stations/players/war_room.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="43" selection-start="1021" selection-end="1021" vertical-scroll-proportion="0.58301157">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/battleship/mock_war_room.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="38" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.8378378">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/battleship/battleship_exceptions.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="34" selection-start="185" selection-end="185" vertical-scroll-proportion="0.16216215">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/battleship/game.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="73" selection-start="2124" selection-end="2124" vertical-scroll-proportion="0.6525096">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/battleship/game_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="158" column="2" selection-start="6240" selection-end="6240" vertical-scroll-proportion="0.8610039">
           <folding />
         </state>
       </provider>

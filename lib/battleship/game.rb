@@ -9,7 +9,7 @@ module Battleship
     attr_reader :war_room1, :war_room2
     attr_reader :fleet1, :fleet2
     attr_reader :grid1, :grid2
-    attr_reader :winner
+    attr_reader :winner, :disqualification_reason
 
     def initialize(player1, war_room1, player2, war_room2)
       @player1 = player1
@@ -41,6 +41,8 @@ module Battleship
       end
     end
 
+    private ###############################################
+
     def set_attacker(player)
       @current_attacker = player
       if @current_attacker == @player1
@@ -56,17 +58,19 @@ module Battleship
 
     def play_turn
       target = @current_attacker.next_target
-      ship = @attacked_grid.attack(target)
-      if ship
-        ship.hit!
-        @attacked_war_room.ship_statuses[ship.name.to_sym].damaged(ship.damage)
-        if ship.sunk? && all_ships_sunk?(@attacked_fleet)
-          declare_winner(@current_attacker)
+      begin
+        ship = @attacked_grid.attack(target)
+        if ship
+          ship.hit!
+          @attacked_war_room.ship_statuses[ship.name.to_sym].damaged(ship.damage)
+          if ship.sunk? && all_ships_sunk?(@attacked_fleet)
+            declare_winner(@current_attacker)
+          end
         end
+      rescue BattleshipException => e
+        disqualify(@current_attacker, "The player targeted an invalid sector.  #{e.message}.")
       end
     end
-
-    private ###############################################
 
     def switch_turns
       @current_attacker == @player1 ? set_attacker(@player2) : set_attacker(@player1)
@@ -88,12 +92,30 @@ module Battleship
       end
     end
 
+    def disqualify(player, reason)
+      @game_over = true
+      if (player == @player1)
+        @winner = @player2
+        @war_room1.disqualified!(reason)
+        @war_room2.victory!
+      else
+        @winner = @player1
+        @war_room1.victory!
+        @war_room2.disqualified!(reason)
+      end
+      @disqualification_reason = reason
+    end
+
     def place_ships_for(fleet, grid, player)
-      grid.place(fleet[:carrier], player.carrier_placement)
-      grid.place(fleet[:battleship], player.battleship_placement)
-      grid.place(fleet[:destroyer], player.destroyer_placement)
-      grid.place(fleet[:submarine], player.submarine_placement)
-      grid.place(fleet[:patrolship], player.patrolship_placement)
+      begin
+        grid.place(fleet[:carrier], player.carrier_placement)
+        grid.place(fleet[:battleship], player.battleship_placement)
+        grid.place(fleet[:destroyer], player.destroyer_placement)
+        grid.place(fleet[:submarine], player.submarine_placement)
+        grid.place(fleet[:patrolship], player.patrolship_placement)
+      rescue BattleshipException => e
+        disqualify(player, "The player made an invalid ship placement.  #{e.message}.")
+      end
     end
 
     def create_fleet

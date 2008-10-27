@@ -119,10 +119,42 @@ describe Battleship::Game do
     @war_room2.result.should == :defeat
   end
 
-  #Disqualifications
-    # ship placements
-    # invalid attack
-    # repeated attack
+  it "should disquality a player for improper ship placement" do
+    @player2.stub!(:patrolship_placement).and_return("A1 vertical")
 
-  #how do you indicate winner?
+    @game.prepare
+                 
+    @game.winner.should == @player1
+    @game.disqualification_reason.should == "The player made an invalid ship placement.  A1 vertical: The patrolship would overlap the carrier."
+  end
+
+  it "should update the screen when disqualifying a player" do
+    @player2.stub!(:patrolship_placement).and_return("A1 vertical")
+
+    @game.prepare
+
+    @war_room1.result.should == :victory
+    @war_room2.result.should == "disqualified:The player made an invalid ship placement.  A1 vertical: The patrolship would overlap the carrier."
+  end
+
+  it "should disqualify a player for invalid attacks" do
+    @player2.stub!(:next_target).and_return("Z11")
+
+    @game.prepare
+    @game.play
+             
+    @game.winner.should == @player1
+    @game.disqualification_reason.should == "The player targeted an invalid sector.  Invalid coordinates: Z11."
+  end
+
+  it "should disqualify a player for repeated attacks" do
+    @player2.stub!(:next_target).and_return("F5")
+
+    @game.prepare
+    @game.play
+
+    @game.winner.should == @player1
+    @game.disqualification_reason.should == "The player targeted an invalid sector.  Sector F5 has already been attacked."
+  end
+  
 end
