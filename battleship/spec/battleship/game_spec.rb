@@ -21,6 +21,13 @@ describe Battleship::Game do
     @game.war_room2.should be(@war_room2)
   end
 
+  it "should notify each player of a new game with their opponent" do
+    @game.prepare
+
+    @player1.opponent.should == "Player 2"
+    @player2.opponent.should == "Player 1"
+  end
+
   it "should create a healthy fleet for each player" do
     @game.prepare
 

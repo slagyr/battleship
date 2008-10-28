@@ -75,6 +75,9 @@ module Battleship
       @result = "disqualified:#{reason}"
     end
 
+    def reset
+    end
+
   end
 
 end

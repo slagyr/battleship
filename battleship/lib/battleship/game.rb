@@ -28,6 +28,8 @@ module Battleship
     def prepare
       @war_room1.commander = @player1.name
       @war_room2.commander = @player2.name
+      @player1.new_game(@player2.name)
+      @player2.new_game(@player1.name)
       place_ships_for(@fleet1, @grid1, @player1)
       place_ships_for(@fleet2, @grid2, @player2)
     end
