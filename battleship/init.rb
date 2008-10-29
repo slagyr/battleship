@@ -12,4 +12,5 @@ production = Limelight::Production["."]
 #require 'seomthing'
 
 # This is the ideal place to assign values to production attributes.
-#production.something = MySource::Something.new
+require 'battleship/player_profile'
+production.computer_players = Battleship::PlayerProfile.load_all

@@ -1,0 +1,5 @@
+author: "Micah Martin"
+description: "A Player that positions ships and fires completely randomly."
+name: "Rear Admiral Randy"
+player_source_file: "random_player/random_player.rb"
+player_full_class_name: "RandomPlayer::RandomPlayer"

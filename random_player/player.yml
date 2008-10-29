@@ -1,4 +1,0 @@
-author: "Micah Martin"
-description: "A Player that positions ships and fires completely randomly."
-player_source_file: "random_player.rb"
-player_full_class_name: "RandomPlayer"

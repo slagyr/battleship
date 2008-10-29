@@ -1,10 +1,10 @@
-require File.expand_path(File.dirname(__FILE__) + "/spec_helper")
-require 'random_player'
+require File.expand_path(File.dirname(__FILE__) + "/../spec_helper")
+require 'random_player/random_player'
 
-describe RandomPlayer do
+describe RandomPlayer::RandomPlayer do
 
   before(:each) do
-    @randy = RandomPlayer.new
+    @randy = RandomPlayer::RandomPlayer.new
   end
 
   it "should find valid ship placements" do

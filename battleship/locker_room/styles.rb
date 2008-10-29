@@ -6,8 +6,8 @@ locker_room {
   gradient :on
   horizontal_alignment :center
   vertical_alignment :center
-  width 800
-  height 650
+  width 1000
+  height 700
 }
 
 column {
@@ -89,10 +89,10 @@ player_list {
 player_list_item {
   width "100%"
   border_color :grey
-  border_width 1
+  border_width 2
   rounded_corner_radius 4
-  left_padding 5
-  right_margin 5
+  margin 5
+  padding 5
 }
 
 player_text {
@@ -109,4 +109,25 @@ player_name {
 player_score {
   extends :player_text
   width "20%"
+}
+
+buttons {
+  width "100%"
+  top_padding 10
+  horizontal_alignment :right
+}
+
+evaulate_button {
+  border_width 2
+  border_color "red"
+  rounded_corner_radius 4
+  background_color :transparent
+  text_color :red
+  font_size 16
+  font_face "courier_new"
+  padding 5
+  horizontal_alignment :center
+  hover {
+    background_color :white
+  }
 }

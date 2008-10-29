@@ -6,4 +6,4 @@ name "."
 # Attributes.  Defining attributes on the production will create getters/setters on the production object.
 # Create attributes for any model objects or resources that need to accessible to props or players within the production
 
-#attribute :attribute_name
+attribute :computer_players
