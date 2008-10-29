@@ -15,3 +15,10 @@ stage "default" do
   location [200, 25]
   size [800, 800]
 end
+#
+#stage "lab" do
+#  default_scene nil
+#  title "Player Lab"
+#  location [0, 0]
+#  size [300, 400]
+#end

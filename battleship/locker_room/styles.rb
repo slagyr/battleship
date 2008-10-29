@@ -1,0 +1,112 @@
+
+locker_room {
+  background_color :black
+  secondary_background_color :gray
+  gradient_angle 270
+  gradient :on
+  horizontal_alignment :center
+  vertical_alignment :center
+  width 800
+  height 650
+}
+
+column {
+  width "50%"
+  height "100%"
+  margin 5
+}
+
+title {
+  width "100%"
+  horizontal_alignment :center
+  text_color :white
+  font_size 25
+  font_face :courier_new
+}
+
+profile {
+  width "100%"
+  height "100%"
+  left_border_width 2
+  left_border_color :grey
+  left_padding 5
+}
+
+stat_label {
+  width "100%"
+  text_color :white
+  font_size 12
+  font_face :courier_new
+  font_style :bold
+  top_margin 10
+}
+
+stat_result {
+  width "100%"
+  top_margin 10
+  left_margin 10
+  text_color :white
+  font_size 16
+  font_face :courier_new
+  max_height 200
+}
+
+result_graph {
+  width "100%"
+  height 40
+  border_color :dark_gray
+  border_width 3
+  rounded_corner_radius 4
+  background_color :white
+}
+
+result_graph_bar {
+  background_color :green
+  width "100%"
+  height "100%"
+}
+
+result_graph_text {
+  float :on
+  width "100%"
+  height "100%"
+  x 0
+  y 0
+  text_color :black
+  font_size 16
+  font_face :courier_new
+  horizontal_alignment :center
+  vertical_alignment :center
+}
+
+
+player_list {
+  vertical_scrollbar :on
+  width "100%"
+  min_height 400
+}
+
+player_list_item {
+  width "100%"
+  border_color :grey
+  border_width 1
+  rounded_corner_radius 4
+  left_padding 5
+  right_margin 5
+}
+
+player_text {
+  text_color :white
+  font_face :courier_new
+  font_size 16
+}
+
+player_name {
+  extends :player_text
+  width "80%"
+}
+
+player_score {
+  extends :player_text
+  width "20%"
+}
