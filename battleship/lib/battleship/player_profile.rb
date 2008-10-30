@@ -16,15 +16,20 @@ module Battleship
         profiles = []
         Dir.entries(ComputerPlayersDir).each do |entry|
           if entry != "." && entry != ".."
-            yaml = IO.read(File.join(ComputerPlayersDir, entry, 'player.yml'))
-            options = YAML.load(yaml)
-            profile = PlayerProfile.new(options)
+            profile = load_profile(entry)
             profiles << profile
-            profile.lib_dir = File.join(ComputerPlayersDir, entry, 'lib')
-            $: << profile.lib_dir
           end
         end
         return profiles
+      end
+
+      def load_profile(player_dir_name)
+        yaml = IO.read(File.join(ComputerPlayersDir, player_dir_name, 'player.yml'))
+        options = YAML.load(yaml)
+        profile = PlayerProfile.new(options)
+        profile.lib_dir = File.join(ComputerPlayersDir, player_dir_name, 'lib')
+        $: << profile.lib_dir
+        return profile
       end
 
     end
@@ -55,9 +60,15 @@ module Battleship
       if score < 25
         return "red"
       elsif score < 50
+        return "orange_red"
+      elsif score < 60
         return "orange"
-      elsif score < 75
+      elsif score < 70
+        return "gold"
+      elsif score < 80
         return "yellow"
+      elsif score < 90
+        return "green_yellow"
       else
         return "green"
       end

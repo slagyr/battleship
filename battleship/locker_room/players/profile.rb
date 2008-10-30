@@ -5,6 +5,7 @@ module Profile
   attr_reader :profile
   prop_reader :player_name, :author_name, :description
   prop_reader :coverage_graph, :flog_graph, :simplicity_graph, :battle_graph, :average_graph
+  prop_reader :player_list
 
   def profile=(player_profile)
     @profile = player_profile
@@ -46,6 +47,9 @@ module Profile
 
   def update_average_score(score)
     average_graph.populate(score, score.to_s)
+    player_list.find_by_name("player_list_item").each do |item|
+      item.update if item.profile == profile
+    end
   end
 
 end
