@@ -14,10 +14,10 @@ module Profile
     description.text = @profile.description
 
     average_graph.populate(@profile.average_score, @profile.average_score.to_s)
-    battle_graph.populate(@profile.battle_score, @profile.battle_score.to_s)
-    simplicity_graph.populate(@profile.simplicity_score, @profile.simplicity_score.to_s)
-    coverage_graph.populate(@profile.coverage_score, @profile.coverage_score.to_s)
-    flog_graph.populate(@profile.flog_score, @profile.flog_score.to_s)
+    battle_graph.populate(@profile.battle_score, @profile.battle_description)
+    simplicity_graph.populate(@profile.simplicity_score, @profile.simplicity_description)
+    coverage_graph.populate(@profile.coverage_score, @profile.coverage_description)
+    flog_graph.populate(@profile.flog_score, @profile.flog_description)
   end
 
   def perform_analysis

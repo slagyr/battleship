@@ -41,6 +41,7 @@ module Battleship
     attr_reader :simplicity_score, :simplicity_description
     attr_reader :coverage_score, :coverage_description
     attr_reader :battle_score, :battle_description
+    attr_reader :games_played, :wins, :disqualifications
     attr_accessor :lib_dir
 
     def initialize(options={})
@@ -53,6 +54,12 @@ module Battleship
           self.instance_variable_set("@#{key}", value)
         end
       end
+    end
+
+    def simple_hash
+      return {:name => name,
+          :author => author,
+          :description => description}
     end
 
     def color_for_score(score)

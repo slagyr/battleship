@@ -16,76 +16,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/battle_stations/players/sectors.rb" afterPath="$PROJECT_DIR$/battleship/battle_stations/players/sectors.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship.iml" afterPath="$PROJECT_DIR$/battleship.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/spec/battle_stations/sectors_spec.rb" afterPath="$PROJECT_DIR$/battleship/spec/battle_stations/sectors_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/spec/battleship/server_spec.rb" afterPath="$PROJECT_DIR$/battleship/spec/battleship/server_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/lib/battleship/analyzers/battle_analyzer.rb" afterPath="$PROJECT_DIR$/battleship/lib/battleship/analyzers/battle_analyzer.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/production.rb" afterPath="$PROJECT_DIR$/battleship/production.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/spec/battleship/analyzers/flog_analyzer_spec.rb" afterPath="$PROJECT_DIR$/battleship/spec/battleship/analyzers/flog_analyzer_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/spec/spec_helper.rb" afterPath="$PROJECT_DIR$/battleship/spec/spec_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/spec/battleship/grid_spec.rb" afterPath="$PROJECT_DIR$/battleship/spec/battleship/grid_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/welcome/props.rb" afterPath="$PROJECT_DIR$/battleship/welcome/props.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/images/battleship.png" afterPath="$PROJECT_DIR$/battleship/images/battleship.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/lib/battleship/player_profile.rb" afterPath="$PROJECT_DIR$/battleship/lib/battleship/player_profile.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/locker_room/player_list_item.rb" afterPath="$PROJECT_DIR$/battleship/locker_room/player_list_item.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/stages.rb" afterPath="$PROJECT_DIR$/battleship/stages.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/lib/battleship/ship.rb" afterPath="$PROJECT_DIR$/battleship/lib/battleship/ship.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/spec/battleship/analyzers/simplicity_analyzer_spec.rb" afterPath="$PROJECT_DIR$/battleship/spec/battleship/analyzers/simplicity_analyzer_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/battleship/computer_players/sergeant_simple/lib/sergeant_simple/sergeant_simple.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/images/patrolship.png" afterPath="$PROJECT_DIR$/battleship/images/patrolship.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/battle_stations/players/war_room.rb" afterPath="$PROJECT_DIR$/battleship/battle_stations/players/war_room.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/lib/battleship/simple_player.rb" afterPath="$PROJECT_DIR$/battleship/lib/battleship/simple_player.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/images/carrier.psd" afterPath="$PROJECT_DIR$/battleship/images/carrier.psd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/locker_room/players/player_list_item.rb" afterPath="$PROJECT_DIR$/battleship/locker_room/players/player_list_item.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/spec/battleship/player_profile_spec.rb" afterPath="$PROJECT_DIR$/battleship/spec/battleship/player_profile_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship.ipr" afterPath="$PROJECT_DIR$/battleship.ipr" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/lib/battleship/game.rb" afterPath="$PROJECT_DIR$/battleship/lib/battleship/game.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/battle_stations/players/battle_stations.rb" afterPath="$PROJECT_DIR$/battleship/battle_stations/players/battle_stations.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/images/submarine.png" afterPath="$PROJECT_DIR$/battleship/images/submarine.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/battle_stations/props.rb" afterPath="$PROJECT_DIR$/battleship/battle_stations/props.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/init.rb" afterPath="$PROJECT_DIR$/battleship/init.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/battleship/computer_players/sergeant_simple/player.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/images/destroyer.psd" afterPath="$PROJECT_DIR$/battleship/images/destroyer.psd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/images/battleship.psd" afterPath="$PROJECT_DIR$/battleship/images/battleship.psd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/styles.rb" afterPath="$PROJECT_DIR$/battleship/styles.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/locker_room/profile.rb" afterPath="$PROJECT_DIR$/battleship/locker_room/profile.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/locker_room/props.rb" afterPath="$PROJECT_DIR$/battleship/locker_room/props.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/locker_room/players/result_graph.rb" afterPath="$PROJECT_DIR$/battleship/locker_room/players/result_graph.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/images/carrier.png" afterPath="$PROJECT_DIR$/battleship/images/carrier.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/spec/locker_room/profile_spec.rb" afterPath="$PROJECT_DIR$/battleship/spec/locker_room/profile_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/spec/battleship/ship_spec.rb" afterPath="$PROJECT_DIR$/battleship/spec/battleship/ship_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/welcome/styles.rb" afterPath="$PROJECT_DIR$/battleship/welcome/styles.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/battleship/computer_players/sergeant_simple/spec/spec_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/images/submarine.psd" afterPath="$PROJECT_DIR$/battleship/images/submarine.psd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Rakefile" afterPath="$PROJECT_DIR$/Rakefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/images/title_cover.png" afterPath="$PROJECT_DIR$/battleship/images/title_cover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/locker_room/players/locker_room.rb" afterPath="$PROJECT_DIR$/battleship/locker_room/players/locker_room.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/computer_players/random_player/spec/random_player/random_player_spec.rb" afterPath="$PROJECT_DIR$/battleship/computer_players/random_player/spec/random_player/random_player_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/spec/battle_stations/war_room_spec.rb" afterPath="$PROJECT_DIR$/battleship/spec/battle_stations/war_room_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/images/destroyer.png" afterPath="$PROJECT_DIR$/battleship/images/destroyer.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/lib/battleship/grid.rb" afterPath="$PROJECT_DIR$/battleship/lib/battleship/grid.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/spec/battleship/analyzers/coverage_analyzer_spec.rb" afterPath="$PROJECT_DIR$/battleship/spec/battleship/analyzers/coverage_analyzer_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/computer_players/random_player/spec/spec_helper.rb" afterPath="$PROJECT_DIR$/battleship/computer_players/random_player/spec/spec_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/spec/battleship/simple_player_spec.rb" afterPath="$PROJECT_DIR$/battleship/spec/battleship/simple_player_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/battle_stations/war_room.rb" afterPath="$PROJECT_DIR$/battleship/battle_stations/war_room.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/lib/battleship/mock_war_room.rb" afterPath="$PROJECT_DIR$/battleship/lib/battleship/mock_war_room.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/battle_stations/styles.rb" afterPath="$PROJECT_DIR$/battleship/battle_stations/styles.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/lib/battleship/analyzers/simplicity_analyzer.rb" afterPath="$PROJECT_DIR$/battleship/lib/battleship/analyzers/simplicity_analyzer.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/computer_players/random_player/player.yml" afterPath="$PROJECT_DIR$/battleship/computer_players/random_player/player.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/computer_players/random_player/lib/random_player/random_player.rb" afterPath="$PROJECT_DIR$/battleship/computer_players/random_player/lib/random_player/random_player.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/locker_room/styles.rb" afterPath="$PROJECT_DIR$/battleship/locker_room/styles.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/battleship/computer_players/sergeant_simple/spec/sergeant_simple/sergeant_simple_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/images/patrolship.psd" afterPath="$PROJECT_DIR$/battleship/images/patrolship.psd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/spec/locker_room/locker_room_spec.rb" afterPath="$PROJECT_DIR$/battleship/spec/locker_room/locker_room_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship.iws" afterPath="$PROJECT_DIR$/battleship.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/battle_stations/players/ship_status.rb" afterPath="$PROJECT_DIR$/battleship/battle_stations/players/ship_status.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/lib/battleship/analyzers/coverage_analyzer.rb" afterPath="$PROJECT_DIR$/battleship/lib/battleship/analyzers/coverage_analyzer.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/spec/battleship/game_spec.rb" afterPath="$PROJECT_DIR$/battleship/spec/battleship/game_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/lib/battleship/battleship_exceptions.rb" afterPath="$PROJECT_DIR$/battleship/lib/battleship/battleship_exceptions.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/lib/battleship/analyzers/flog_analyzer.rb" afterPath="$PROJECT_DIR$/battleship/lib/battleship/analyzers/flog_analyzer.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/spec/battle_stations/ship_status_spec.rb" afterPath="$PROJECT_DIR$/battleship/spec/battle_stations/ship_status_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/spec/battleship/analyzers/battle_analyzer_spec.rb" afterPath="$PROJECT_DIR$/battleship/spec/battleship/analyzers/battle_analyzer_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/locker_room/players/profile.rb" afterPath="$PROJECT_DIR$/battleship/locker_room/players/profile.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship.iws" afterPath="$PROJECT_DIR$/battleship.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/lib/battleship/server.rb" afterPath="$PROJECT_DIR$/battleship/lib/battleship/server.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/lib/battleship/player_profile.rb" afterPath="$PROJECT_DIR$/battleship/lib/battleship/player_profile.rb" />
     </list>
     <ignored path="battleship.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -148,64 +85,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="sergeant_simple_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/battleship/computer_players/sergeant_simple/spec/sergeant_simple/sergeant_simple_spec.rb">
+      <file leaf-file-name="profile.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/battleship/locker_room/players/profile.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="2" selection-start="158" selection-end="158" vertical-scroll-proportion="0.08559201">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spec_helper.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/battleship/computer_players/random_player/spec/spec_helper.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="93" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spec_helper.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/battleship/computer_players/sergeant_simple/spec/spec_helper.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="14" selection-start="93" selection-end="93" vertical-scroll-proportion="0.051355205">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="player.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/battleship/computer_players/random_player/player.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="0" selection-end="232" vertical-scroll-proportion="0.08559201">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="player.yml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/battleship/computer_players/sergeant_simple/player.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="198" selection-end="198" vertical-scroll-proportion="0.08559201">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="simple_player.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/battleship/lib/battleship/simple_player.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="7181" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sergeant_simple.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/battleship/computer_players/sergeant_simple/lib/sergeant_simple/sergeant_simple.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="7" selection-start="150" selection-end="150" vertical-scroll-proportion="0.15406562">
+            <state line="18" column="77" selection-start="748" selection-end="748" vertical-scroll-proportion="0.4822695">
               <folding />
             </state>
           </provider>
@@ -304,7 +187,7 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/welcome" />
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/spec" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -326,7 +209,59 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/computer_players" />
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/spec" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/spec/battleship" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="battleship" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="battleship" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/locker_room" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="battleship" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="battleship" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/locker_room" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/locker_room/players" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -362,8 +297,8 @@
     <RUBY_DOC NAME="DEFAULTS" VALUE="true" />
     <RUBY_DOC NAME="NUMBER" VALUE="0" />
   </component>
-  <component name="RunManager" selected="RSpec.coverage_analyzer_spec">
-    <tempConfiguration default="false" name="coverage_analyzer_spec" type="RSpecRunConfigurationType" factoryName="RSpec">
+  <component name="RunManager" selected="RSpec.battle_analyzer_spec">
+    <tempConfiguration default="false" name="battle_analyzer_spec" type="RSpecRunConfigurationType" factoryName="RSpec">
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/battleship/spec/battleship/analyzers" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="MODULE_NAME" VALUE="battleship" />
@@ -372,7 +307,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
       <envs />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/battleship/spec/battleship/analyzers/coverage_analyzer_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/battleship/spec/battleship/analyzers/battle_analyzer_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="[none]" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
@@ -483,7 +418,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
     </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="RSpec.coverage_analyzer_spec" />
+      <item index="0" class="java.lang.String" itemvalue="RSpec.battle_analyzer_spec" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -557,7 +492,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="5" />
       <window_info id="Maven projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="1" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="6" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3618202" order="10" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3608522" order="10" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="6" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="4" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="12" />
@@ -629,55 +564,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/battleship/computer_players/random_player/spec/random_player/random_player_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="1039" selection-end="1039" vertical-scroll-proportion="0.7876448">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/battleship/lib/battleship/player_profile.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="3" selection-start="1961" selection-end="1961" vertical-scroll-proportion="0.2810271">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/battleship/lib/battleship/analyzers/coverage_analyzer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="32" selection-start="947" selection-end="947" vertical-scroll-proportion="0.51355207">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/battleship/spec/battleship/analyzers/coverage_analyzer_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="6" selection-start="274" selection-end="274" vertical-scroll-proportion="0.15406562">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/battleship/locker_room/players/profile.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="18" selection-start="1695" selection-end="1695" vertical-scroll-proportion="0.85592014">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/battleship/locker_room/player_list_item.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/battleship/locker_room/props.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/battleship/locker_room/players/player_list_item.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="287" selection-end="287" vertical-scroll-proportion="0.23965763">
@@ -737,6 +623,55 @@
     <entry file="file://$PROJECT_DIR$/battleship/computer_players/sergeant_simple/player.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="198" selection-end="198" vertical-scroll-proportion="0.08559201">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/battleship/lib/battleship/analyzers/battle_analyzer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="26" selection-start="365" selection-end="365" vertical-scroll-proportion="0.36879432">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/battleship/spec/battleship/analyzers/battle_analyzer_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="8" selection-start="270" selection-end="270" vertical-scroll-proportion="0.25531915">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/battleship/lib/battleship/server.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="505" selection-end="505" vertical-scroll-proportion="0.79432625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/battleship/spec/battleship/server_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="5" selection-start="411" selection-end="411" vertical-scroll-proportion="0.34042552">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/battleship/lib/battleship/player_profile.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="0" selection-start="1531" selection-end="1531" vertical-scroll-proportion="0.3617021">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/battleship/spec/battleship/analyzers/coverage_analyzer_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="6" selection-start="0" selection-end="562" vertical-scroll-proportion="0.25531915">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/battleship/locker_room/players/profile.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="77" selection-start="748" selection-end="748" vertical-scroll-proportion="0.4822695">
           <folding />
         </state>
       </provider>
