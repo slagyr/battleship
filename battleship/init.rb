@@ -13,4 +13,7 @@ production = Limelight::Production["."]
 
 # This is the ideal place to assign values to production attributes.
 require 'battleship/player_profile'
-production.computer_players = Battleship::PlayerProfile.load_all
+players = Battleship::PlayerProfile.load_all
+player_hash = {}
+players.each { |p| player_hash[p.name] = p }
+production.computer_players = player_hash

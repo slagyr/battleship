@@ -36,4 +36,8 @@ module Battleship
 
   end
 
+  class ServerException < BattleshipException
+    
+  end
+
 end

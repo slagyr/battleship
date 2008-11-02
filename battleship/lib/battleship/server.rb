@@ -1,5 +1,6 @@
 require 'drb'
 require 'battleship/player_profile'
+require 'battleship/battleship_exceptions'
 
 module Battleship
 
@@ -13,13 +14,27 @@ module Battleship
       end
 
       def profile(name)
-        profile_hash = api.profile(name)
-        return nil if profile_hash.nil?
-        return PlayerProfile.new(profile_hash)
+        try do
+          profile_hash = api.profile(name)
+          return nil if profile_hash.nil?
+          return PlayerProfile.new(profile_hash)
+        end
       end
 
       def register_profile(profile)
-        api.register_profile(profile.simple_hash)
+        try do
+          api.register_profile(profile.simple_hash)
+        end
+      end
+
+      private #############################################
+
+      def try
+        begin
+          yield
+        rescue Exception => e
+          raise ServerException.new(e.message)
+        end
       end
 
     end

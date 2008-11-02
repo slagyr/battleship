@@ -19,7 +19,6 @@ options {
   left_margin 100
   right_margin 100
   horizontal_alignment :center
-  vertical_alignment :center
 }
 
 option {
@@ -39,4 +38,19 @@ option {
     gradient_penetration 100
     gradient :on
   }
+}
+
+player_selection {
+  width "50%"   
+  horizontal_alignment :center
+}
+
+player_selection_title {
+  text_color :white
+  font_face :arial
+  font_size 25
+}
+
+player_options {
+  width "100%"
 }

@@ -1,6 +1,16 @@
 options do
-  option :text => "Go to Locker Room", :on_mouse_clicked => "scene.load('locker_room').players = production.computer_players"
-  option :text => "Human vs Human"
-  option :text => "Human vs Computer"
-  option :text => "Computer vs Computer", :on_mouse_clicked => "scene.load('battle_stations').play"
+  option :text => "Go to Locker Room", :on_mouse_clicked => "scene.load('locker_room').players = production.computer_players.values"
+
+  player_selections do
+    player_selection do
+      player_selection_title :text => "Player 1"
+      player_options :id => "player1_selection", :players => "combo_box", :choices => "production.computer_players.keys"
+    end
+    player_selection do
+      player_selection_title :text => "Player 2"
+      player_options :id => "player2_selection", :players => "combo_box", :choices => "production.computer_players.keys"
+    end
+  end
+
+  option :text => "Begin Battle", :on_mouse_clicked => "scene.begin_game"
 end

@@ -6,7 +6,11 @@ module Battleship
     class BattleAnalyzer
 
       def self.analyze(profile)
-        record = Server.profile(profile.name)
+        begin
+          record = Server.profile(profile.name)
+        rescue ServerException => e
+          return 50, "50 : Couldn't retreive record"
+        end
         return 50, "50 : No games recorded" if record.nil?
 
         games_played = record.games_played
