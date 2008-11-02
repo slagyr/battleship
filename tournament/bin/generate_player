@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+player_name = ARGV[0]
+
+require File.expand_path(File.dirname(__FILE__) + "/../lib/init")
+require "limelight/templates/player_templater"
+
+templater = Limelight::Templates::PlayerTemplater.new(player_name)
+templater.generate

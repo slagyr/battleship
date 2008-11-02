@@ -1,0 +1,35 @@
+require 'rake'
+require 'rake/gempackagetask'
+require 'spec/rake/spectask'
+
+desc "Run all specs"
+Spec::Rake::SpecTask.new('spec') do |t|
+  t.spec_files = FileList['spec/**/*.rb']
+  t.rcov = false
+end
+
+PKG_NAME = "!-FILENAME-!"
+PKG_VERSION   = "1.0"
+PKG_TAG = "!-FILENAME-!-1_0"
+PKG_FILE_NAME = "#{PKG_NAME}-#{PKG_VERSION}"
+
+spec = Gem::Specification.new do |s|
+  s.name = PKG_NAME
+  s.version = PKG_VERSION
+  s.files = FileList['lib/**/*.rb', 'spec/**/*.rb'].to_a
+  s.require_path = 'lib'
+  s.test_files = Dir.glob('spec/*_spec.rb')
+  s.bindir = 'bin'
+  s.executables = []
+
+  # Modify the following.  Make sure descriptions starts with "Battleship:".  This is how the gem is recognized as
+  # a battleship player.
+  s.summary = "A Battleship player"
+  s.description = "Battleship: A battleship player"
+  s.author = "Anonymous"
+end
+
+Rake::GemPackageTask.new(spec) do |pkg|
+  pkg.need_zip = false
+  pkg.need_tar = false
+end

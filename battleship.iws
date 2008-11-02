@@ -16,17 +16,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/welcome/styles.rb" afterPath="$PROJECT_DIR$/battleship/welcome/styles.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/init.rb" afterPath="$PROJECT_DIR$/battleship/init.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/lib/battleship/analyzers/battle_analyzer.rb" afterPath="$PROJECT_DIR$/battleship/lib/battleship/analyzers/battle_analyzer.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/welcome/players/welcome.rb" afterPath="$PROJECT_DIR$/battleship/welcome/players/welcome.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/spec/welcome/welcome_spec.rb" afterPath="$PROJECT_DIR$/battleship/spec/welcome/welcome_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/lib/battleship/battleship_exceptions.rb" afterPath="$PROJECT_DIR$/battleship/lib/battleship/battleship_exceptions.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/spec/battleship/analyzers/battle_analyzer_spec.rb" afterPath="$PROJECT_DIR$/battleship/spec/battleship/analyzers/battle_analyzer_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/battle_stations/players/battle_stations.rb" afterPath="$PROJECT_DIR$/battleship/battle_stations/players/battle_stations.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tournament/lib/init.rb" afterPath="$PROJECT_DIR$/tournament/lib/init.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/battleship/computer_players/sergeant_simple/Battleship.Rakefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tournament/lib/limelight/templates/sources/spec_helper.template" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tournament/lib/limelight/templates/sources/player_spec.template" afterPath="$PROJECT_DIR$/tournament/lib/limelight/templates/sources/player_spec.template" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tournament/bin/generate_player" afterPath="$PROJECT_DIR$/tournament/bin/generate_player" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tournament/lib/limelight/templates/templater_logger.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tournament/lib/limelight/templates/sources/Rakefile.template" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship.iws" afterPath="$PROJECT_DIR$/battleship.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/welcome/props.rb" afterPath="$PROJECT_DIR$/battleship/welcome/props.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/lib/battleship/server.rb" afterPath="$PROJECT_DIR$/battleship/lib/battleship/server.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tournament/lib/limelight/templates/templater.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tournament/lib/limelight/string.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tournament/lib/limelight/templates/player_templater.rb" afterPath="$PROJECT_DIR$/tournament/lib/limelight/templates/player_templater.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tournament/lib/limelight/templates/sources/player.template" afterPath="$PROJECT_DIR$/tournament/lib/limelight/templates/sources/player.template" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/battleship/computer_players/sergeant_simple/Rakefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tournament/spec/spec_helper.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tournament/lib/limelight/templates/sources/Battleship.Rakefile.template" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tournament/spec/limelight/templates/player_templater_spec.rb" afterPath="$PROJECT_DIR$/tournament/spec/limelight/templates/player_templater_spec.rb" />
     </list>
     <ignored path="battleship.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,55 +94,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="props.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/battleship/welcome/props.rb">
+      <file leaf-file-name="player_templater.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tournament/lib/limelight/templates/player_templater.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="31" selection-start="610" selection-end="610" vertical-scroll-proportion="0.4117647">
+            <state line="24" column="40" selection-start="766" selection-end="766" vertical-scroll-proportion="0.6241135">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="welcome.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/battleship/welcome/players/welcome.rb">
+      <file leaf-file-name="player_spec.template" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tournament/lib/limelight/templates/sources/player_spec.template">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="24" selection-start="213" selection-end="213" vertical-scroll-proportion="0.17021276">
+            <state line="7" column="7" selection-start="207" selection-end="207" vertical-scroll-proportion="0.19858156">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="player.template" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tournament/lib/limelight/templates/sources/player.template">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="23" selection-start="1530" selection-end="1530" vertical-scroll-proportion="0.9117647">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Battleship.Rakefile.template" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tournament/lib/limelight/templates/sources/Battleship.Rakefile.template">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="55" selection-start="242" selection-end="242" vertical-scroll-proportion="0.19858156">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="player_templater_spec.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tournament/spec/limelight/templates/player_templater_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="57" selection-start="1428" selection-end="1428" vertical-scroll-proportion="0.61764705">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="generate_player" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tournament/bin/generate_player">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="21" selection-start="42" selection-end="42" vertical-scroll-proportion="0.056737587">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="init.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/battleship/init.rb">
+        <entry file="file://$PROJECT_DIR$/tournament/lib/init.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="41" selection-start="767" selection-end="767" vertical-scroll-proportion="0.5106383">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/battleship/welcome/styles.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="30" selection-start="652" selection-end="652" vertical-scroll-proportion="-0.20588236">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="welcome_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/battleship/spec/welcome/welcome_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="11" selection-start="404" selection-end="404" vertical-scroll-proportion="0.53900707">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="battle_stations.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/battleship/battle_stations/players/battle_stations.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="397" selection-end="397" vertical-scroll-proportion="0.6524823">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -214,6 +228,192 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/tournament" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/tournament/spec" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="battleship" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="battleship" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/tournament" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/tournament/spec" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/tournament/spec/limelight" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/tournament/spec/limelight/templates" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="battleship" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="battleship" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/tournament" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/tournament/lib" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="battleship" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="battleship" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/tournament" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/tournament/lib" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/tournament/lib/limelight" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="battleship" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="battleship" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/tournament" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/tournament/lib" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/tournament/lib/limelight" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/tournament/lib/limelight/templates" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="battleship" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="battleship" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/tournament" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/tournament/lib" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/tournament/lib/limelight" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/tournament/lib/limelight/templates" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/tournament/lib/limelight/templates/sources" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="battleship" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="battleship" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/tournament" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/tournament/bin" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="battleship" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="battleship" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
           <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
@@ -236,7 +436,11 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/welcome" />
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/computer_players" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/computer_players/sergeant_simple" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -258,33 +462,15 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/welcome" />
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/computer_players" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/welcome/players" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="battleship" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="battleship" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship" />
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/computer_players/sergeant_simple" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/spec" />
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/computer_players/sergeant_simple/spec" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -306,37 +492,19 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/spec" />
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/computer_players" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/spec/welcome" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="battleship" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="battleship" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship" />
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/computer_players/sergeant_simple" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship" />
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/computer_players/sergeant_simple/spec" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/spec" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/spec/locker_room" />
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/computer_players/sergeant_simple/spec/sergeant_simple" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -358,33 +526,15 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/spec" />
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/computer_players" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/spec/battle_stations" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="battleship" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="battleship" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship" />
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/computer_players/sergeant_simple" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/locker_room" />
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/computer_players/sergeant_simple/pkg" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -406,7 +556,19 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/battle_stations" />
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/computer_players" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/computer_players/sergeant_simple" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/computer_players/sergeant_simple/lib" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/computer_players/sergeant_simple/lib/sergeant_simple" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -428,11 +590,11 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/battle_stations" />
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/computer_players" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/battle_stations/players" />
+          <option name="myItemId" value="PsiDirectory:/Users/micahmartin/Projects/battleship/battleship/computer_players/random_player" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -468,17 +630,17 @@
     <RUBY_DOC NAME="DEFAULTS" VALUE="true" />
     <RUBY_DOC NAME="NUMBER" VALUE="0" />
   </component>
-  <component name="RunManager" selected="RSpec.welcome_spec">
-    <tempConfiguration default="false" name="welcome_spec" type="RSpecRunConfigurationType" factoryName="RSpec">
+  <component name="RunManager" selected="RSpec.player_templater_spec">
+    <tempConfiguration default="false" name="player_templater_spec" type="RSpecRunConfigurationType" factoryName="RSpec">
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/battleship/spec/welcome" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/tournament/spec/limelight/templates" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="MODULE_NAME" VALUE="battleship" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
       <envs />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/battleship/spec/welcome/welcome_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/tournament/spec/limelight/templates/player_templater_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="[none]" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
@@ -589,7 +751,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
     </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="RSpec.welcome_spec" />
+      <item index="0" class="java.lang.String" itemvalue="RSpec.player_templater_spec" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -735,114 +897,114 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/battleship/locker_room/players/profile.rb">
+    <entry file="file://$PROJECT_DIR$/battleship/lib/battleship/simple_player.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="14" selection-start="833" selection-end="833" vertical-scroll-proportion="0.5673759">
+        <state line="23" column="38" selection-start="0" selection-end="7181" vertical-scroll-proportion="0.6764706">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/battleship/lib/battleship/server.rb">
+    <entry file="file://$PROJECT_DIR$/tournament/lib/limelight/string.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="31" selection-start="81" selection-end="81" vertical-scroll-proportion="0.056737587">
+        <state line="34" column="3" selection-start="1166" selection-end="1166" vertical-scroll-proportion="0.964539">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/battleship/lib/battleship/analyzers/battle_analyzer.rb">
+    <entry file="file://$PROJECT_DIR$/battleship/computer_players/sergeant_simple/spec/spec_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="51" selection-start="250" selection-end="274" vertical-scroll-proportion="0.31205675">
+        <state line="0" column="0" selection-start="0" selection-end="93" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/battleship/production.rb">
+    <entry file="file://$PROJECT_DIR$/battleship/computer_players/sergeant_simple/spec/sergeant_simple/sergeant_simple_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="162" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tournament/lib/limelight/templates/templater.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.1158392">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tournament/lib/limelight/templates/sources/spec_helper.template">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="14" selection-start="93" selection-end="93" vertical-scroll-proportion="0.08510638">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/battleship/computer_players/sergeant_simple/Rakefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="19" selection-start="0" selection-end="792" vertical-scroll-proportion="0.08510638">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tournament/lib/limelight/templates/sources/Rakefile.template">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="106" selection-start="679" selection-end="679" vertical-scroll-proportion="0.5177305">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/battleship/computer_players/sergeant_simple/Battleship.Rakefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="55" selection-start="229" selection-end="242" vertical-scroll-proportion="0.19858156">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tournament/lib/init.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/battleship/spec/battleship/analyzers/battle_analyzer_spec.rb">
+    <entry file="file://$PROJECT_DIR$/tournament/bin/generate_player">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="129" selection-start="520" selection-end="520" vertical-scroll-proportion="0.29411766">
+        <state line="2" column="21" selection-start="42" selection-end="42" vertical-scroll-proportion="0.056737587">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/battleship/lib/battleship/battleship_exceptions.rb">
+    <entry file="file://$PROJECT_DIR$/tournament/spec/limelight/templates/player_templater_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="4" selection-start="804" selection-end="804" vertical-scroll-proportion="0.858156">
+        <state line="34" column="57" selection-start="1428" selection-end="1428" vertical-scroll-proportion="0.61764705">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/battleship/spec/battle_stations/sectors_spec.rb">
+    <entry file="file://$PROJECT_DIR$/tournament/lib/limelight/templates/player_templater.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="74" selection-start="0" selection-end="2522" vertical-scroll-proportion="0.5673759">
+        <state line="24" column="40" selection-start="766" selection-end="766" vertical-scroll-proportion="0.6241135">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///Users/micahmartin/Projects/limelight/lib/limelight/builtin/players/combo_box.rb">
+    <entry file="file://$PROJECT_DIR$/tournament/lib/limelight/templates/sources/player_spec.template">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="18" selection-start="2647" selection-end="2647" vertical-scroll-proportion="0.5">
+        <state line="7" column="7" selection-start="207" selection-end="207" vertical-scroll-proportion="0.19858156">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/battleship/locker_room/players/locker_room.rb">
+    <entry file="file://$PROJECT_DIR$/tournament/lib/limelight/templates/sources/player.template">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="31" column="23" selection-start="1530" selection-end="1530" vertical-scroll-proportion="0.9117647">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/battleship/init.rb">
+    <entry file="file://$PROJECT_DIR$/tournament/lib/limelight/templates/sources/Battleship.Rakefile.template">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="41" selection-start="767" selection-end="767" vertical-scroll-proportion="0.5106383">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/battleship/spec/welcome/welcome_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="11" selection-start="404" selection-end="404" vertical-scroll-proportion="0.53900707">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/battleship/lib/battleship/player_profile.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.61702126">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/battleship/battle_stations/players/battle_stations.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="397" selection-end="397" vertical-scroll-proportion="0.6524823">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/battleship/welcome/styles.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="30" selection-start="652" selection-end="652" vertical-scroll-proportion="-0.20588236">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/battleship/welcome/players/welcome.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="24" selection-start="213" selection-end="213" vertical-scroll-proportion="0.17021276">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/battleship/welcome/props.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="31" selection-start="610" selection-end="610" vertical-scroll-proportion="0.4117647">
+        <state line="7" column="55" selection-start="242" selection-end="242" vertical-scroll-proportion="0.19858156">
           <folding />
         </state>
       </provider>
