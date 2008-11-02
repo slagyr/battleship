@@ -1,15 +1,9 @@
-$: << File.expand_path(File.dirname(__FILE__) + "/../../../../lib")
-require 'battleship/grid'
-require 'battleship/mock_war_room'
-require 'battleship/ship'
+require 'rear_admiral_randy/grid'
+require 'rear_admiral_randy/ship'
 
-module RandomPlayer
-  
-  class RandomPlayer
+module RearAdmiralRandy
 
-    def name
-      return "Rear Admiral Randy"
-    end
+  class RearAdmiralRandy
 
     def new_game(opponent_name)
       find_valid_placements
@@ -62,7 +56,7 @@ module RandomPlayer
           need_valid_placement = false
         rescue Exception => e
           # ignore
-          #        puts "failed attempt ##{attempts} : #{e}"
+#                  puts "failed attempt ##{attempts} : #{e}"
         end
       end
     end
@@ -76,12 +70,12 @@ module RandomPlayer
     end
 
     def attempt_placements
-      grid = Battleship::Grid.new(Battleship::MockSectors.new)
-      grid.place(Battleship::Carrier.new, @carrier_placement)
-      grid.place(Battleship::Battleship.new, @battleship_placement)
-      grid.place(Battleship::Destroyer.new, @destroyer_placement)
-      grid.place(Battleship::Submarine.new, @submarine_placement)
-      grid.place(Battleship::Patrolship.new, @patrolship_placement)
+      grid = Grid.new
+      grid.place(Ship.new(5), @carrier_placement)
+      grid.place(Ship.new(4), @battleship_placement)
+      grid.place(Ship.new(3), @destroyer_placement)
+      grid.place(Ship.new(3), @submarine_placement)
+      grid.place(Ship.new(2), @patrolship_placement)
     end
 
     def build_move_list

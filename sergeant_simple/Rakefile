@@ -16,13 +16,15 @@ PKG_FILE_NAME = "#{PKG_NAME}-#{PKG_VERSION}"
 spec = Gem::Specification.new do |s|
   s.name = PKG_NAME
   s.version = PKG_VERSION
-  s.summary = "A Battleship player"
-  s.description = "Battleship: A very simple player."
   s.files = FileList['lib/**/*.rb', 'spec/**/*.rb'].to_a
   s.require_path = 'lib'
   s.test_files = Dir.glob('spec/*_spec.rb')
   s.bindir = 'bin'
   s.executables = []
+
+  s.summary = "Battleship Player:Sergeant Simple"
+
+  s.description = "A very simple player."
   s.author = "Micah Martin"
 end
 

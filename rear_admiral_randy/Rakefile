@@ -8,9 +8,9 @@ Spec::Rake::SpecTask.new('spec') do |t|
   t.rcov = false
 end
 
-PKG_NAME = "!-FILENAME-!"
+PKG_NAME = "rear_admiral_randy"
 PKG_VERSION   = "1.0"
-PKG_TAG = "!-FILENAME-!-1_0"
+PKG_TAG = "rear_admiral_randy-1_0"
 PKG_FILE_NAME = "#{PKG_NAME}-#{PKG_VERSION}"
 
 spec = Gem::Specification.new do |s|
@@ -21,11 +21,11 @@ spec = Gem::Specification.new do |s|
   s.test_files = Dir.glob('spec/*_spec.rb')
   s.bindir = 'bin'
   s.executables = []
-  s.summary = "Battleship Player:!-PLAYER_NAME-!"
+  s.summary = "Battleship Player:Rear Admiral Randy"
 
   # You may modify the following attributes.
-  s.description = "A battleship player"
-  s.author = "Anonymous"
+  s.description = "A Player that positions ships and fires completely randomly."
+  s.author = "Micah Martin"
 end
 
 Rake::GemPackageTask.new(spec) do |pkg|

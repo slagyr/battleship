@@ -1,5 +1,0 @@
-author: "Micah Martin"
-description: "A very simple player."
-name: "Sergeant Simple"
-player_source_file: "sergeant_simple/sergeant_simple.rb"
-player_full_class_name: "SergeantSimple::SergeantSimple"
