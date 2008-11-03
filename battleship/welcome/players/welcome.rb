@@ -1,22 +1,9 @@
 module Welcome
 
   def scene_opened(e)
-    close_curtains
-    begin
-      require 'battleship/player_profile'
-      players = Battleship::PlayerProfile.load_from_gems
-      player_hash = {}
-      players.each { |p| player_hash[p.name] = p }
-      production.computer_players = player_hash
-
-      find("player1_selection").choices = player_hash.keys
-      find("player2_selection").choices = player_hash.keys
-      open_curtains
-    rescue Exception => e
-      puts e
-      puts e.backtrace
-      stage.alert("Could not load players!")
-    end
+    load_players if production.computer_players.nil?
+    find("player1_selection").choices = production.computer_players.keys
+    find("player2_selection").choices = production.computer_players.keys
   end
 
   def begin_game
@@ -48,6 +35,23 @@ module Welcome
 
   def open_curtains
     remove(find("curtains"))
+  end
+
+  def load_players
+    close_curtains
+    begin
+      require 'battleship/player_profile'
+      players = Battleship::PlayerProfile.load_from_gems
+      player_hash = {}
+      players.each { |p| player_hash[p.name] = p }
+      production.computer_players = player_hash
+
+      open_curtains
+    rescue Exception => e
+      puts e
+      puts e.backtrace
+      stage.alert("Could not load players!")
+    end
   end
 
 end

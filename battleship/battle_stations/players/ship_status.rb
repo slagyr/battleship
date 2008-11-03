@@ -13,6 +13,7 @@ module ShipStatus
       style.gradient = "off"
     elsif percent <= 50
       style.background_color = "red"
+      style.secondary_background_color = "transparent"
       style.gradient_penetration = (percent * 2).to_s
       style.gradient = "on"
       style.gradient_angle = "0"

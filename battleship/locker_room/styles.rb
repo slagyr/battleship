@@ -83,7 +83,7 @@ result_graph_text {
 player_list {
   vertical_scrollbar :on
   width "100%"
-  min_height 400
+  height 600
 }
 
 player_list_item {
@@ -130,4 +130,29 @@ evaulate_button {
   hover {
     background_color :white
   }
+}
+
+action_link {
+  text_color :white
+  font_size 20
+  font_face :arial
+  left_padding 20
+  right_padding 20
+  left_margin 20
+  right_margin 20
+  border_color :white
+  border_width 2
+  rounded_corner_radius 4
+}
+
+main_menu_link {
+  extends :action_link
+  hover {
+    border_color :blue
+  }
+}
+
+actions {
+  width "100%"
+  top_margin 20
 }

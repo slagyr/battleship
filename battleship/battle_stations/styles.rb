@@ -16,7 +16,7 @@ battle_stations {
   horizontal_alignment :center
 #  vertical_alignment :center
   width 1200
-  height 600
+  height 650
 }
 
 title {
@@ -160,3 +160,42 @@ cover_text {
   font_face "Krungthep"
   font_size 18
 }
+
+actions {
+  width "100%"
+  top_margin 20
+  horizontal_alignment :center
+}
+
+action_link {
+  text_color :white
+  font_size 20
+  font_face :arial
+  hover {
+    text_color :blue
+  }
+  left_padding 20
+  right_padding 20
+  left_margin 20
+  right_margin 20
+  border_color :white
+  border_width 2
+  rounded_corner_radius 4
+}
+
+main_menu_link {
+  extends :action_link
+  hover {
+#    text_color :blue
+    border_color :blue
+  }
+}
+
+battle_again_link {
+  extends :action_link
+  hover {
+#    text_color :blue
+    border_color :blue
+  }
+}
+
