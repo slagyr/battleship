@@ -54,3 +54,20 @@ player_selection_title {
 player_options {
   width "100%"
 }
+
+curtains {
+  width "100%"
+  height "100%"
+  background_color "#000C"
+  float :on
+  x 0
+  y 0
+  horizontal_alignment :center
+  vertical_alignment :center
+}
+
+curtains_text {
+  text_color "#5cc31e"
+  font_face :arial
+  font_size 40
+}

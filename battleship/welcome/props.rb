@@ -4,11 +4,11 @@ options do
   player_selections do
     player_selection do
       player_selection_title :text => "Player 1"
-      player_options :id => "player1_selection", :players => "combo_box", :choices => "production.computer_players.keys"
+      player_options :id => "player1_selection", :players => "combo_box"
     end
     player_selection do
       player_selection_title :text => "Player 2"
-      player_options :id => "player2_selection", :players => "combo_box", :choices => "production.computer_players.keys"
+      player_options :id => "player2_selection", :players => "combo_box"
     end
   end
 

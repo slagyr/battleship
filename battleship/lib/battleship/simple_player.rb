@@ -15,13 +15,6 @@ module Battleship
   #
   class SimplePlayer
 
-    # Returns the name of the player.  Every player must have a name that does not change.
-    # Choose a unique name so as not to conflict with other players.
-    #
-    def name
-      return @name
-    end
-
     # This method is called at the beginning of each game.  A player may only be instantiated once and used to play many games.
     # So new_game should reset any internal state acquired in previous games so that it is prepared for a new game.
     #
@@ -159,8 +152,7 @@ module Battleship
 
     attr_reader :opponent, :targets, :enemy_targeted_sectors, :result, :disqualification_reason #:nodoc:
 
-    def initialize(name="SimplePlayer") #:nodoc:
-      @name = name
+    def initialize #:nodoc:
       @targets = {}
       @enemy_targeted_sectors = []
       reset

@@ -36,8 +36,6 @@ describe "War Room" do
   it "should show win" do
     @war_room.victory!
 
-    sleep(5)
-
     @war_room.find_by_name("cover").length.should == 1
     @war_room.find_by_name("cover_header")[0].text.should == "Victory!"
   end
@@ -45,17 +43,13 @@ describe "War Room" do
   it "should show loss" do
     @war_room.defeat!
 
-    sleep(5)
-
     @war_room.find_by_name("cover").length.should == 1
     @war_room.find_by_name("cover_header")[0].text.should == "Defeat"
   end
 
   it "should show disqualification" do
     @war_room.disqualified!("For some reason")
-
-    sleep(5)
-
+    
     @war_room.find_by_name("cover").length.should == 1
     @war_room.find_by_name("cover_header")[0].text.should == "Disqualified"
     @war_room.find_by_name("cover_text")[0].text.should == "For some reason"

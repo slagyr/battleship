@@ -9,7 +9,7 @@ describe Battleship::Analyzers::BattleAnalyzer do
   end
 
   it "should test battle of the Random Player" do
-    profile = Battleship::PlayerProfile.load_profile('random_player')
+    profile = Battleship::PlayerProfile.load_from_gem('rear_admiral_randy')
     Battleship::Server.should_receive(:profile).with("Rear Admiral Randy").and_return(Battleship::PlayerProfile.new(:games_played => 100, :wins => 50))
 
     score, description = Battleship::Analyzers::BattleAnalyzer.analyze(profile)
@@ -19,7 +19,7 @@ describe Battleship::Analyzers::BattleAnalyzer do
   end
 
   it "should return 50 is server error" do
-    profile = Battleship::PlayerProfile.load_profile('random_player')
+    profile = Battleship::PlayerProfile.load_from_gem('rear_admiral_randy')
     Battleship::Server.should_receive(:profile).with("Rear Admiral Randy").and_raise(Battleship::ServerException.new("server down"))
 
     score, description = Battleship::Analyzers::BattleAnalyzer.analyze(profile)

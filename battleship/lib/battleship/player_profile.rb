@@ -3,6 +3,7 @@ require 'battleship/analyzers/battle_analyzer'
 require 'battleship/analyzers/simplicity_analyzer'
 require 'battleship/analyzers/flog_analyzer'
 require 'battleship/analyzers/coverage_analyzer'
+require 'limelight/string'
 
 module Battleship
 
@@ -12,37 +13,58 @@ module Battleship
 
     class << self
 
-      def load_all
+      def gem_index
+        if @gem_index.nil?
+          if File.exists? File.expand_path("~/.bash_profile")
+            system_gem_path = `. ~/.profile && ruby -e "require 'rubygems'; puts Gem.path"`
+          elsif File.exists? File.expand_path("~/.profile")
+            system_gem_path = `. ~/.profile && ruby -e "require 'rubygems'; puts Gem.path"`
+          else
+            system_gem_path = `ruby -e "require 'rubygems'; puts Gem.path"`
+          end
+          ENV['GEM_PATH'] = system_gem_path.strip
+          Gem.clear_paths
+          @gem_index = Gem.source_index
+        end
+        return @gem_index
+      end
+
+      def load_from_gems
         profiles = []
-        Dir.entries(ComputerPlayersDir).each do |entry|
-          if entry != "." && entry != ".."
-            profile = load_profile(entry)
-            profiles << profile
+        gem_index.latest_specs.each do |spec|          
+          if spec.summary[0..17] == "Battleship Player:"
+            profiles << load_from_gem(spec)
           end
         end
         return profiles
       end
 
-      def load_profile(player_dir_name)
-        yaml = IO.read(File.join(ComputerPlayersDir, player_dir_name, 'player.yml'))
-        options = YAML.load(yaml)
-        profile = PlayerProfile.new(options)
-        profile.lib_dir = File.join(ComputerPlayersDir, player_dir_name, 'lib')
-        $: << profile.lib_dir
-        return profile
+      def load_from_gem(name_or_spec)
+        spec = name_or_spec.is_a?(String) ? find_gem_spec(name_or_spec) : name_or_spec
+        return if spec.nil?
+        options = {}
+        options[:filename] = spec.name
+        options[:classname] = spec.name.camalized
+        options[:name] = spec.summary[18..-1]
+        options[:author] = spec.author
+        options[:description] = spec.description
+        options[:root_path] = spec.full_gem_path     
+        return PlayerProfile.new(options)
       end
 
+      def find_gem_spec(name)
+        return gem_index.latest_specs.find { |spec| spec.name == name }  
+      end
     end
 
 
     attr_reader :name, :author, :description
-    attr_reader :player_full_class_name, :player_source_file
+    attr_reader :filename, :classname, :root_path
     attr_reader :flog_score, :flog_description
     attr_reader :simplicity_score, :simplicity_description
     attr_reader :coverage_score, :coverage_description
     attr_reader :battle_score, :battle_description
     attr_reader :games_played, :wins, :disqualifications
-    attr_accessor :lib_dir
 
     def initialize(options={})
       @flog_score = 0
@@ -91,8 +113,8 @@ module Battleship
     end
 
     def create_player
-      load File.join(lib_dir, player_source_file)
-      return eval("#{player_full_class_name}.new")
+      require "#{filename}/#{filename}"
+      return eval("#{classname}::#{classname}.new")
     end
 
     def perform_analysis(observer)
@@ -109,6 +131,10 @@ module Battleship
       observer.update_flog_score(@flog_score, @flog_description)
 
       observer.update_average_score(average_score)
+    end
+
+    def lib_dir
+      return File.join(root_path, "lib")
     end
 
   end

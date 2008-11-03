@@ -9,12 +9,12 @@ describe Battleship::Analyzers::CoverageAnalyzer do
   end
 
   it "should test coverage the Random Player" do
-    profile = Battleship::PlayerProfile.load_profile('random_player')
+    profile = Battleship::PlayerProfile.load_from_gem('rear_admiral_randy')
 
     score, description = Battleship::Analyzers::CoverageAnalyzer.analyze(profile)
 
-    score.should == 80
-    description.should == "80 : 80% test coverage"
+    score.should == 92
+    description.should == "92 : 92% test coverage"
   end
 
 end

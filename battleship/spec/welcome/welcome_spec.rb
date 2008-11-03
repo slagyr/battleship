@@ -8,7 +8,7 @@ describe "Welcome Screen" do
   end
 
   after(:each) do
-    sleep(5)
+#    sleep(5)
   end
 
   it "should have all players listed" do

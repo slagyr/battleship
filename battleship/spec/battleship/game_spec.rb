@@ -6,12 +6,12 @@ require 'battleship/mock_war_room'
 describe Battleship::Game do
 
   before(:each) do
-    @player1 = Battleship::SimplePlayer.new("Player 1")
-    @player2 = Battleship::SimplePlayer.new("Player 2")
+    @player1 = Battleship::SimplePlayer.new
+    @player2 = Battleship::SimplePlayer.new
     @war_room1 = Battleship::MockWarRoom.new                                
     @war_room2 = Battleship::MockWarRoom.new
 
-    @game = Battleship::Game.new(@player1, @war_room1, @player2, @war_room2)
+    @game = Battleship::Game.new("Player 1", @player1, @war_room1, "Player 2", @player2, @war_room2)
   end
 
   it "should be created with two players and two war_rooms" do

@@ -20,33 +20,6 @@ describe Battleship::PlayerProfile do
     profile.battle_score.should == 0
   end
 
-  it "should load all profiles" do
-    profiles = Battleship::PlayerProfile.load_all
-    profiles.length.should == 1
-    profile = profiles[0]
-
-    profile.name.should == "Rear Admiral Randy"
-    profile.description.should == "A Player that positions ships and fires completely randomly."
-    profile.author.should == "Micah Martin"
-    profile.player_source_file.should == "random_player/random_player.rb"
-    profile.player_full_class_name.should == "RandomPlayer::RandomPlayer"
-  end
-
-  it "should add the lib directory of the player profile" do
-    profiles = Battleship::PlayerProfile.load_all
-
-    $:.should include(File.join(Battleship::PlayerProfile::ComputerPlayersDir, "random_player", "lib"))
-  end
-
-  it "should instantiate a player" do
-    profiles = Battleship::PlayerProfile.load_all
-    profile = profiles[0]
-
-    player = profile.create_player
-
-    player.class.name.should == "RandomPlayer::RandomPlayer"
-  end
-
   it "should perform analysis" do
     profile = Battleship::PlayerProfile.new()
 
@@ -74,6 +47,24 @@ describe Battleship::PlayerProfile do
     observer.should_receive(:update_average_score).with(25)
 
     profile.perform_analysis(observer)
+  end
+
+  it "should load profiles from gems" do
+    profiles = Battleship::PlayerProfile.load_from_gems
+    profiles.length.should == 2
+
+    profiles[0].name.should == "Rear Admiral Randy"
+    profiles[0].root_path.should == "/opt/local/lib/ruby/gems/1.8/gems/rear_admiral_randy-1.0"
+    profiles[1].name.should == "Sergeant Simple"
+    profiles[1].root_path.should == "/opt/local/lib/ruby/gems/1.8/gems/sergeant_simple-1.0"
+  end
+
+  it "should instantiate a player" do
+    profile = Battleship::PlayerProfile.load_from_gem("rear_admiral_randy")
+
+    player = profile.create_player
+
+    player.class.name.should == "RearAdmiralRandy::RearAdmiralRandy"
   end
 
 end

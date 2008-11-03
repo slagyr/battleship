@@ -11,12 +11,14 @@ module Battleship
     attr_reader :grid1, :grid2
     attr_reader :winner, :disqualification_reason
 
-    def initialize(player1, war_room1, player2, war_room2)
+    def initialize(player1_name, player1, war_room1, player2_name, player2, war_room2)
+      @player1_name = player1_name
       @player1 = player1
       @war_room1 = war_room1
       @grid1 = Grid.new(@war_room1.sectors)
       @fleet1 = create_fleet
 
+      @player2_name = player2_name
       @player2 = player2
       @war_room2 = war_room2
       @grid2 = Grid.new(@war_room2.sectors)
@@ -26,10 +28,10 @@ module Battleship
     end
 
     def prepare
-      @war_room1.commander = @player1.name
-      @war_room2.commander = @player2.name
-      @player1.new_game(@player2.name)
-      @player2.new_game(@player1.name)
+      @war_room1.commander = @player1_name
+      @war_room2.commander = @player2_name
+      @player1.new_game(@player2_name)
+      @player2.new_game(@player1_name)
       place_ships_for(@fleet1, @grid1, @player1)
       place_ships_for(@fleet2, @grid2, @player2)
     end

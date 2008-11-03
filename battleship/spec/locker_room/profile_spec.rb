@@ -38,7 +38,6 @@ describe "Player Profile Prop" do
   it "should trigger an evaluation when pressing the button" do
     player = Battleship::PlayerProfile.new(:name => "Bill", :score => 50, :author => "Ted", :description => "Excellent")
     @profile.profile = player
-                                     sleep(5)
     @profile.should_receive(:perform_analysis)
     scene.find("evaluate_button").mouse_clicked(nil)
   end

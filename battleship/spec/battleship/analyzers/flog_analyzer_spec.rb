@@ -9,12 +9,12 @@ describe Battleship::Analyzers::FlogAnalyzer do
   end
 
   it "should flog the Random Player" do
-    profile = Battleship::PlayerProfile.load_profile('random_player')
+    profile = Battleship::PlayerProfile.load_from_gem('rear_admiral_randy')
 
     score, description = Battleship::Analyzers::FlogAnalyzer.analyze(profile)
 
-    score.should == 84
-    description.should == "84 : 11/13 methods pass"
+    score.should == 81
+    description.should == "81 : 22/27 methods pass"
   end
 
 end
