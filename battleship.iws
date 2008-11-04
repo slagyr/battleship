@@ -18,12 +18,14 @@
     <list default="true" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tournament/Rakefile" afterPath="$PROJECT_DIR$/tournament/Rakefile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/spec/battle_stations/sectors_spec.rb" afterPath="$PROJECT_DIR$/battleship/spec/battle_stations/sectors_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tournament/lib/limelight/templates/sources/Rakefile.template" afterPath="$PROJECT_DIR$/tournament/lib/limelight/templates/sources/Rakefile.template" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tournament/bin/submit_battleship_player" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tournament/lib/battleship_tournament/submit.rb" afterPath="$PROJECT_DIR$/tournament/lib/battleship_tournament/submit.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship.iws" afterPath="$PROJECT_DIR$/battleship.iws" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tournament/bin/generate_player" afterPath="$PROJECT_DIR$/tournament/bin/generate_battleship_player" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tournament/spec/battleship_tournament/submit_spec.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tournament/bin/generate_player" afterPath="$PROJECT_DIR$/tournament/bin/generate_battleship_player" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sergeant_simple/Rakefile" afterPath="$PROJECT_DIR$/sergeant_simple/Rakefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tournament/lib/limelight/templates/sources/Battleship.Rakefile.template" afterPath="$PROJECT_DIR$/tournament/lib/limelight/templates/sources/Battleship.Rakefile.template" />
     </list>
     <ignored path="battleship.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -86,64 +88,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Rakefile" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Rakefile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tournament/Rakefile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="89" selection-start="340" selection-end="340" vertical-scroll-proportion="0.20567375">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="submit_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tournament/spec/battleship_tournament/submit_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="49" selection-start="861" selection-end="861" vertical-scroll-proportion="0.73758864">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="submit.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tournament/lib/battleship_tournament/submit.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="32" selection-start="365" selection-end="365" vertical-scroll-proportion="0.31205675">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="server.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/battleship/lib/battleship/server.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="79" selection-start="177" selection-end="240" vertical-scroll-proportion="0.31205675">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="player_profile.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/battleship/lib/battleship/player_profile.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="0" selection-start="1432" selection-end="1728" vertical-scroll-proportion="0.42553192">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Rakefile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sergeant_simple/Rakefile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="0" selection-start="931" selection-end="931" vertical-scroll-proportion="0.858156">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Rakefile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Rakefile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="30" selection-start="23" selection-end="52" vertical-scroll-proportion="0.0">
+            <state line="36" column="0" selection-start="1022" selection-end="1022" vertical-scroll-proportion="0.82978725">
               <folding />
             </state>
           </provider>
@@ -659,20 +607,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///Users/micahmartin/Projects/limelight/lib/limelight/prop.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="204" column="0" selection-start="5854" selection-end="5854" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/battleship/locker_room/props.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="5" selection-start="205" selection-end="205" vertical-scroll-proportion="0.14184397">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/battleship/locker_room/styles.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="141" column="43" selection-start="2021" selection-end="2021" vertical-scroll-proportion="0.37588653">
@@ -708,34 +642,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Rakefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="30" selection-start="23" selection-end="52" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tournament/spec/battleship_tournament/submit_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="49" selection-start="861" selection-end="861" vertical-scroll-proportion="0.73758864">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/battleship/lib/battleship/player_profile.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="1432" selection-end="1728" vertical-scroll-proportion="0.42553192">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/battleship/lib/battleship/server.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="79" selection-start="177" selection-end="240" vertical-scroll-proportion="0.31205675">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tournament/bin/generate_battleship_player">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="243" vertical-scroll-proportion="0.0">
@@ -750,16 +656,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tournament/Rakefile">
+    <entry file="file://$PROJECT_DIR$/tournament/spec/battleship_tournament/submit_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="89" selection-start="340" selection-end="340" vertical-scroll-proportion="0.20567375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sergeant_simple/Rakefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="931" selection-end="931" vertical-scroll-proportion="0.858156">
+        <state line="26" column="49" selection-start="861" selection-end="861" vertical-scroll-proportion="0.73758864">
           <folding />
         </state>
       </provider>
@@ -767,6 +666,55 @@
     <entry file="file://$PROJECT_DIR$/tournament/lib/battleship_tournament/submit.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="32" selection-start="365" selection-end="365" vertical-scroll-proportion="0.31205675">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/battleship/lib/battleship/server.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="79" selection-start="177" selection-end="240" vertical-scroll-proportion="0.31205675">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/battleship/lib/battleship/player_profile.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="0" selection-start="1432" selection-end="1728" vertical-scroll-proportion="0.42553192">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rakefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="30" selection-start="23" selection-end="52" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tournament/lib/limelight/templates/sources/Rakefile.template">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="12" selection-start="1086" selection-end="1086" vertical-scroll-proportion="0.858156">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tournament/lib/limelight/templates/sources/Battleship.Rakefile.template">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="314" selection-end="314" vertical-scroll-proportion="0.31205675">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sergeant_simple/Rakefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="40" selection-start="73" selection-end="112" vertical-scroll-proportion="-0.24822696">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tournament/Rakefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="0" selection-start="1022" selection-end="1022" vertical-scroll-proportion="0.82978725">
           <folding />
         </state>
       </provider>

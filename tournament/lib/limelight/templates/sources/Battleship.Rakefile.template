@@ -1,3 +1,6 @@
+#
+# DO NOT tamper with this file.  It will lead to disqualification.
+
 require 'rake'
 require 'spec/rake/spectask'
 
