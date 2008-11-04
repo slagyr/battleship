@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+player_name = ARGV[0]
+
+require File.expand_path(File.dirname(__FILE__) + "/../lib/init")
+require "battleship_tournament/submit"
+
+submitter = BattleshipTournament::Submit.new(player_name)
+submitter.submit
