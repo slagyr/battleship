@@ -17,6 +17,7 @@ describe BattleshipTournament::Submit do
 
     result[:name].should == "Sergeant Simple"
     result[:author].should == "Micah Martin"
+    result[:email].should == "micah@8thlight.com"
     result[:description].should == "A very simple player."
     result[:gem_file_name].should == "sergeant_simple-1.0.gem"
     result[:gem_content].should == IO.read("/opt/local/lib/ruby/gems/1.8/cache/sergeant_simple-1.0.gem")

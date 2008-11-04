@@ -27,6 +27,7 @@ spec = Gem::Specification.new do |s|
 
   s.description = "A very simple player."
   s.author = "Micah Martin"
+  s.email = "micah@8thlight.com"
 end
 
 Rake::GemPackageTask.new(spec) do |pkg|

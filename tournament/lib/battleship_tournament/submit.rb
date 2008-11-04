@@ -35,6 +35,7 @@ module BattleshipTournament
       data = {}
       data[:name] = spec.summary[18..-1]
       data[:author] = spec.author
+      data[:email] = spec.email
       data[:description] = spec.description
       data[:gem_file_name] = spec.file_name     
       gem_file_path = File.expand_path(File.join(spec.full_gem_path, "..", "..", 'cache', spec.file_name))
