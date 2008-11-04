@@ -16,6 +16,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tournament/CHANGES" afterPath="$PROJECT_DIR$/tournament/CHANGES" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tournament/Rakefile" afterPath="$PROJECT_DIR$/tournament/Rakefile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/battleship/spec/battle_stations/sectors_spec.rb" afterPath="$PROJECT_DIR$/battleship/spec/battle_stations/sectors_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tournament/lib/limelight/templates/sources/Rakefile.template" afterPath="$PROJECT_DIR$/tournament/lib/limelight/templates/sources/Rakefile.template" />
@@ -88,10 +89,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Rakefile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Rakefile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tournament/Rakefile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="38" selection-start="1016" selection-end="1016" vertical-scroll-proportion="0.0070921984">
+            <state line="52" column="86" selection-start="1682" selection-end="1682" vertical-scroll-proportion="0.33501258">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CHANGES" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tournament/CHANGES">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="5" selection-start="71" selection-end="71" vertical-scroll-proportion="0.14184397">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Rakefile.template" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tournament/lib/limelight/templates/sources/Rakefile.template">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="21" selection-start="286" selection-end="286" vertical-scroll-proportion="0.3627204">
               <folding />
             </state>
           </provider>
@@ -511,13 +530,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/battleship/locker_room/styles.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="141" column="43" selection-start="2021" selection-end="2021" vertical-scroll-proportion="0.37588653">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/battleship/battle_stations/styles.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="163" column="0" selection-start="2699" selection-end="2772" vertical-scroll-proportion="0.2720588">
@@ -581,13 +593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tournament/lib/limelight/templates/sources/Rakefile.template">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="12" selection-start="1086" selection-end="1086" vertical-scroll-proportion="0.858156">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tournament/lib/limelight/templates/sources/Battleship.Rakefile.template">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="0" selection-start="314" selection-end="314" vertical-scroll-proportion="0.31205675">
@@ -616,9 +621,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tournament/lib/limelight/templates/sources/Rakefile.template">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="21" selection-start="286" selection-end="286" vertical-scroll-proportion="0.3627204">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tournament/Rakefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="38" selection-start="1016" selection-end="1016" vertical-scroll-proportion="0.0070921984">
+        <state line="52" column="86" selection-start="1682" selection-end="1682" vertical-scroll-proportion="0.33501258">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tournament/CHANGES">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="5" selection-start="71" selection-end="71" vertical-scroll-proportion="0.14184397">
           <folding />
         </state>
       </provider>
