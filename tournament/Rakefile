@@ -24,14 +24,47 @@ spec = Gem::Specification.new do |s|
   s.email = "sparring-battleship@rubyforge.org"
   s.homepage = "http://sparring.rubyforge.org/"
   s.rubyforge_project = "sparring"
-
   s.summary = "Battleship tournament."
-
   s.description = "This gem provides the infrastructure needed to participate in the Battleship Tournament"
   s.author = "Micah Martin"
+
+  s.add_dependancy('sergeant_simple', ">= 1.0")
+  s.add_dependancy('rear_admiral_randy', ">= 1.0")
 end
 
 Rake::GemPackageTask.new(spec) do |pkg|
   pkg.need_zip = false
   pkg.need_tar = false
+end
+
+task :verify_user do
+  raise "RUBYFORGE_USER environment variable not set!" unless ENV['RUBYFORGE_USER']
+end
+
+task :verify_password do
+  raise "RUBYFORGE_PASSWORD environment variable not set!" unless ENV['RUBYFORGE_PASSWORD']
+end
+
+task :copy_player_gems do
+  system "cp ../sergeant_simple/pkg/sergeant_simple-1.0.gem pkg"
+  system "cp ../rear_admiral_randy/pkg/rear_admiral_randy-1.0.gem pkg"
+end
+
+desc "Publish gem+tgz+zip on RubyForge. You must make sure lib/version.rb is aligned with the CHANGELOG file"
+task :publish_packages => [:copy_player_gems, :verify_user, :verify_password, :package] do
+  require 'meta_project'
+  require 'rake/contrib/xforge'
+  release_files = FileList[
+    "pkg/#{PKG_FILE_NAME}.gem",
+    "pkg/sergeant_simple-1.0.gem",
+    "pkg/rear_admiral_randy-1.0.gem",
+  ]
+
+  Rake::XForge::Release.new(MetaProject::Project::XForge::RubyForge.new(PKG_NAME)) do |xf|
+    # Never hardcode user name and password in the Rakefile!
+    xf.user_name = ENV['RUBYFORGE_USER']
+    xf.password = ENV['RUBYFORGE_PASSWORD']
+    xf.files = release_files.to_a
+    xf.release_name = "Battleship Tournament #{PKG_VERSION}"
+  end
 end
