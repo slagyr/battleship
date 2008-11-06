@@ -110,19 +110,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="player_profile.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="player_profile.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/battleship/lib/battleship/player_profile.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="45" selection-start="1410" selection-end="1410" vertical-scroll-proportion="0.6504993">
+            <state line="42" column="85" selection-start="1572" selection-end="1572" vertical-scroll-proportion="0.7189729">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="README" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="61" selection-start="600" selection-end="600" vertical-scroll-proportion="0.29101285">
+            <state line="93" column="27" selection-start="3782" selection-end="3782" vertical-scroll-proportion="0.6918688">
               <folding />
             </state>
           </provider>
@@ -672,13 +672,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="61" selection-start="600" selection-end="600" vertical-scroll-proportion="0.29101285">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/battleship/welcome/players/welcome.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -688,7 +681,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/battleship/lib/battleship/player_profile.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="45" selection-start="1410" selection-end="1410" vertical-scroll-proportion="0.6504993">
+        <state line="42" column="85" selection-start="1572" selection-end="1572" vertical-scroll-proportion="0.7189729">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="27" selection-start="3782" selection-end="3782" vertical-scroll-proportion="0.6918688">
           <folding />
         </state>
       </provider>

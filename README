@@ -88,6 +88,17 @@ To run full analysis, you will have to have the following gems, and their depend
  6 Making use of Kernel.set_trace_func
  7 Tampering or abusing tournament infractruscure and facilities
 
+== Troubleshooting
+
+"None of the players are showing up in the player lists."
+First check that the player gems are installed.  It's likely that the Battleship engine cannot find them.
+We'll have to tell it where it can find the gems.
+Mac:
+  ruby -r "rubygems" -e "File.open(File.expand_path('~/.gem_home'), 'w') { |f| f.write Gem.dir }"
+Windows:
+Find your gem directory.  In you home directory (C:\Documents and Settings\Micah) create a file named 'gem_home.txt'
+containing the path to your gem directory.
+
 
 
 
