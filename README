@@ -27,7 +27,7 @@ You'll need Limelight to watch your player battle.
 1 Download an installer from http://limelight.8thlight.com
 2 Install
 3 Create a Limelight Link file
-  echo "http://limelight.8thlight.com/battleship.llp" > ~/Desktop/battleship.lll
+  echo "http://sparring.rubyforge.org/battleship/battleship.llp" > ~/Desktop/battleship.lll
 4 Go to your desktop and double click on battleship.llp
 
 You should see your player in the list along with Sergeant Simple and Rear Admiral Randy.
@@ -38,8 +38,10 @@ Select a competator and begin the battle.  Who will win?
 The source code for your player is contained in one file:
   some_creative_and_unique_name/lib/some_creative_and_unique_name/some_creative_and_unique_name.rb
 
-You'll also find an lack of test/specs in the file:
+You'll also find an lack of specs in the file:
   some_creative_and_unique_name/spec/some_creative_and_unique_name/some_creative_and_unique_name_spec.rb
+
+Use of rSpec is required.  
 
 There are plenty of comments in the generated source code.  Go nuts!  Add code.  Change code. Add files.
 Turn your player into a masterfull battleship AI.
