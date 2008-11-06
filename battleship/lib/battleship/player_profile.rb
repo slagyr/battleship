@@ -4,6 +4,7 @@ require 'battleship/analyzers/simplicity_analyzer'
 require 'battleship/analyzers/flog_analyzer'
 require 'battleship/analyzers/coverage_analyzer'
 require 'limelight/string'
+require 'etc'
 
 module Battleship
 
@@ -15,13 +16,17 @@ module Battleship
 
       def gem_index
         if @gem_index.nil?
-          if File.exists? File.expand_path("~/.bash_profile")
+          if File.exists? File.expand_path("~/.gem_home")
+            system_gem_path = IO.read(File.expand_path("~/.gem_home")).strip
+          elsif File.exists? File.expand_path("~/gem_home.txt")
+            system_gem_path = IO.read(File.expand_path("~/gem_home.txt")).strip
+          elsif File.exists? File.expand_path("~/.bash_profile")
             system_gem_path = `. ~/.profile && ruby -e "require 'rubygems'; puts Gem.path"`
           elsif File.exists? File.expand_path("~/.profile")
             system_gem_path = `. ~/.profile && ruby -e "require 'rubygems'; puts Gem.path"`
           else
             system_gem_path = `ruby -e "require 'rubygems'; puts Gem.path"`
-          end
+          end        
           ENV['GEM_PATH'] = system_gem_path.strip
           Gem.clear_paths
           @gem_index = Gem.source_index
@@ -31,11 +36,11 @@ module Battleship
 
       def load_from_gems
         profiles = []
-        gem_index.latest_specs.each do |spec|          
+        gem_index.latest_specs.each do |spec|
           if spec.summary[0..17] == "Battleship Player:"
             profiles << load_from_gem(spec)
           end
-        end
+        end                                   
         return profiles
       end
 

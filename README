@@ -1,0 +1,97 @@
+= Battleship Tournament
+
+A Ruby sparring tournament.  Compete by building a computer AI for the classic Battleship game.
+
+== Participating
+
+There are 4 simple steps to participate.
+
+1 Install the battleship_tournament gem
+  sudo gem install battleship_tournament
+2 Create a player (computer AI) with a creative and unique name
+  generate_battleship_player "Some Creative and Unique Name"
+3 Build and install your player's ruby gem
+  # Install the rspec gem if needed
+  # sudo gem install rspec
+  cd some_creative_and_unique_name
+  rake gem
+  sudo gem install pkg/some_creative_and_unique_name-1.0.gem
+4 Enter data, choose password, and submit your player
+  # Edit Rakefile and provide the information indicated.
+  rake submit
+
+== Battle Your Player
+
+You'll need Limelight to watch your player battle.
+
+1 Download an installer from http://limelight.8thlight.com
+2 Install
+3 Create a Limelight Link file
+  echo "http://limelight.8thlight.com/battleship.llp" > ~/Desktop/battleship.lll
+4 Go to your desktop and double click on battleship.llp
+
+You should see your player in the list along with Sergeant Simple and Rear Admiral Randy.
+Select a competator and begin the battle.  Who will win?
+
+== Improve Your Player's AI
+
+The source code for your player is contained in one file:
+  some_creative_and_unique_name/lib/some_creative_and_unique_name/some_creative_and_unique_name.rb
+
+You'll also find an lack of test/specs in the file:
+  some_creative_and_unique_name/spec/some_creative_and_unique_name/some_creative_and_unique_name_spec.rb
+
+There are plenty of comments in the generated source code.  Go nuts!  Add code.  Change code. Add files.
+Turn your player into a masterfull battleship AI.
+
+Whe your player is ready, be sure to submit again.  Make sure you remember your players password.
+You may submit as many times as you like. Each submission will overwrite the previous submission.
+  rake submit
+
+== Email List
+
+Join the email list.  Use it for questions and discussion about the tournament.
+
+Subscribe: http://rubyforge.org/mailman/listinfo/sparring-battleship
+Email: sparring-battleship@rubyforge.org
+
+== Rules
+
+You have until November 30th, 2008 to submit your final solution.  On December 1st, competition begins.
+Each player will be matched against every other player in round robin fashion.  Each match
+it a best-of-21 games.  The first player to win 11 games, wins the match.  The Tournament Champion will
+be the player with the most match wins.
+
+However, there is a more prestegious title to which players should aspire.  The Tournament Master.  This coveted
+title is awarded not to the player who wins the most battles but to the player that also has the best source code.
+A series of metrics will be collected on your player's source code and compiled into an all-round score.
+The player with the best all-round score will be honored as Tournament Master.
+
+The Battleship Limelight production provides a Locker Room scene where you can run some sample analysis on
+your player.  This is just an example of the analysis that will be perfomed but it should give you an idea of
+what is expected.
+
+=== Analysis Dependancies
+
+To run full analysis, you will have to have the following gems, and their dependancies, installed:
+ * flog
+ * rCov
+ * rSpec
+
+== Terms for Disqualification
+
+ 1 Attempting to open or modify classes, modules, or objects in the Battleship engine.
+ 2 Tampering with the Battleship.Rakefile file.
+ 3 Providing invalid ship placements.
+ 4 Providing invalid targets.
+ 5 Attempting to open or modify opponent player's classes, modules, or objects.
+ 6 Making use of Kernel.set_trace_func
+ 7 Tampering or abusing tournament infractruscure and facilities
+
+
+
+
+
+
+
+
