@@ -6,12 +6,12 @@ module Sectors
     self.build do
       ship options
     end
-#    sleep(0.25)
+    sleep(0.25)
   end
 
   def miss(x, y)
     cell(x, y).style.background_color = "white"
-#    sleep(0.25)
+    sleep(0.25)
   end
 
   def hit(x, y)

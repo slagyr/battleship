@@ -6,6 +6,7 @@ module Battleship
 
   class Server
 
+    #TODO Need a timeout on the connection
     class << self
 
       def api
