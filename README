@@ -73,6 +73,8 @@ The Battleship Limelight production provides a Locker Room scene where you can r
 your player.  This is just an example of the analysis that will be perfomed but it should give you an idea of
 what is expected.
 
+Solutions may NOT make use of ruby gems.  The tournament is about crafting a complete solution.    
+
 === Analysis Dependancies
 
 To run full analysis, you will have to have the following gems, and their dependancies, installed:
