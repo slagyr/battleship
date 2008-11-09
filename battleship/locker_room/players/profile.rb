@@ -21,6 +21,7 @@ module Profile
   end
 
   def perform_analysis
+    return if @profile.nil?
     average_graph.populate(0, "analyzing...")
     battle_graph.populate(0, "analyzing...")
     simplicity_graph.populate(0, "analyzing...")
