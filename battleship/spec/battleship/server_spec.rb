@@ -7,7 +7,7 @@ describe Battleship::Server do
     profile = Battleship::PlayerProfile.load_from_gem('rear_admiral_randy')
 
     Battleship::Server.register_profile(profile)
-
+                                                       
     profile = Battleship::Server.profile("Rear Admiral Randy")
     profile.author.should == "Micah Martin"
   end

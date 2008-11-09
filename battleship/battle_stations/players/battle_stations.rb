@@ -11,7 +11,14 @@ module BattleStations
     game = Battleship::Game.new(@player1.name, @player1.create_player, war_room1, @player2.name, @player2.create_player, war_room2)
     game.prepare
 
-    Thread.new { game.play; show_actions }
+    Thread.new do
+      begin
+        game.play
+      rescue Exception => e
+        scene.stage.alert(e.to_s + "\n" + e.backtrace[0..10].join("\n") + "\n...")
+      end
+      show_actions
+    end
   end
 
   def player1=(player)

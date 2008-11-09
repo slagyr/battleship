@@ -25,8 +25,12 @@ module Profile
     battle_graph.populate(0, "analyzing...")
     simplicity_graph.populate(0, "analyzing...")
     coverage_graph.populate(0, "analyzing...")
-    flog_graph.populate(0, "analyzing...")   
-    @profile.perform_analysis(self)
+    flog_graph.populate(0, "analyzing...")
+    begin
+      @profile.perform_analysis(self)
+    rescue Exception => e
+      scene.stage.alert(e.to_s + "\n" + e.backtrace[0..10].join("\n") + "...")
+    end
   end
 
   def update_battle_score(score, description)
@@ -46,7 +50,7 @@ module Profile
   end
 
   def update_average_score(score)
-    average_graph.populate(score, score.to_s)
+    average_graph.populate(score, "#{score.to_s}/100")
     player_list.find_by_name("player_list_item").each do |item|
       item.update if item.profile == profile
     end

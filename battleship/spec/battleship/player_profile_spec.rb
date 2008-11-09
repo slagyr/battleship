@@ -51,7 +51,7 @@ describe Battleship::PlayerProfile do
 
   it "should load profiles from gems" do
     profiles = Battleship::PlayerProfile.load_from_gems
-    profiles.length.should == 2
+    profiles.length.should >= 2
 
     profiles[0].name.should == "Rear Admiral Randy"
     profiles[0].root_path.should == "/opt/local/lib/ruby/gems/1.8/gems/rear_admiral_randy-1.0"

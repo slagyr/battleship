@@ -7,7 +7,7 @@ module Battleship
 
       def self.analyze(profile)
         begin
-#          record = Server.profile(profile.name)
+          record = nil #Server.profile(profile.name)
         rescue ServerException => e
           return 50, "50 : Couldn't retreive record"
         end

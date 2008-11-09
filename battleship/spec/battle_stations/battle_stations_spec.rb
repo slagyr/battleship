@@ -8,10 +8,11 @@ describe "Sectors" do
   end
 
   after(:each) do
-    sleep(5)
+#    sleep(5)
   end
 
   it "should have some actions" do
+    scene.show_actions
     scene.find_by_name("main_menu_link").length.should == 1
     scene.find_by_name("battle_again_link").length.should == 1
   end

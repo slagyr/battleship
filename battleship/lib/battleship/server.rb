@@ -24,7 +24,7 @@ module Battleship
 
       def register_profile(profile)
         try do
-          api.register_profile(profile.simple_hash)
+          api.submit_profile(profile.simple_hash)
         end
       end
 
