@@ -8,8 +8,12 @@ module BattleStations
   def play
     hide_actions
 
-    game = Battleship::Game.new(@player1.name, @player1.create_player, war_room1, @player2.name, @player2.create_player, war_room2)
-    game.prepare
+    begin
+      game = Battleship::Game.new(@player1.name, @player1.create_player, war_room1, @player2.name, @player2.create_player, war_room2)
+      game.prepare
+    rescue Exception => e
+      scene.stage.alert(e.to_s + "\n" + e.backtrace[0..10].join("\n") + "\n...")
+    end
 
     Thread.new do
       begin
