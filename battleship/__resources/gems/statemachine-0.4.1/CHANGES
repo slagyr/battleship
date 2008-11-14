@@ -1,0 +1,93 @@
+= Statemachine Changelog
+
+== Version 0.4.1
+
+Simple Fixes
+* Fixed priority of default transitions, self defaults first, then superstate defaults.
+
+== Version 0.4.0
+
+Feature enhancements
+* enabled nested superstate history
+* TransitionMissingException's are raised when the statemachine can't respond to an event
+* Statmachine overrides respond_to? to respond to valid events.
+
+Behavior Fixes
+* fixed default transition so that superstate transitions have priority over default
+
+== Version 0.3.0
+
+Feature enhancements
+* added default transitions
+* added default history for superstates
+* the context method in the builder will set the context's statemachine variable if the context respond_to?(:statemachine=)
+
+Behavior Fixes
+* the entry action of the startstate is called when the statemachine starts or is reset.
+* resetting the statemachine will reset the history state for each superstate.
+
+== Version 0.2.2
+
+Minor plugin update
+* introduced before_event and after_event hooks for controllers
+
+== Version 0.2.1
+
+Rails Plugin.
+* Rails plugin introduced
+
+== Version 0.2.0
+
+Separation of logic from behavior.
+* Prefered builder syntax implemented
+* statemachine have a context which defines all the behavior
+* startstate can be set at any time in the builder
+* states can be declared without blocks
+* context can be set in builder
+
+== Version 0.1.0
+
+A new way to build the statemachines
+* cleaner API for running a statemachine
+* much refactoring
+* new API for building statemachine
+* process_event accepts strings
+
+== Version 0.0.4
+
+Some minor improvements
+* Proper handling of state transition implemented, such that the proper state is set for entry and exit actions.
+* can now use State objects in addition to symbols while creating a transition
+* more compliant implementation of history state
+
+== Version 0.0.3
+
+Bug fix dealing with entry and exit actions.  The state machine's state need to be set to the entered/exited state before calling the 
+exit/entry action.
+* added a couple specs in the exit_entry_spec
+* modified state.entered/exited methods to set the state
+* modifed the StateMachine.state to accept state objects.
+* removed running attribute from StateMachine because it wasn't much use
+* also removed the nil (end state)
+
+== Version 0.0.2
+
+More conventional file structure
+* nothing much to report in terms of changes.
+
+== Version 0.0.1
+
+0.0.0 didn't seem to work as a gem so maybe this one will.
+
+* nothing really, just playing with rake and release configuration
+
+== Version 0.0.0
+
+The first release.  Most finite state machine features are implemented
+* states
+* transitions
+* transition actions
+* super states
+* entry actions
+* exit actions
+* history state

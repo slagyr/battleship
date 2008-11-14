@@ -15,7 +15,7 @@ war_room :id => "war_room#{@number}" do
     end
     sectors :id => "war_room#{@number}_sectors" do
       100.times do |i|
-        sector :styles => "cell"
+        sector :styles => "cell", :index => i
       end
     end
   end

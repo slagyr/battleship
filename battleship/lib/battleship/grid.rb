@@ -25,13 +25,12 @@ module Battleship
       raise InvalidPlacementFormatException.new(placement) if match.nil?
       coordinates = match[1]
       orientation = match[3]
-
       start_index = index = to_index(coordinates)
+
       begin
-        self[index] = ship
-        (ship.length - 1).times do
-          index = orientation == "HORIZONTAL" ? right(index) : down(index)
-          self[index] = ship
+        sectors_for(coordinates, orientation, ship.length).each do |sector|
+          raise SectorOccupiedException.new(sector.ship) if sector.ship
+          sector.ship = ship
         end
       rescue InvalidSectorException
         raise InvalidPlacementException.new("#{placement}: The #{ship.name} would fall off the edge")
@@ -40,6 +39,28 @@ module Battleship
       end
 
       @view.place_ship(ship.name, orientation.downcase.to_sym, start_index % 10, start_index / 10)
+    end
+
+    def sectors_for(anchor, orientation, length)
+      orientation = orientation.to_s.downcase.to_sym
+      sectors = []
+
+      start_index = index = to_index(anchor)
+      sectors << @sectors[start_index]
+      (length - 1).times do
+        index = orientation == :horizontal ? right(index) : down(index)
+        sectors << @sectors[index]
+      end
+
+      return sectors
+    end
+
+    def valid_placement?(anchor, orientation, length)
+      begin
+        return sectors_for(anchor, orientation, length).all? { |sector| sector.ship.nil? }
+      rescue BattleshipException => e
+        return false
+      end
     end
 
     def attack(coordinates)
@@ -62,11 +83,6 @@ module Battleship
 
     private ###############################################
 
-    def []=(index, ship)
-      raise SectorOccupiedException.new(@sectors[index].ship) if @sectors[index].ship
-      @sectors[index].ship = ship
-    end
-
     def to_index(coordinates)
       match = CoordinatesRegex.match(coordinates)
       raise InvalidSectorException.new(coordinates) if match.nil?
@@ -79,6 +95,7 @@ module Battleship
     end
 
     Rows = %w{ A B C D E F G H I J }
+
     def row_to_index(row)
       return Rows.index(row)
     end

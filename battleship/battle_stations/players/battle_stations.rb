@@ -10,14 +10,14 @@ module BattleStations
 
     begin
       game = Battleship::Game.new(@player1.name, @player1.create_player, war_room1, @player2.name, @player2.create_player, war_room2)
-      game.prepare
     rescue Exception => e
       scene.stage.alert(e.to_s + "\n" + e.backtrace[0..10].join("\n") + "\n...")
     end
 
     Thread.new do
       begin
-        game.play
+        game.prepare
+        game.play 
       rescue Exception => e
         scene.stage.alert(e.to_s + "\n" + e.backtrace[0..10].join("\n") + "\n...")
       end

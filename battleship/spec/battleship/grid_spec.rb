@@ -124,4 +124,11 @@ describe Battleship::Grid do
     lambda { @grid.attack("A1") }.should raise_error(Battleship::SectorAlreadyAttackedException, "Sector A1 has already been attacked")
   end
 
+  it "should know valid placement" do
+    @grid.valid_placement?("A1", "horizontal", 5).should == true
+    @grid.valid_placement?("A7", "horizontal", 5).should == false
+    @grid.valid_placement?("A1", "vertical", 5).should == true
+    @grid.valid_placement?("H5", "vertical", 5).should == false
+  end
+
 end

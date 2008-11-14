@@ -1,10 +1,11 @@
 module ShipStatus
 
   def self.extended(prop)
-    prop.damage = 0    
+    prop.damage = 0
   end
 
   attr_accessor :damage
+  attr_reader :blinker
 
   def damaged(percent)
     @damage = percent
@@ -27,5 +28,18 @@ module ShipStatus
       style.background_color = "red"
       style.gradient = "off"
     end
-   end
+  end
+
+  def blink
+    @toggle = true
+    @blinker = animate(:updates_per_second => 2) do
+      style.background_color = @toggle ? "green" : "transparent"
+      @toggle = !@toggle
+    end
+  end
+
+  def stop_blinking
+    @blinker.stop
+    style.background_color = "transparent"
+  end
 end

@@ -28,6 +28,20 @@ describe Battleship::Game do
     @player2.opponent.should == "Player 1"
   end
 
+  it "should provide human players with UI objects" do
+    @player1 = Battleship::HumanPlayer.new
+    @player2 = Battleship::HumanPlayer.new
+    @game = Battleship::Game.new("Player 1", @player1, @war_room1, "Player 2", @player2, @war_room2)
+
+    @game.stub!(:place_ships_for)
+    @game.prepare
+
+    @player1.my_war_room.should == @war_room1
+    @player1.opponent_war_room.should == @war_room2 
+    @player2.my_war_room.should == @war_room2
+    @player2.opponent_war_room.should == @war_room1
+  end
+
   it "should create a healthy fleet for each player" do
     @game.prepare
 

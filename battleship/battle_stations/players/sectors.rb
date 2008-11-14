@@ -24,6 +24,18 @@ module Sectors
     self.children.each { |child| child.style.background_color = "transparent" }
   end
 
+  attr_accessor :statemachine
+  
+  def sector_clicked(sector)
+    return if @statemachine.nil?
+    @statemachine.click(sector)
+  end
+
+  def sector_entered(sector)
+    return if @statemachine.nil?
+    @statemachine.hover(sector)
+  end
+
   private
 
   def cell(x, y)

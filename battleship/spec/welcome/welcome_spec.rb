@@ -27,4 +27,20 @@ describe "Welcome Screen" do
     scene.player2.name.should == "Sergeant Simple"
   end
 
+  it "should have Human as the first of each player list" do
+    player_options_list = scene.find_by_name("player_options")
+
+    player_options_list[0].choices[0].should == "Human"
+    player_options_list[1].choices[0].should == "Human"
+  end
+
+  it "should load Human player profiles" do
+    player_options_list = scene.find_by_name("player_options")
+    player_options_list[0].value = "Human"
+    player_options_list[1].value = "Human"
+
+    scene.player1.should == Battleship::HumanProfile.instance
+    scene.player2.should == Battleship::HumanProfile.instance
+  end
+
 end

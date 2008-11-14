@@ -1,5 +1,6 @@
 require 'battleship/grid'
 require 'battleship/ship'
+require 'battleship/human_player'
 
 module Battleship
 
@@ -30,6 +31,7 @@ module Battleship
     def prepare
       @war_room1.commander = @player1_name
       @war_room2.commander = @player2_name
+      handle_human_players
       @player1.new_game(@player2_name)
       @player2.new_game(@player1_name)
       place_ships_for(@fleet1, @grid1, @player1)
@@ -154,6 +156,19 @@ module Battleship
       fleet[:submarine] = Submarine.new
       fleet[:patrolship] = Patrolship.new
       return fleet
+    end
+
+    def handle_human_players
+      if @player1.class == HumanPlayer
+        @player1.my_war_room = @war_room1
+        @player1.opponent_war_room = @war_room2
+        @player1.grid = @grid1
+      end
+      if @player2.class == HumanPlayer
+        @player2.my_war_room = @war_room2
+        @player2.opponent_war_room = @war_room1
+        @player2.grid = @grid2
+      end
     end
 
   end

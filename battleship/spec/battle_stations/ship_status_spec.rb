@@ -72,4 +72,16 @@ describe "Ship Status" do
     @carrier_status.damage.should == 0
   end
 
+  it "should blink" do
+    @carrier_status.blink
+
+    @carrier_status.blinker.should_not == nil
+    @carrier_status.blinker.running?.should == true
+
+    @carrier_status.stop_blinking
+
+    @carrier_status.blinker.running?.should == false
+    @carrier_status.style.background_color.should == "#00000000"
+  end
+
 end

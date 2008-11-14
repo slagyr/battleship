@@ -1,9 +1,14 @@
+require 'battleship/human_profile'
+
 module Welcome
 
   def scene_opened(e)
     load_players if production.computer_players.nil?
-    find("player1_selection").choices = production.computer_players.keys
-    find("player2_selection").choices = production.computer_players.keys
+    player_names = production.computer_players.keys.sort
+    player_names.unshift "Human"
+
+    find("player1_selection").choices = player_names
+    find("player2_selection").choices = player_names
   end
 
   def begin_game
@@ -15,15 +20,20 @@ module Welcome
 
   def player1
     name = find("player1_selection").value
-    return production.computer_players[name]
+    return player_for(name)
   end
 
   def player2
     name = find("player2_selection").value
-    return production.computer_players[name]
+    return player_for(name)
   end
 
   private #################################################
+
+  def player_for(name)
+    return Battleship::HumanProfile.instance if name == "Human"
+    return production.computer_players[name]
+  end
 
   def close_curtains
     build do
