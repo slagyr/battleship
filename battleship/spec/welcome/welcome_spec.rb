@@ -14,7 +14,7 @@ describe "Welcome Screen" do
   it "should have all players listed" do
     player_options_list = scene.find_by_name("player_options")
     player_options_list.each do |player_options|
-      player_options.choices.length.should == 2  
+      player_options.choices.length.should >= 2  
     end
   end
 

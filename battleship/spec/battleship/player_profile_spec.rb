@@ -53,10 +53,8 @@ describe Battleship::PlayerProfile do
     profiles = Battleship::PlayerProfile.load_from_gems
     profiles.length.should >= 2
 
-    profiles[0].name.should == "Rear Admiral Randy"
-    profiles[0].root_path.should == "/opt/local/lib/ruby/gems/1.8/gems/rear_admiral_randy-1.0"
-    profiles[1].name.should == "Sergeant Simple"
-    profiles[1].root_path.should == "/opt/local/lib/ruby/gems/1.8/gems/sergeant_simple-1.0"
+    profiles.find {|p| p.name == "Rear Admiral Randy" }.root_path.should == "/opt/local/lib/ruby/gems/1.8/gems/rear_admiral_randy-1.0"
+    profiles.find {|p| p.name == "Sergeant Simple" }.root_path.should == "/opt/local/lib/ruby/gems/1.8/gems/sergeant_simple-1.0"
   end
 
   it "should instantiate a player" do

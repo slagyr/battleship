@@ -13,8 +13,8 @@ describe Battleship::Analyzers::CoverageAnalyzer do
 
     score, description = Battleship::Analyzers::CoverageAnalyzer.analyze(profile)
 
-    score.should == 92
-    description.should == "92 : 92% test coverage"
+    score.should == 20
+    description.should == "20 : 20% test coverage"
   end
 
 end
