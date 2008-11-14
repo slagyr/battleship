@@ -31,6 +31,7 @@ war_room {
   width 600
   height 530
   horizontal_alignment :center
+  rounded_corner_radius 20
 }
 
 war_room_title {

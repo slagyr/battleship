@@ -1,6 +1,9 @@
 module Sectors
 
+  attr_accessor :ships_hidden
+
   def place_ship(type, orientation, x, y)
+    return if ships_hidden
     options = { :x => (x * 40 + 1), :y => (y * 40 + 1), :players => "image", :image => "images/#{type}.png" }
     options[:rotation] = 270.0 if orientation == :vertical
     self.build do
@@ -10,12 +13,12 @@ module Sectors
   end
 
   def miss(x, y)
-    cell(x, y).style.background_color = "white"
+    cell(x, y).color = "white"
     sleep(0.25)
   end
 
   def hit(x, y)
-    cell(x, y).style.background_color = "red"
+    cell(x, y).color = "red"
     sleep(0.25)
   end
 
@@ -24,17 +27,7 @@ module Sectors
     self.children.each { |child| child.style.background_color = "transparent" }
   end
 
-  attr_accessor :statemachine
-  
-  def sector_clicked(sector)
-    return if @statemachine.nil?
-    @statemachine.click(sector)
-  end
-
-  def sector_entered(sector)
-    return if @statemachine.nil?
-    @statemachine.hover(sector)
-  end
+  attr_accessor :sector_listener
 
   private
 

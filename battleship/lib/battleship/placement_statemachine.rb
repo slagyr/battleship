@@ -25,6 +25,10 @@ module Battleship
             event :invalid_placement, :no_clicks, :cancel_placement
             event :valid_placement, :completed, :place_ship
           end
+          state :completed do
+            event :hover, :completed
+            event :click, :completed
+          end
           context PlacementContext.new
         end
       end
@@ -97,6 +101,7 @@ module Battleship
       private #############################################
 
       def process_possible_placement(method)
+        @anchor.unhighlight
         sector = @anchor
         (@length).times do
           break if sector.nil?

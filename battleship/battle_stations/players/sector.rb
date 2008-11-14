@@ -6,12 +6,26 @@ module Sector
     return parent
   end
 
+  def sector_listener
+    return sectors.sector_listener
+  end
+
+  def color=(value)
+    @desired_color = value
+    style.background_color = value
+  end
+
   def mouse_entered(e)
-    sectors.sector_entered(self)
+    begin
+      sector_listener.sector_entered(self) if sector_listener
+    rescue Exception => e
+      puts e
+      puts e.backtrace
+    end
   end
 
   def mouse_clicked(e)
-    sectors.sector_clicked(self)   
+    sector_listener.sector_clicked(self) if sector_listener  
   end
 
   ROWS = %w{ A B C D E F G H I J }
@@ -31,20 +45,21 @@ module Sector
 
   def right
     return nil if (@index % 10 == 9)
-    return parent.children[@index + 1]
+    return sectors.children[@index + 1]
   end
 
   def down
     return nil if (@index > 89)
-    return parent.children[@index + 10]
+    return sectors.children[@index + 10]
   end
 
   def highlight
+    @desired_color = style.background_color
     style.background_color = "#0F09"
   end
 
   def unhighlight
-    style.background_color = "transparent"
+    style.background_color = @desired_color
   end
 
 end

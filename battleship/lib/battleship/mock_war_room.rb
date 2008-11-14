@@ -66,7 +66,7 @@ module Battleship
   class MockSectors
 
     attr_reader :placements, :misses, :hits, :children
-    attr_accessor :statemachine
+    attr_accessor :statemachine, :ships_hidden
 
     def initialize
       @children = Array.new(100) { |i| MockSector.new(self, i) }

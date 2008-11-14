@@ -23,7 +23,7 @@ module WarRoom
   def victory!
     build do
       cover :border_color => "green" do
-        cover_header :text => "Victory!", :text_color => "green"  
+        cover_header :text => "Victory!", :text_color => "green"
       end
     end
   end
@@ -49,6 +49,19 @@ module WarRoom
     ship_statuses.values.each { |status| status.damaged(0) }
     sectors.reset
     find_by_name("cover").each { |cover| remove(cover) }
+  end
+
+  def blink
+    @toggle = true
+    @blinker = animate(:updates_per_second => 1) do
+      style.background_color = @toggle ? "#f002" : "transparent"
+      @toggle = !@toggle
+    end
+  end
+
+  def stop_blinking
+    @blinker.stop
+    style.background_color = "transparent"
   end
 
 end

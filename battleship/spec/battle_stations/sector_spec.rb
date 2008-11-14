@@ -7,6 +7,8 @@ describe "Sectors" do
   before(:each) do
     @sectors = scene.find("war_room1_sectors")
     @sector = @sectors.children[50]
+    @listener = mock("listener")
+    @sectors.sector_listener = @listener
   end
 
   after(:each) do
@@ -14,7 +16,7 @@ describe "Sectors" do
   end
 
   it "should announce mouse_enetered to sectors" do
-    @sectors.should_receive(:sector_entered).with(@sector)
+    @listener.should_receive(:sector_entered).with(@sector)
     
     @sector.mouse_entered("mouse_event")
   end
