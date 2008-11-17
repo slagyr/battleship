@@ -1,9 +1,11 @@
 module Sectors
 
-  attr_accessor :ships_hidden
+  attr_accessor :concealed
+
+  alias :concealed? :concealed
 
   def place_ship(type, orientation, x, y)
-    return if ships_hidden
+    return if @concealed
     options = { :x => (x * 40 + 1), :y => (y * 40 + 1), :players => "image", :image => "images/#{type}.png" }
     options[:rotation] = 270.0 if orientation == :vertical
     self.build do

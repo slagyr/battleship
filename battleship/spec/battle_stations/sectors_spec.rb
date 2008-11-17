@@ -80,4 +80,11 @@ describe "Sectors" do
     @sectors.children[55].style.background_color.should == "#ff0000ff"
   end
 
+  it "should not show ships when concealed" do
+    @sectors.concealed = true
+    @sectors.place_ship(:carrier, :horizontal, 0, 0)
+
+    @sectors.find_by_name("ship").length.should == 0
+  end
+
 end

@@ -70,4 +70,12 @@ describe "War Room" do
     @war_room.find_by_name("cover").length.should == 0
   end
 
+  it "should conceal" do
+    @war_room.concealed = true
+
+    @war_room.concealed?.should == true
+    @war_room.sectors.concealed.should == true
+    @war_room.ship_statuses.values.each { |status| status.concealed.should == true }
+  end
+  
 end

@@ -3,6 +3,7 @@ module Battleship
   class MockShipStatus
 
     attr_reader :damage
+    attr_accessor :concealed
 
     def damaged(damage)
       @damage = damage
@@ -66,7 +67,8 @@ module Battleship
   class MockSectors
 
     attr_reader :placements, :misses, :hits, :children
-    attr_accessor :statemachine, :ships_hidden
+    attr_accessor :sector_listener
+    attr_accessor :concealed
 
     def initialize
       @children = Array.new(100) { |i| MockSector.new(self, i) }
@@ -94,6 +96,9 @@ module Battleship
   class MockWarRoom
 
     attr_reader :commander, :result
+    attr_accessor :concealed
+
+    alias :concealed? :concealed
 
     def initialize
       @statuses = {}
@@ -134,6 +139,12 @@ module Battleship
     end
 
     def reset
+    end
+
+    def blink 
+    end
+
+    def stop_blinking 
     end
 
   end

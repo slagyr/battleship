@@ -1,45 +1,54 @@
 require 'battleship/placement_statemachine'
+require 'battleship/grid'
+require 'battleship/mock_war_Room'
+require 'battleship/ship'
 
 module Battleship
 
   class HumanPlayer
 
-    attr_accessor :my_war_room, :opponent_war_room, :grid
+    attr_accessor :my_war_room, :opponent_war_room
+    attr_reader :grid
 
     def new_game(opponent_name)
-      opponent_war_room.sectors.ships_hidden = true
+      opponent_war_room.concealed = true
+      @grid = Grid.new(MockWarRoom.new)
     end
 
     def carrier_placement
-      return ship_placement(@my_war_room.ship_statuses[:carrier], 5)
+      return ship_placement(@my_war_room.ship_statuses[:carrier], Carrier.new)
     end
 
     def battleship_placement
-      return ship_placement(@my_war_room.ship_statuses[:battleship], 4)
+      return ship_placement(@my_war_room.ship_statuses[:battleship], Battleship.new)
     end
 
     def destroyer_placement
-      return ship_placement(@my_war_room.ship_statuses[:destroyer], 3)
+      return ship_placement(@my_war_room.ship_statuses[:destroyer], Destroyer.new)
     end
 
     def submarine_placement
-      return ship_placement(@my_war_room.ship_statuses[:submarine], 3)
+      return ship_placement(@my_war_room.ship_statuses[:submarine], Submarine.new)
     end
 
     def patrolship_placement
-      return ship_placement(@my_war_room.ship_statuses[:patrolship], 2)
+      return ship_placement(@my_war_room.ship_statuses[:patrolship], Patrolship.new)
     end
 
     def next_target
       @target_desired = true
       @opponent_war_room.blink
       @opponent_war_room.sectors.sector_listener = self
+
       sleep(0.1) while @target.nil?
+
       @opponent_war_room.sectors.sector_listener = nil
       target = @target
       @target_desired = false
       @target = nil
       @opponent_war_room.stop_blinking
+
+      @grid[target].attacked = true
       return target
     end
 
@@ -59,7 +68,7 @@ module Battleship
     
     def sector_clicked(sector)
       if @target_desired
-        @target = sector.coordinates
+        @target = sector.coordinates if !@grid[sector.coordinates].attacked
       elsif @statemachine
         @statemachine.click(sector)
       end 
@@ -77,9 +86,9 @@ module Battleship
 
     private ###############################################
 
-    def get_placement(length)
+    def get_placement(ship)
       @statemachine = PlacementStatemachine.instance
-      @statemachine.context.reset(@my_war_room.sectors, @grid, length)
+      @statemachine.context.reset(@my_war_room.sectors, @grid, ship.length)
       @my_war_room.sectors.sector_listener = self
 
       while @statemachine.context.placement.nil?
@@ -89,6 +98,7 @@ module Battleship
       @my_war_room.sectors.sector_listener = nil
       placement = @statemachine.context.placement
       @statemachine = nil
+      @grid.place(ship, placement)
       return placement
     end
 

@@ -84,4 +84,19 @@ describe "Ship Status" do
     @carrier_status.style.background_color.should == "#00000000"
   end
 
+  it "should not display damage less than 100% when concealed" do
+    @carrier_status.concealed = true
+
+    @carrier_status.damaged(0)
+    @carrier_status.damaged(20)
+    @carrier_status.style.gradient.should == "off"
+    @carrier_status.style.background_color.should == "#00000000"
+    @carrier_status.damaged(90)
+    @carrier_status.style.gradient.should == "off"
+    @carrier_status.style.background_color.should == "#00000000"
+    @carrier_status.damaged(100)
+    @carrier_status.style.gradient.should == "off"
+    @carrier_status.style.background_color.should == "#ff0000ff"
+  end
+
 end

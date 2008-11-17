@@ -162,12 +162,10 @@ module Battleship
       if @player1.class == HumanPlayer
         @player1.my_war_room = @war_room1
         @player1.opponent_war_room = @war_room2
-        @player1.grid = @grid1
       end
       if @player2.class == HumanPlayer
         @player2.my_war_room = @war_room2
         @player2.opponent_war_room = @war_room1
-        @player2.grid = @grid2
       end
     end
 

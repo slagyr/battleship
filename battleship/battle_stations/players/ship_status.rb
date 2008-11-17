@@ -5,6 +5,7 @@ module ShipStatus
   end
 
   attr_accessor :damage
+  attr_accessor :concealed
   attr_reader :blinker
 
   def damaged(percent)
@@ -12,19 +13,19 @@ module ShipStatus
     if percent == 0
       style.background_color = "transparent"
       style.gradient = "off"
-    elsif percent <= 50
+    elsif percent <= 50 && !@concealed
       style.background_color = "red"
       style.secondary_background_color = "transparent"
       style.gradient_penetration = (percent * 2).to_s
       style.gradient = "on"
       style.gradient_angle = "0"
-    elsif percent < 100
+    elsif percent < 100 && !@concealed
       style.background_color = "transparent"
       style.secondary_background_color = "red"
       style.gradient_penetration = ((100-percent) * 2).to_s
       style.gradient = "on"
       style.gradient_angle = "180"
-    else
+    elsif percent == 100
       style.background_color = "red"
       style.gradient = "off"
     end

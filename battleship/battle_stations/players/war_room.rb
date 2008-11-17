@@ -64,4 +64,17 @@ module WarRoom
     style.background_color = "transparent"
   end
 
+  def concealed=(value)
+    @concealed = !!value
+    sectors.concealed = true
+    ship_statuses.values.each { |status| status.concealed = true }
+  end
+
+  def concealed?
+    @concealed= false if @concealed == nil
+    return @concealed
+  end
+
+
+
 end
