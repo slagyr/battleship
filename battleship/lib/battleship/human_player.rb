@@ -1,6 +1,6 @@
 require 'battleship/placement_statemachine'
 require 'battleship/grid'
-require 'battleship/mock_war_Room'
+require 'battleship/mock_war_room'
 require 'battleship/ship'
 
 module Battleship
