@@ -3,6 +3,7 @@ require 'battleship/analyzers/battle_analyzer'
 require 'battleship/analyzers/simplicity_analyzer'
 require 'battleship/analyzers/flog_analyzer'
 require 'battleship/analyzers/coverage_analyzer'
+require 'battleship/analyzers/saikuro_analyzer'
 require 'limelight/string'
 require 'etc'
 
@@ -134,6 +135,9 @@ module Battleship
 
       @flog_score, @flog_description = Analyzers::FlogAnalyzer.analyze(self)
       observer.update_flog_score(@flog_score, @flog_description)
+
+      @saikuro_score, @saikuro_description = Analyzers::SaikuroAnalyzer.analyze(self)
+      observer.update_saikuro_score(@saikuro_score, @saikuro_description)
 
       observer.update_average_score(average_score)
     end

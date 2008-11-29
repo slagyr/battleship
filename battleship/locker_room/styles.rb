@@ -33,7 +33,7 @@ profile {
 }
 
 stat_label {
-  width "100%"
+  width "20%"
   text_color :white
   font_size 12
   font_face :courier_new
@@ -42,7 +42,7 @@ stat_label {
 }
 
 stat_result {
-  width "100%"
+  width "80%"
   top_margin 10
   left_margin 10
   text_color :white
@@ -53,7 +53,7 @@ stat_result {
 
 result_graph {
   width "100%"
-  height 40
+  height 30
   border_color :dark_gray
   border_width 3
   rounded_corner_radius 4
@@ -73,7 +73,7 @@ result_graph_text {
   x 0
   y 0
   text_color :black
-  font_size 16
+  font_size 12
   font_face :courier_new
   horizontal_alignment :center
   vertical_alignment :center

@@ -34,6 +34,11 @@ profile :id => "profile" do
     result_graph :id => "flog_graph"
   end
 
+  stat_label :text => "Saikuro Score:"
+  stat_result do
+    result_graph :id => "saikuro_graph"
+  end
+
   buttons do
     evaulate_button :id => "evaluate_button", :text => "Perform Analysis", :on_mouse_clicked => "scene.find('profile').perform_analysis"
   end
