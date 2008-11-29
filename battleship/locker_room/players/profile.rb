@@ -19,6 +19,7 @@ module Profile
     coverage_graph.populate(@profile.coverage_score, @profile.coverage_description)
     flog_graph.populate(@profile.flog_score, @profile.flog_description)
     saikuro_graph.populate(@profile.flog_score, @profile.flog_description)
+    flay_graph.populate(@profile.flog_score, @profile.flog_description)
   end
 
   def perform_analysis
@@ -29,6 +30,7 @@ module Profile
     coverage_graph.populate(0, "analyzing...")
     flog_graph.populate(0, "analyzing...")
     saikuro_graph.populate(0, "analyzing...")
+    flay_graph.populate(0, "analyzing...")
     begin
       @profile.perform_analysis(self)
     rescue Exception => e
@@ -54,6 +56,10 @@ module Profile
 
   def update_saikuro_score(score, description)
     saikuro_graph.populate(score, description)
+  end
+
+  def update_flay_score(score, description)
+    flay_graph.populate(score, description)
   end
 
   def update_average_score(score)

@@ -70,6 +70,8 @@ module Battleship
     attr_reader :simplicity_score, :simplicity_description
     attr_reader :coverage_score, :coverage_description
     attr_reader :battle_score, :battle_description
+    attr_reader :saikuro_score, :saikuro_description
+    attr_reader :flay_score, :flay_description
     attr_reader :games_played, :wins, :disqualifications
 
     def initialize(options={})
@@ -138,6 +140,9 @@ module Battleship
 
       @saikuro_score, @saikuro_description = Analyzers::SaikuroAnalyzer.analyze(self)
       observer.update_saikuro_score(@saikuro_score, @saikuro_description)
+
+      @flay_score, @flay_description = Analyzers::FlayAnalyzer.analyze(self)
+      observer.update_flay_score(@flay_score, @flay_description)
 
       observer.update_average_score(average_score)
     end
