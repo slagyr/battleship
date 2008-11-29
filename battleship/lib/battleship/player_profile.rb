@@ -4,6 +4,7 @@ require 'battleship/analyzers/simplicity_analyzer'
 require 'battleship/analyzers/flog_analyzer'
 require 'battleship/analyzers/coverage_analyzer'
 require 'battleship/analyzers/saikuro_analyzer'
+require 'battleship/analyzers/flay_analyzer'
 require 'limelight/string'
 require 'etc'
 
@@ -114,7 +115,7 @@ module Battleship
 
     def average_score
       begin
-        return (flog_score + coverage_score + simplicity_score + battle_score) / 4
+        return (flog_score + coverage_score + simplicity_score + battle_score + saikuro_score + flay_score) / 6
       rescue Exception
         return 0
       end

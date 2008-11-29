@@ -9,7 +9,7 @@ describe Battleship::Analyzers::FlayAnalyzer do
   end
 
   it "should flay the Random Player" do
-    profile = Battleship::PlayerProfile.load_from_gem('rear_admiral_randy')
+    profile = Battleship::PlayerProfile.load_from_gem('micahs_fury')
 
     score, description = Battleship::Analyzers::FlayAnalyzer.analyze(profile)
 
