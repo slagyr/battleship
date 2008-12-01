@@ -16,12 +16,12 @@ module Sectors
 
   def miss(x, y)
     cell(x, y).color = "white"
-    sleep(0.25)
+    sleep(0.1)
   end
 
   def hit(x, y)
     cell(x, y).color = "red"
-    sleep(0.25)
+    sleep(0.1)
   end
 
   def reset

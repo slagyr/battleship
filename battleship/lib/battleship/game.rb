@@ -47,6 +47,10 @@ module Battleship
       end
     end
 
+    def player1_winner?
+      return @winner == @player1
+    end
+
     private ###############################################
 
     def play_turn

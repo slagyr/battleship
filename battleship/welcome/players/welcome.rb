@@ -15,7 +15,6 @@ module Welcome
     battle_stations = scene.load('battle_stations')
     battle_stations.player1 = player1
     battle_stations.player2 = player2
-    battle_stations.play
   end
 
   def player1

@@ -162,7 +162,7 @@ cover_text {
   font_size 18
 }
 
-actions {
+control_panel {
   width "100%"
   top_margin 20
   horizontal_alignment :center
@@ -173,7 +173,7 @@ action_link {
   font_size 20
   font_face :arial
   hover {
-    text_color :blue
+    border_color :blue
   }
   left_padding 20
   right_padding 20
@@ -184,19 +184,14 @@ action_link {
   rounded_corner_radius 4
 }
 
-main_menu_link {
-  extends :action_link
-  hover {
-#    text_color :blue
-    border_color :blue
-  }
+button_panel {
 }
 
-battle_again_link {
-  extends :action_link
-  hover {
-#    text_color :blue
-    border_color :blue
-  }
+stats {
+  horizontal_alignment :center
+  vertical_alignment :center
+  font_face "Krungthep"
+  font_size 30
+  text_color :white
 }
 
