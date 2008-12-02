@@ -6,7 +6,7 @@ module Battleship
 
   class Game
 
-    attr_reader :player1, :player2
+    attr_reader :player1, :player2, :player1_name, :player2_name
     attr_reader :war_room1, :war_room2
     attr_reader :fleet1, :fleet2
     attr_reader :grid1, :grid2

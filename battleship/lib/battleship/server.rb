@@ -10,7 +10,10 @@ module Battleship
     class << self
 
       def api
-        @api = DRbObject.new(nil, 'druby://micahmartin.com:9696') if @api.nil?
+        if @api.nil?
+          DRb.start_service
+          @api = DRbObject.new(nil, 'druby://micahmartin.com:9696')
+        end
         return @api
       end
 
@@ -28,12 +31,21 @@ module Battleship
         end
       end
 
+      def submit_game(game)
+        try do
+          api.submit_battle(:player1 => game.player1_name, :player2 => game.player2_name, :winner => game.player1_winner? ? game.player1_name : game.player2_name, :disqualification => game.disqualification_reason != nil)
+        end
+      end
+
       private #############################################
 
       def try
+        return if !$USE_SERVER
         begin
           yield
         rescue Exception => e
+          puts e
+          puts e.backtrace
           raise ServerException.new(e.message)
         end
       end

@@ -12,3 +12,5 @@ production = Limelight::Production["."]
 #require 'seomthing'
 
 # This is the ideal place to assign values to production attributes.
+
+$USE_SERVER = true

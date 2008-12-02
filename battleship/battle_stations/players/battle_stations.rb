@@ -1,5 +1,6 @@
 require 'battleship/game'
 require 'battleship/simple_player'
+require 'battleship/server'
 
 module BattleStations
 
@@ -60,6 +61,7 @@ module BattleStations
     else
       @player2_wins += 1
     end
+    Battleship::Server.submit_game(game)
     sleep(1)
     process_match
     show_actions if !@in_match
