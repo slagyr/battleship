@@ -218,5 +218,13 @@ describe Battleship::Game do
     @player1.disqualification_reason.should == "The player targeted an invalid sector.  Sector F5 has already been attacked."
     @player2.disqualification_reason.should == "The player targeted an invalid sector.  Sector F5 has already been attacked."
   end
+
+  it "should set first move" do
+    @game.first_move = @player2
+    @game.prepare
+    @game.play
+
+    @game.winner.should == @player2
+  end
   
 end

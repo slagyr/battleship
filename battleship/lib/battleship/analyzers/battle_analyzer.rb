@@ -7,8 +7,10 @@ module Battleship
 
       def self.analyze(profile)
         begin
-          record = nil #Server.profile(profile.name)
+          record = Server.profile(profile.name)
         rescue ServerException => e
+          puts e
+          puts e.backtrace
           return 50, "50 : Couldn't retreive record"
         end
         return 50, "50 : No games recorded" if record.nil?

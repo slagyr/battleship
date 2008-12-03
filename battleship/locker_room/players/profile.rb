@@ -19,8 +19,8 @@ module Profile
     simplicity_graph.populate(@profile.simplicity_score, @profile.simplicity_description)
     coverage_graph.populate(@profile.coverage_score, @profile.coverage_description)
     flog_graph.populate(@profile.flog_score, @profile.flog_description)
-    saikuro_graph.populate(@profile.flog_score, @profile.saikuro_description)
-    flay_graph.populate(@profile.flog_score, @profile.flay_description)
+    saikuro_graph.populate(@profile.saikuro_score, @profile.saikuro_description)
+    flay_graph.populate(@profile.flay_score, @profile.flay_description)
   end
 
   def perform_analysis

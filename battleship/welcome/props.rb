@@ -12,5 +12,6 @@ options do
     end
   end
 
-  option :text => "Begin Battle", :on_mouse_clicked => "scene.begin_game"
+  option :text => "Battle Stations", :on_mouse_clicked => "scene.begin_game"
+  option :text => "Run Tournament", :on_mouse_clicked => "battle_stations = scene.load('battle_stations'); battle_stations.round_robin" 
 end
