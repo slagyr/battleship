@@ -219,12 +219,69 @@ describe Battleship::Game do
     @player2.disqualification_reason.should == "The player targeted an invalid sector.  Sector F5 has already been attacked."
   end
 
-  it "should set first move" do
-    @game.first_move = @player2
+  it "should should disqualify a player for taking too long" do
+    @game.max_move_duration = 0.2
+    @player2.instance_eval("def next_target; sleep(0.5); return 'A1' end")
+
     @game.prepare
     @game.play
 
-    @game.winner.should == @player2
+    @game.winner.should == @player1
+    @game.disqualification_reason.should == "The player took too long to respond"
+  end
+  
+  it "should should disqualify a player for taking too long to place ships" do
+    @game.max_move_duration = 0.1
+    @player2.instance_eval("def carrier_placement; sleep(0.9); return 'A1 horizontal' end")
+
+    @game.prepare
+    @game.play
+
+    @game.winner.should == @player1
+    @game.disqualification_reason.should == "The player took too long to respond"
+  end
+
+  it "should record ship placements" do
+    @game.prepare
+
+    @game.player1_placements[:carrier].should == "A1 horizontal"
+    @game.player1_placements[:battleship].should == "B1 horizontal"
+    @game.player1_placements[:destroyer].should == "C1 horizontal"
+    @game.player1_placements[:submarine].should == "D1 horizontal"
+    @game.player1_placements[:patrolship].should == "E1 horizontal"
+
+    @game.player2_placements[:carrier].should == "A1 horizontal"
+    @game.player2_placements[:battleship].should == "B1 horizontal"
+    @game.player2_placements[:destroyer].should == "C1 horizontal"
+    @game.player2_placements[:submarine].should == "D1 horizontal"
+    @game.player2_placements[:patrolship].should == "E1 horizontal"
+  end
+
+  it "should record targets" do
+    @game.prepare
+    @game.play
+
+    @game.player1_targets.length.should == 42
+    @game.player1_targets[0..9].should == %w{A1 A2 A3 A4 A5 A6 A7 A8 A9 A10}
+    @game.player2_targets.length.should == 41
+    @game.player2_targets[0..9].should == %w{A1 A2 A3 A4 A5 A6 A7 A8 A9 A10}
+  end
+
+  it "should covert to hash" do
+    @player2.stub!(:next_target).and_return("F5")
+    @game.prepare
+    @game.play
+
+    hash = @game.to_hash
+
+    hash[:player1].should == "Player 1"
+    hash[:player2].should == "Player 2"
+    hash[:winner].should == "Player 1"
+    hash[:disqualification_reason].should == "The player targeted an invalid sector.  Sector F5 has already been attacked."
+    hash[:player1_placements].should == @game.player1_placements
+    hash[:player2_placements].should == @game.player2_placements
+    hash[:player1_targets].should == @game.player1_targets
+    hash[:player2_targets].should == @game.player2_targets
   end
   
 end

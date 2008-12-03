@@ -1,0 +1,93 @@
+--- 
+:player1: joshua_son_of_nun
+:player1_placements: 
+  :patrolship: I5 vertical
+  :carrier: F1 vertical
+  :battleship: B7 vertical
+  :destroyer: B3 horizontal
+  :submarine: J8 horizontal
+:disqualification_reason: 
+:player2_placements: 
+  :patrolship: I3 horizontal
+  :carrier: G1 horizontal
+  :battleship: F8 vertical
+  :destroyer: C5 vertical
+  :submarine: B7 horizontal
+:player2: ssoroka takes the win
+:player1_targets: 
+- D8
+- G3
+- F3
+- G4
+- G2
+- G1
+- G5
+- J5
+- H4
+- C3
+- H2
+- A8
+- B9
+- A9
+- B10
+- C9
+- B8
+- B7
+- A10
+- B4
+- J10
+- F2
+- E10
+- G6
+- J6
+- H3
+- C6
+- H1
+- J7
+- J8
+- A6
+- H10
+- I10
+- J2
+- B5
+- C8
+- E8
+:player2_targets: 
+- F5
+- E4
+- C6
+- D10
+- D5
+- J8
+- I8
+- J7
+- J9
+- J10
+- G7
+- G9
+- C1
+- B2
+- H4
+- D7
+- E7
+- F7
+- C7
+- B7
+- I3
+- C9
+- B10
+- D3
+- B5
+- A5
+- B4
+- B3
+- I5
+- I6
+- J5
+- G2
+- H1
+- I1
+- J1
+- G1
+- F1
+:winner: ssoroka takes the win

@@ -1,0 +1,140 @@
+--- 
+:player1: joshua_son_of_nun
+:player1_placements: 
+  :patrolship: B1 vertical
+  :carrier: D9 vertical
+  :battleship: F4 vertical
+  :destroyer: A3 vertical
+  :submarine: D5 horizontal
+:disqualification_reason: 
+:player2_placements: 
+  :patrolship: E1 horizontal
+  :carrier: B2 horizontal
+  :battleship: D7 horizontal
+  :destroyer: A8 horizontal
+  :submarine: G8 horizontal
+:player2: Rear Admiral Randy
+:player1_targets: 
+- J8
+- I10
+- F1
+- D2
+- B3
+- A3
+- B4
+- B2
+- B1
+- B5
+- B6
+- C5
+- E4
+- E7
+- D9
+- C9
+- D10
+- D8
+- D7
+- C7
+- A8
+- A9
+- A7
+- A10
+- G1
+- F3
+- G5
+- F7
+- H6
+- I8
+- J6
+- H7
+- G9
+- F9
+- G10
+- G8
+- E8
+- I9
+- J9
+- I7
+- I3
+- J5
+- A6
+- H8
+- F8
+- B8
+- D5
+- F4
+- G6
+- C3
+- I6
+- B9
+- C2
+- E3
+- D1
+- C8
+- J7
+- B7
+- F10
+- E1
+- E2
+:player2_targets: 
+- D9
+- J7
+- J2
+- G6
+- J4
+- G1
+- E4
+- H4
+- C10
+- B6
+- F3
+- J5
+- E7
+- H9
+- B1
+- F10
+- A5
+- A2
+- F6
+- J6
+- H1
+- I3
+- H6
+- H2
+- B5
+- A3
+- C1
+- I9
+- H7
+- I4
+- A7
+- C6
+- G2
+- E9
+- A1
+- A9
+- E5
+- G10
+- B3
+- G4
+- J10
+- H3
+- D10
+- E8
+- C8
+- A10
+- D6
+- A6
+- E1
+- J9
+- I6
+- F5
+- G8
+- A8
+- E10
+- I1
+- C4
+- I2
+- G5
+- D7
+:winner: joshua_son_of_nun

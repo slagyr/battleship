@@ -1,0 +1,89 @@
+--- 
+:player1: Commodore Cox
+:player1_placements: 
+  :patrolship: F4 vertical
+  :carrier: A9 vertical
+  :battleship: C2 vertical
+  :destroyer: F6 horizontal
+  :submarine: A1 horizontal
+:disqualification_reason: 
+:player2_placements: 
+  :patrolship: J4 horizontal
+  :carrier: D5 horizontal
+  :battleship: J6 horizontal
+  :destroyer: I6 horizontal
+  :submarine: B10 vertical
+:player2: USS Monte Carlo
+:player1_targets: 
+- G9
+- H8
+- G10
+- A3
+- D4
+- H9
+- B4
+- I9
+- G2
+- A4
+- I5
+- G7
+- J8
+- J9
+- J10
+- J7
+- J6
+- E9
+- C10
+- B10
+- A10
+- D10
+- A2
+- E8
+- D8
+- C8
+- D9
+- D7
+- D6
+- D5
+- J5
+- J4
+- I1
+- A6
+- B3
+:player2_targets: 
+- J10
+- D1
+- F2
+- G2
+- E2
+- D2
+- C2
+- F4
+- F5
+- F3
+- E4
+- G4
+- J7
+- C10
+- A2
+- A3
+- A4
+- A1
+- B2
+- G7
+- J8
+- G5
+- H8
+- I9
+- E1
+- F6
+- E6
+- G6
+- F7
+- F8
+- A9
+- B9
+- C9
+- D9
+- E9
+:winner: USS Monte Carlo

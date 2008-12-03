@@ -1,0 +1,134 @@
+--- 
+:player1: Ensign Erratic
+:player1_placements: 
+  :patrolship: F3 horizontal
+  :carrier: E1 horizontal
+  :battleship: B7 horizontal
+  :destroyer: I8 horizontal
+  :submarine: H2 horizontal
+:disqualification_reason: The player targeted an invalid sector.  Sector C11 has already been attacked.
+:player2_placements: 
+  :patrolship: B8 vertical
+  :carrier: G3 horizontal
+  :battleship: C2 vertical
+  :destroyer: D7 horizontal
+  :submarine: A2 horizontal
+:player2: USS Monte Carlo
+:player1_targets: 
+- E10
+- J8
+- B3
+- E7
+- D5
+- E6
+- D2
+- D1
+- D3
+- C2
+- B2
+- E2
+- F2
+- I9
+- B4
+- J5
+- C9
+- B10
+- F4
+- C1
+- A9
+- B5
+- H6
+- G4
+- G3
+- G2
+- G5
+- G6
+- G7
+- C4
+- E1
+- C10
+- A3
+- A2
+- A1
+- A4
+- A10
+- H3
+- E5
+- F6
+- D8
+- D7
+- D6
+- D9
+- I8
+- F3
+- I3
+- H9
+- A8
+- H5
+- A5
+- G1
+- F5
+- J4
+- A7
+- C8
+- C7
+- C11
+:player2_targets: 
+- J9
+- A2
+- E3
+- D3
+- F3
+- G3
+- E4
+- E5
+- E6
+- E2
+- E1
+- F4
+- I7
+- B10
+- B9
+- B8
+- B7
+- E8
+- F9
+- G2
+- H5
+- A6
+- D7
+- G8
+- H1
+- I4
+- B5
+- H9
+- I2
+- C8
+- D9
+- E10
+- H3
+- I3
+- H2
+- H4
+- A5
+- D6
+- G7
+- H8
+- A9
+- I5
+- J6
+- A7
+- D10
+- G1
+- C1
+- D4
+- J10
+- A3
+- B2
+- I1
+- J4
+- C9
+- J8
+- F2
+- C7
+:winner: USS Monte Carlo

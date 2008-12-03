@@ -1,0 +1,142 @@
+--- 
+:player1: White Horseman
+:player1_placements: 
+  :patrolship: A9 vertical
+  :carrier: E8 vertical
+  :battleship: G9 vertical
+  :destroyer: J1 horizontal
+  :submarine: A2 horizontal
+:disqualification_reason: 
+:player2_placements: 
+  :patrolship: A1 horizontal
+  :carrier: F10 vertical
+  :battleship: D5 vertical
+  :destroyer: B9 vertical
+  :submarine: H8 vertical
+:player2: joshua_son_of_nun
+:player1_targets: 
+- E6
+- F5
+- F4
+- G5
+- E5
+- D5
+- C7
+- H7
+- F8
+- C3
+- H3
+- I6
+- G9
+- E2
+- B4
+- D9
+- E9
+- D8
+- C9
+- B9
+- A5
+- J5
+- F1
+- F10
+- E10
+- G10
+- H10
+- I10
+- J10
+- B6
+- I4
+- G2
+- A8
+- I8
+- H8
+- G8
+- J8
+- I2
+- B2
+- D2
+- D4
+- H1
+- H5
+- A3
+- E7
+- J3
+- F3
+- C1
+- G6
+- C5
+- B8
+- D6
+- E3
+- C10
+- I9
+- F7
+- A7
+- A10
+- J7
+- J1
+- A1
+- A2
+:player2_targets: 
+- D6
+- D9
+- B3
+- I5
+- A6
+- H4
+- C6
+- F4
+- A5
+- H8
+- G8
+- F8
+- E8
+- D8
+- I8
+- H1
+- J3
+- I3
+- J4
+- J2
+- J1
+- G5
+- B7
+- I7
+- J9
+- F5
+- B1
+- I2
+- J7
+- B2
+- H3
+- B10
+- B6
+- F10
+- H7
+- H9
+- G9
+- F9
+- I9
+- G2
+- G7
+- F7
+- C10
+- I10
+- C5
+- H10
+- H6
+- H5
+- G1
+- G4
+- B9
+- A9
+- I4
+- C1
+- D2
+- A8
+- J10
+- F1
+- D1
+- C4
+- B4
+:winner: White Horseman

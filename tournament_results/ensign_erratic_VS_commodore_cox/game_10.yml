@@ -1,0 +1,32 @@
+--- 
+:player1: Ensign Erratic
+:player1_placements: 
+  :patrolship: H8 vertical
+  :carrier: F7 vertical
+  :battleship: A3 horizontal
+  :destroyer: H3 horizontal
+  :submarine: E10 vertical
+:disqualification_reason: "The player targeted an invalid sector.  Invalid coordinates: 1."
+:player2_placements: 
+  :patrolship: C6 horizontal
+  :carrier: C3 vertical
+  :battleship: I2 horizontal
+  :destroyer: F10 vertical
+  :submarine: D2 vertical
+:player2: Commodore Cox
+:player1_targets: 
+- H10
+- H2
+- H3
+- G1
+- I1
+- J1
+- "1"
+:player2_targets: 
+- D7
+- D8
+- D2
+- I8
+- H8
+- G6
+:winner: Commodore Cox

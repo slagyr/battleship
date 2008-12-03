@@ -1,0 +1,134 @@
+--- 
+:player1: Ensign Erratic
+:player1_placements: 
+  :patrolship: D5 horizontal
+  :carrier: A7 vertical
+  :battleship: F2 vertical
+  :destroyer: B8 horizontal
+  :submarine: A3 vertical
+:disqualification_reason: 
+:player2_placements: 
+  :patrolship: J6 horizontal
+  :carrier: B4 horizontal
+  :battleship: B2 vertical
+  :destroyer: A2 horizontal
+  :submarine: F9 vertical
+:player2: Commodore Cox
+:player1_targets: 
+- D4
+- A5
+- A3
+- A2
+- A1
+- A4
+- J8
+- G6
+- C10
+- I10
+- G7
+- D1
+- G5
+- C2
+- C1
+- C3
+- B2
+- D2
+- E2
+- F10
+- I4
+- G9
+- G8
+- G10
+- F9
+- E9
+- H9
+- E10
+- J4
+- C4
+- C8
+- B7
+- B6
+- B5
+- B4
+- B3
+- B8
+- H7
+- D10
+- D6
+- J3
+- I6
+- I7
+- I9
+- D5
+- F7
+- J1
+- D8
+- E4
+- H5
+- C5
+- F8
+- F4
+- I3
+- A9
+- H3
+- J7
+- J6
+:player2_targets: 
+- B8
+- C8
+- A8
+- B7
+- B6
+- B9
+- B10
+- B1
+- D5
+- E5
+- D6
+- F9
+- G4
+- E1
+- F5
+- J9
+- I10
+- H1
+- G5
+- D2
+- J4
+- J1
+- G9
+- C4
+- I8
+- I2
+- J2
+- I1
+- I3
+- H2
+- G2
+- F2
+- D3
+- E6
+- A6
+- E8
+- D1
+- G3
+- C3
+- B3
+- A3
+- J10
+- H4
+- J8
+- D7
+- D8
+- E7
+- F7
+- A10
+- A4
+- D10
+- F3
+- G1
+- E3
+- J3
+- I5
+- A2
+:winner: Ensign Erratic

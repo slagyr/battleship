@@ -1,0 +1,113 @@
+--- 
+:player1: Commodore Cox
+:player1_placements: 
+  :patrolship: D7 horizontal
+  :carrier: H2 horizontal
+  :battleship: D9 vertical
+  :destroyer: E4 horizontal
+  :submarine: A9 vertical
+:disqualification_reason: 
+:player2_placements: 
+  :patrolship: G5 vertical
+  :carrier: F2 vertical
+  :battleship: B3 vertical
+  :destroyer: D5 vertical
+  :submarine: B6 vertical
+:player2: interferoman
+:player1_targets: 
+- D7
+- B9
+- F8
+- C2
+- I6
+- C9
+- A1
+- E3
+- D3
+- C3
+- B3
+- G2
+- G1
+- G3
+- H2
+- I2
+- J2
+- F2
+- G7
+- B4
+- D5
+- D4
+- D6
+- E6
+- C5
+- C6
+- B6
+- E5
+- J9
+- E4
+- F5
+- A9
+- E10
+- H1
+- J7
+- E8
+- I10
+- E2
+- H3
+- C7
+- J4
+- I3
+- J6
+- H8
+- I8
+- A4
+- B5
+:player2_targets: 
+- A10
+- F7
+- A2
+- D5
+- E10
+- B9
+- B10
+- C9
+- D9
+- E9
+- F9
+- G9
+- B8
+- A9
+- G10
+- I2
+- J1
+- G8
+- H1
+- F1
+- H5
+- H6
+- H7
+- H4
+- H3
+- H2
+- F3
+- B7
+- I4
+- C6
+- J7
+- J5
+- I8
+- G2
+- C10
+- I6
+- B3
+- D7
+- D8
+- J10
+- H8
+- G4
+- D4
+- E5
+- E6
+- E7
+- E4
+:winner: interferoman

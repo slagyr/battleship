@@ -1,0 +1,150 @@
+--- 
+:player1: joshua_son_of_nun
+:player1_placements: 
+  :patrolship: I5 vertical
+  :carrier: E6 horizontal
+  :battleship: E1 vertical
+  :destroyer: G10 vertical
+  :submarine: B7 horizontal
+:disqualification_reason: 
+:player2_placements: 
+  :patrolship: B7 vertical
+  :carrier: E5 vertical
+  :battleship: J1 horizontal
+  :destroyer: G6 vertical
+  :submarine: I7 horizontal
+:player2: USS Monte Carlo
+:player1_targets: 
+- G5
+- F5
+- E5
+- D5
+- H5
+- I5
+- I6
+- I4
+- I7
+- I8
+- I9
+- J2
+- I2
+- J3
+- J1
+- J4
+- C2
+- G10
+- C10
+- F9
+- B2
+- B4
+- A5
+- H2
+- E8
+- C3
+- B7
+- A7
+- B8
+- C7
+- A1
+- D4
+- A6
+- F4
+- F10
+- F1
+- G3
+- J9
+- E2
+- B5
+- J7
+- F6
+- H7
+- C6
+- A2
+- I3
+- F2
+- G7
+- H3
+- D3
+- A9
+- D6
+- C8
+- A8
+- A4
+- G4
+- G1
+- D9
+- E7
+- H10
+- G8
+- E6
+- C1
+- I10
+- G6
+- H6
+:player2_targets: 
+- F1
+- F2
+- E1
+- D1
+- G1
+- H1
+- J2
+- A5
+- F6
+- H2
+- C4
+- H5
+- C7
+- F8
+- C2
+- E3
+- G6
+- B7
+- B8
+- B9
+- E10
+- E9
+- E8
+- E7
+- E6
+- F7
+- G10
+- G9
+- H10
+- I10
+- A1
+- E4
+- G7
+- H9
+- I1
+- A3
+- D6
+- J1
+- B2
+- D4
+- I8
+- A9
+- B1
+- D3
+- F4
+- J6
+- A7
+- C10
+- D2
+- F3
+- G5
+- I7
+- J9
+- B10
+- H7
+- A10
+- J10
+- I9
+- E5
+- F5
+- H6
+- C1
+- I6
+- J7
+- A8
+:winner: joshua_son_of_nun

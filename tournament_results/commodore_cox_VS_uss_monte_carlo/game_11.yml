@@ -1,0 +1,44 @@
+--- 
+:player1: Commodore Cox
+:player1_placements: 
+  :patrolship: G5 horizontal
+  :carrier: D8 vertical
+  :battleship: B2 vertical
+  :destroyer: G2 horizontal
+  :submarine: F1 horizontal
+:disqualification_reason: The player took too long to respond
+:player2_placements: 
+  :patrolship: J4 horizontal
+  :carrier: D5 horizontal
+  :battleship: J6 horizontal
+  :destroyer: I6 horizontal
+  :submarine: B10 vertical
+:player2: USS Monte Carlo
+:player1_targets: 
+- B3
+- I10
+- D9
+- E9
+- C9
+- D8
+- D7
+- D6
+- D5
+- E2
+- J8
+- J9
+- J10
+:player2_targets: 
+- G3
+- F3
+- E3
+- H3
+- G4
+- G5
+- G6
+- G2
+- F4
+- F2
+- F1
+- H4
+:winner: Commodore Cox

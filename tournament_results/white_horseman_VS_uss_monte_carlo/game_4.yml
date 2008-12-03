@@ -1,0 +1,98 @@
+--- 
+:player1: White Horseman
+:player1_placements: 
+  :patrolship: J9 horizontal
+  :carrier: C10 vertical
+  :battleship: D9 vertical
+  :destroyer: J3 horizontal
+  :submarine: D5 vertical
+:disqualification_reason: 
+:player2_placements: 
+  :patrolship: B1 vertical
+  :carrier: H3 horizontal
+  :battleship: I1 horizontal
+  :destroyer: B10 vertical
+  :submarine: E6 horizontal
+:player2: USS Monte Carlo
+:player1_targets: 
+- F5
+- E6
+- E7
+- E8
+- G4
+- D3
+- C4
+- H6
+- H7
+- H5
+- H4
+- H3
+- D9
+- E2
+- B5
+- G9
+- I8
+- C8
+- A7
+- F10
+- F1
+- I2
+- I3
+- I4
+- I5
+- I1
+- B2
+- A3
+- D5
+- C6
+- C1
+- D1
+- C2
+- B1
+- J8
+- B7
+- F8
+- C10
+- B10
+- D10
+:player2_targets: 
+- B5
+- C6
+- D8
+- H9
+- C10
+- C9
+- D10
+- E10
+- F10
+- G10
+- H3
+- A6
+- B9
+- E1
+- F3
+- I4
+- C5
+- F6
+- G7
+- J8
+- A9
+- J5
+- I5
+- J4
+- J3
+- D4
+- G6
+- A10
+- C1
+- F8
+- G9
+- F9
+- E9
+- D9
+- E2
+- H4
+- J6
+- C7
+- G3
+:winner: White Horseman

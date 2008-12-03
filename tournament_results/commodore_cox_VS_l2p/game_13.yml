@@ -1,0 +1,92 @@
+--- 
+:player1: Commodore Cox
+:player1_placements: 
+  :patrolship: B1 horizontal
+  :carrier: J3 horizontal
+  :battleship: H1 horizontal
+  :destroyer: F4 horizontal
+  :submarine: F8 vertical
+:disqualification_reason: 
+:player2_placements: 
+  :patrolship: E1 horizontal
+  :carrier: A1 horizontal
+  :battleship: B1 horizontal
+  :destroyer: C1 horizontal
+  :submarine: D1 horizontal
+:player2: l2p
+:player1_targets: 
+- C10
+- B3
+- A3
+- C3
+- D3
+- E3
+- D4
+- B2
+- B1
+- B4
+- A2
+- C2
+- E6
+- C1
+- A4
+- C4
+- I5
+- A5
+- A6
+- B5
+- H4
+- D1
+- D2
+- I4
+- H1
+- J1
+- B10
+- J7
+- J6
+- D6
+- E7
+- A1
+- G8
+- A10
+- E2
+- F2
+- E1
+:player2_targets: 
+- A1
+- A2
+- A3
+- A4
+- A5
+- A6
+- A7
+- A8
+- A9
+- A10
+- B1
+- B2
+- B3
+- B4
+- B5
+- B6
+- B7
+- B8
+- B9
+- B10
+- C1
+- C2
+- C3
+- C4
+- C5
+- C6
+- C7
+- C8
+- C9
+- C10
+- D1
+- D2
+- D3
+- D4
+- D5
+- D6
+:winner: Commodore Cox

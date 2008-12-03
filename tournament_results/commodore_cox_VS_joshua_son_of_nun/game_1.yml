@@ -1,0 +1,126 @@
+--- 
+:player1: Commodore Cox
+:player1_placements: 
+  :patrolship: H5 horizontal
+  :carrier: B10 vertical
+  :battleship: C6 vertical
+  :destroyer: A4 vertical
+  :submarine: G3 horizontal
+:disqualification_reason: 
+:player2_placements: 
+  :patrolship: B7 vertical
+  :carrier: H2 horizontal
+  :battleship: A9 vertical
+  :destroyer: J1 horizontal
+  :submarine: I8 horizontal
+:player2: joshua_son_of_nun
+:player1_targets: 
+- C4
+- I1
+- B1
+- F4
+- E2
+- E3
+- A2
+- A9
+- A8
+- A10
+- B9
+- C9
+- D9
+- G9
+- I6
+- C7
+- D7
+- B7
+- B5
+- E5
+- A1
+- E6
+- B2
+- B3
+- D5
+- J1
+- J2
+- J3
+- F9
+- E10
+- J8
+- I4
+- H5
+- I5
+- G5
+- H6
+- H7
+- H4
+- H3
+- H2
+- D8
+- D6
+- G2
+- F6
+- I7
+- C6
+- F7
+- G3
+- E1
+- C5
+- C1
+- I9
+- I10
+- I8
+:player2_targets: 
+- I3
+- E1
+- I2
+- C4
+- B4
+- A4
+- G4
+- D4
+- A2
+- I9
+- B9
+- C5
+- J5
+- G2
+- I10
+- H5
+- G5
+- F5
+- I5
+- C2
+- E2
+- J2
+- B7
+- A1
+- F4
+- G10
+- F1
+- A9
+- B5
+- A5
+- C1
+- C10
+- B10
+- A10
+- D10
+- E10
+- F10
+- D3
+- D6
+- C6
+- B6
+- E6
+- F6
+- E9
+- H7
+- F2
+- D5
+- I6
+- H4
+- J8
+- C7
+- E3
+- B1
+:winner: Commodore Cox

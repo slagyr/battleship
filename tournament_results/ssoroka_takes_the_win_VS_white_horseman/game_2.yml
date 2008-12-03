@@ -1,0 +1,127 @@
+--- 
+:player1: ssoroka takes the win
+:player1_placements: 
+  :patrolship: I3 horizontal
+  :carrier: G1 horizontal
+  :battleship: F8 vertical
+  :destroyer: C5 vertical
+  :submarine: B7 horizontal
+:disqualification_reason: 
+:player2_placements: 
+  :patrolship: E4 vertical
+  :carrier: C7 vertical
+  :battleship: J2 horizontal
+  :destroyer: F8 vertical
+  :submarine: D10 vertical
+:player2: White Horseman
+:player1_targets: 
+- D4
+- D9
+- J10
+- B3
+- G2
+- J7
+- C1
+- H10
+- J5
+- J4
+- J3
+- J2
+- E7
+- D7
+- C7
+- F7
+- G7
+- A4
+- F5
+- H8
+- I8
+- H7
+- G8
+- F8
+- A7
+- A2
+- E1
+- A10
+- G4
+- E10
+- F10
+- G10
+- D10
+- I1
+- F3
+- B6
+- D2
+- I6
+- B9
+- H5
+- C5
+- H3
+- F1
+- I9
+- C3
+- H1
+- B8
+- E3
+- A5
+- D6
+- B1
+- I4
+- C10
+- E5
+:player2_targets: 
+- E5
+- E6
+- F5
+- E4
+- D5
+- C5
+- G7
+- G3
+- F3
+- G4
+- G2
+- G5
+- G6
+- G1
+- F8
+- E8
+- F9
+- G8
+- H8
+- I8
+- C8
+- B6
+- D2
+- D7
+- B3
+- I5
+- B9
+- C9
+- B8
+- B10
+- B7
+- I2
+- E2
+- A2
+- H4
+- E10
+- J3
+- I6
+- C2
+- H10
+- A4
+- C4
+- J7
+- D3
+- D9
+- J9
+- B1
+- I9
+- A8
+- E1
+- H1
+- A6
+- I4
+- I3
+:winner: White Horseman

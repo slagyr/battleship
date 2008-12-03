@@ -1,0 +1,83 @@
+--- 
+:player1: Rear Admiral Randy
+:player1_placements: 
+  :patrolship: D8 horizontal
+  :carrier: F10 vertical
+  :battleship: G8 vertical
+  :destroyer: G1 horizontal
+  :submarine: A9 vertical
+:disqualification_reason: "The player targeted an invalid sector.  Invalid coordinates: 1."
+:player2_placements: 
+  :patrolship: F7 vertical
+  :carrier: J1 horizontal
+  :battleship: E6 vertical
+  :destroyer: D6 horizontal
+  :submarine: F5 vertical
+:player2: Ensign Erratic
+:player1_targets: 
+- I5
+- A5
+- A4
+- I4
+- F6
+- H7
+- D9
+- F4
+- C10
+- C4
+- J8
+- D8
+- F10
+- E10
+- H6
+- J3
+- C7
+- H1
+- G4
+- F2
+- D10
+- B4
+- E6
+- H8
+- E3
+- J6
+- G8
+- G10
+- A6
+- E5
+- F5
+- E7
+:player2_targets: 
+- J3
+- I8
+- I7
+- I9
+- H8
+- G8
+- F8
+- J8
+- G4
+- D7
+- A2
+- C10
+- C8
+- H5
+- H6
+- D1
+- E1
+- B6
+- I5
+- F1
+- G1
+- G2
+- G3
+- B4
+- J2
+- B2
+- J1
+- J10
+- J4
+- J5
+- I1
+- "1"
+:winner: Rear Admiral Randy

@@ -1,0 +1,103 @@
+--- 
+:player1: Rear Admiral Randy
+:player1_placements: 
+  :patrolship: J5 horizontal
+  :carrier: D5 horizontal
+  :battleship: H5 horizontal
+  :destroyer: D4 vertical
+  :submarine: H1 vertical
+:disqualification_reason: 
+:player2_placements: 
+  :patrolship: F7 horizontal
+  :carrier: C1 horizontal
+  :battleship: A2 horizontal
+  :destroyer: D6 horizontal
+  :submarine: G3 horizontal
+:player2: USS Monte Carlo
+:player1_targets: 
+- C9
+- B7
+- G8
+- I6
+- F1
+- I8
+- E5
+- D4
+- C3
+- F10
+- G10
+- J8
+- J4
+- F3
+- H7
+- D10
+- J9
+- A3
+- A9
+- J6
+- J5
+- A10
+- F5
+- C1
+- B3
+- A6
+- J3
+- H10
+- H6
+- C7
+- G5
+- A7
+- B9
+- H9
+- G6
+- F9
+- E4
+- G1
+- I3
+- E1
+- A1
+- H2
+:player2_targets: 
+- J3
+- C4
+- D9
+- E9
+- C9
+- D8
+- D7
+- D6
+- D5
+- F8
+- G1
+- J5
+- I5
+- J4
+- J6
+- A7
+- B10
+- E3
+- F4
+- E4
+- D4
+- G5
+- H6
+- H5
+- H4
+- H7
+- H8
+- A1
+- G7
+- J8
+- B4
+- C7
+- F10
+- G3
+- I9
+- B2
+- C3
+- E7
+- I1
+- I2
+- J1
+- H1
+:winner: USS Monte Carlo

@@ -1,0 +1,94 @@
+--- 
+:player1: White Horseman
+:player1_placements: 
+  :patrolship: D5 horizontal
+  :carrier: B10 vertical
+  :battleship: J7 horizontal
+  :destroyer: F7 vertical
+  :submarine: A2 vertical
+:disqualification_reason: 
+:player2_placements: 
+  :patrolship: B7 vertical
+  :carrier: B10 vertical
+  :battleship: C5 vertical
+  :destroyer: G6 vertical
+  :submarine: F1 vertical
+:player2: Ensign Erratic
+:player1_targets: 
+- E5
+- E6
+- F5
+- D5
+- G5
+- C5
+- H7
+- F8
+- H4
+- I6
+- I5
+- H6
+- G6
+- B4
+- E3
+- F2
+- E9
+- C7
+- D7
+- C8
+- B7
+- A6
+- E10
+- D10
+- F10
+- G10
+- C10
+- B10
+- C2
+- D1
+- H3
+- H9
+- A3
+- I8
+- G1
+- H1
+- I1
+- F1
+:player2_targets: 
+- C4
+- D5
+- D4
+- D6
+- H5
+- H3
+- H10
+- H6
+- E8
+- B9
+- D2
+- J2
+- H1
+- A1
+- D7
+- B2
+- B1
+- B3
+- A2
+- C2
+- I3
+- A5
+- G6
+- E7
+- C3
+- B7
+- J5
+- G8
+- A8
+- G1
+- H9
+- I4
+- D1
+- E6
+- B4
+- E9
+- G7
+:winner: White Horseman

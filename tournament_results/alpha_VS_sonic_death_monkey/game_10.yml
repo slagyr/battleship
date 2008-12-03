@@ -1,0 +1,108 @@
+--- 
+:player1: alpha
+:player1_placements: 
+  :patrolship: D7 horizontal
+  :carrier: I2 horizontal
+  :battleship: F4 horizontal
+  :destroyer: G9 vertical
+  :submarine: C9 vertical
+:disqualification_reason: 
+:player2_placements: 
+  :patrolship: E1 horizontal
+  :carrier: A1 horizontal
+  :battleship: B1 horizontal
+  :destroyer: C1 horizontal
+  :submarine: D1 horizontal
+:player2: Sonic Death Monkey
+:player1_targets: 
+- J3
+- E8
+- I9
+- E3
+- D1
+- D2
+- D3
+- D9
+- I6
+- D5
+- H5
+- C4
+- F3
+- A7
+- A9
+- F4
+- J1
+- G5
+- C6
+- C5
+- E7
+- I7
+- H1
+- B1
+- B2
+- B3
+- B4
+- F8
+- I3
+- E1
+- E2
+- D8
+- B9
+- A3
+- A4
+- A5
+- A6
+- A2
+- A1
+- J4
+- D6
+- I2
+- C2
+- C3
+- C1
+:player2_targets: 
+- A1
+- A2
+- A3
+- A4
+- A5
+- A6
+- A7
+- A8
+- A9
+- A10
+- B1
+- B2
+- B3
+- B4
+- B5
+- B6
+- B7
+- B8
+- B9
+- B10
+- C1
+- C2
+- C3
+- C4
+- C5
+- C6
+- C7
+- C8
+- C9
+- C10
+- D1
+- D2
+- D3
+- D4
+- D5
+- D6
+- D7
+- D8
+- D9
+- D10
+- E1
+- E2
+- E3
+- E4
+:winner: alpha

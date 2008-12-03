@@ -1,0 +1,95 @@
+--- 
+:player1: interferoman
+:player1_placements: 
+  :patrolship: I2 horizontal
+  :carrier: F6 horizontal
+  :battleship: C4 vertical
+  :destroyer: H5 vertical
+  :submarine: A6 vertical
+:disqualification_reason: 
+:player2_placements: 
+  :patrolship: C2 vertical
+  :carrier: A3 vertical
+  :battleship: H1 horizontal
+  :destroyer: I5 horizontal
+  :submarine: G9 vertical
+:player2: White Horseman
+:player1_targets: 
+- H1
+- H2
+- H3
+- H4
+- J9
+- C6
+- F7
+- E2
+- A2
+- F3
+- C10
+- B9
+- D9
+- A10
+- D5
+- I6
+- I7
+- I8
+- I5
+- H5
+- D7
+- C4
+- B1
+- I4
+- A4
+- E10
+- J3
+- I2
+- G6
+- H9
+- H10
+- I9
+- H8
+- G9
+- B3
+- B4
+- C3
+- D3
+:player2_targets: 
+- E5
+- F6
+- F7
+- F8
+- F5
+- G6
+- F9
+- E6
+- E9
+- F10
+- D4
+- D3
+- C4
+- E4
+- F4
+- G3
+- C8
+- I8
+- H7
+- B5
+- H4
+- D7
+- I5
+- I6
+- H5
+- J5
+- F2
+- C2
+- I2
+- H2
+- I3
+- A7
+- E1
+- B9
+- A3
+- B6
+- C6
+- A6
+:winner: White Horseman

@@ -1,0 +1,117 @@
+--- 
+:player1: interferoman
+:player1_placements: 
+  :patrolship: H1 vertical
+  :carrier: F3 horizontal
+  :battleship: D7 horizontal
+  :destroyer: E5 horizontal
+  :submarine: G8 horizontal
+:disqualification_reason: 
+:player2_placements: 
+  :patrolship: D2 vertical
+  :carrier: C1 horizontal
+  :battleship: C6 vertical
+  :destroyer: I5 horizontal
+  :submarine: G4 vertical
+:player2: USS Monte Carlo
+:player1_targets: 
+- H9
+- F7
+- A2
+- E10
+- B5
+- A4
+- D5
+- C8
+- C2
+- C3
+- C4
+- C5
+- C6
+- C7
+- C1
+- D6
+- E6
+- F6
+- J9
+- F1
+- I4
+- I5
+- I6
+- I7
+- J4
+- I3
+- H4
+- G4
+- G2
+- F5
+- G10
+- J1
+- D1
+- I10
+- B7
+- C10
+- G6
+- J7
+- G8
+- F3
+- H7
+- B3
+- D9
+- A6
+- H5
+- I2
+- E8
+- E2
+- E3
+:player2_targets: 
+- J10
+- E1
+- H4
+- A5
+- B6
+- F2
+- I5
+- J6
+- D7
+- E7
+- F7
+- G7
+- C7
+- D6
+- D8
+- D9
+- D10
+- E8
+- E6
+- E5
+- F8
+- F6
+- F5
+- F4
+- F3
+- B7
+- C8
+- A9
+- D1
+- G5
+- I7
+- B10
+- C2
+- D4
+- I8
+- A10
+- C1
+- I6
+- H10
+- J1
+- C3
+- G9
+- H9
+- F9
+- G8
+- G10
+- H1
+- H2
+- I1
+:winner: USS Monte Carlo

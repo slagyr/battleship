@@ -8,11 +8,13 @@ describe Battleship::Match do
 
   before do
     Battleship::Server.stub!(:submit_game)
-    @bill = Battleship::PlayerProfile.new(:name => "Bill", :description => "blah", :author => "Author")
+    @bill = Battleship::PlayerProfile.new(:name => "Bill", :description => "blah", :author => "Author", :filename => "bill")
     @bill.stub!(:create_player).and_return(Battleship::SimplePlayer.new)
-    @fred = Battleship::PlayerProfile.new(:name => "Fred", :description => "blah", :author => "Author")
+    @fred = Battleship::PlayerProfile.new(:name => "Fred", :description => "blah", :author => "Author", :filename => "fred")
     @fred.stub!(:create_player).and_return(Battleship::SimplePlayer.new)
     @ui = Battleship::MockBattleStations.new
+
+    @match = Battleship::Match.new(1, @bill, @fred, @ui)
   end
 
   it "should get constructed" do
@@ -25,14 +27,21 @@ describe Battleship::Match do
   end
 
   it "should play match of 1 game" do
-    match = Battleship::Match.new(1, @bill, @fred, @ui)
-    match.begin
+    @match.begin
 
     @ui.was_reset.should == true
     @ui.stats.should == "1 : 0"
-    match.winner.should == @bill
+    @match.winner.should == @bill
   end
 
+  it "should record games" do
+    @match.begin
 
+    @match.games.length.should == 1
+  end
+
+  it "should have a directory name" do
+    @match.dir_name.should == "bill_VS_fred"
+  end
 
 end

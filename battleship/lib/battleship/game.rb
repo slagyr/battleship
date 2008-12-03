@@ -11,17 +11,26 @@ module Battleship
     attr_reader :fleet1, :fleet2
     attr_reader :grid1, :grid2
     attr_reader :winner, :disqualification_reason
+    attr_accessor :max_move_duration
+    attr_reader :player1_placements, :player2_placements
+    attr_reader :player1_targets, :player2_targets
 
     def initialize(player1_name, player1, war_room1, player2_name, player2, war_room2)
+      @max_move_duration = 5
+
       @player1_name = player1_name
       @player1 = player1
       @war_room1 = war_room1
+      @player1_placements = {}
+      @player1_targets = []
       @grid1 = Grid.new(@war_room1.sectors)
       @fleet1 = create_fleet
 
       @player2_name = player2_name
       @player2 = player2
       @war_room2 = war_room2
+      @player2_placements = {}
+      @player2_targets = []
       @grid2 = Grid.new(@war_room2.sectors)
       @fleet2 = create_fleet
 
@@ -34,8 +43,8 @@ module Battleship
       handle_human_players
       @player1.new_game(@player2_name)
       @player2.new_game(@player1_name)
-      place_ships_for(@fleet1, @grid1, @player1)
-      place_ships_for(@fleet2, @grid2, @player2)
+      place_ships_for(@fleet1, @grid1, @player1, @player1_placements)
+      place_ships_for(@fleet2, @grid2, @player2, @player2_placements)
     end
 
     def play
@@ -51,15 +60,41 @@ module Battleship
       return @winner == @player1
     end
 
+    def to_hash
+      hash = {}
+      hash[:player1] = @player1_name
+      hash[:player2] = @player2_name
+      hash[:winner] = winners_name 
+      hash[:disqualification_reason] = @disqualification_reason
+      hash[:player1_placements] = @player1_placements
+      hash[:player2_placements] = @player2_placements
+      hash[:player1_targets] = @player1_targets
+      hash[:player2_targets] = @player2_targets
+      return hash
+    end
+
     private ###############################################
 
     def play_turn
-      target = @current_attacker.next_target
+      target = get_next_target
+      return if target.nil?
       begin
+        @target_list << target
         process_target(target)
       rescue BattleshipException => e
         disqualify(@current_attacker, "The player targeted an invalid sector.  #{e.message}.")
       end
+    end
+
+    def get_next_target
+      @target = nil
+      thread = Thread.new { @target = @current_attacker.next_target }
+      result = thread.join(@max_move_duration)
+      if result.nil?
+        thread.kill
+        disqualify(@current_attacker, "The player took too long to respond") if result.nil?
+      end
+      return @target
     end
 
     def process_target(target)
@@ -96,11 +131,13 @@ module Battleship
         @attacked_grid = @grid2
         @attacked_fleet = @fleet2
         @attacked_war_room = @war_room2
+        @target_list = @player1_targets
       else
         @attacked_player = @player1
         @attacked_grid = @grid1
         @attacked_fleet = @fleet1
         @attacked_war_room = @war_room1
+        @target_list = @player2_targets
       end
     end
 
@@ -140,13 +177,25 @@ module Battleship
       @disqualification_reason = reason
     end
 
-    def place_ships_for(fleet, grid, player)
+    def place_ships_for(fleet, grid, player, placements)
+      thread = Thread.new do
+        placements[:carrier] = player.carrier_placement
+        placements[:battleship] = player.battleship_placement
+        placements[:destroyer] = player.destroyer_placement
+        placements[:submarine] = player.submarine_placement
+        placements[:patrolship] = player.patrolship_placement
+      end
+      result = thread.join(@max_move_duration * 5)
+      if result.nil?
+        thread.kill
+        disqualify(player, "The player took too long to respond")
+        return
+      end
+
       begin
-        grid.place(fleet[:carrier], player.carrier_placement)
-        grid.place(fleet[:battleship], player.battleship_placement)
-        grid.place(fleet[:destroyer], player.destroyer_placement)
-        grid.place(fleet[:submarine], player.submarine_placement)
-        grid.place(fleet[:patrolship], player.patrolship_placement)
+        [:carrier, :battleship, :destroyer, :submarine, :patrolship].each do |ship_type|
+          grid.place(fleet[ship_type], placements[ship_type])
+        end
       rescue BattleshipException => e
         disqualify(player, "The player made an invalid ship placement.  #{e.message}.")
       end
@@ -170,6 +219,15 @@ module Battleship
       if @player2.class == HumanPlayer
         @player2.my_war_room = @war_room2
         @player2.opponent_war_room = @war_room1
+      end
+    end
+
+    def winners_name
+      return nil if @winner.nil?
+      if player1_winner?
+        return player1_name
+      else
+        return player2_name
       end
     end
 

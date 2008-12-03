@@ -1,0 +1,105 @@
+--- 
+:player1: Rear Admiral Randy
+:player1_placements: 
+  :patrolship: J5 horizontal
+  :carrier: G5 horizontal
+  :battleship: H7 horizontal
+  :destroyer: F3 horizontal
+  :submarine: G1 vertical
+:disqualification_reason: 
+:player2_placements: 
+  :patrolship: A2 vertical
+  :carrier: C4 horizontal
+  :battleship: A5 horizontal
+  :destroyer: B7 horizontal
+  :submarine: H2 horizontal
+:player2: interferoman
+:player1_targets: 
+- D7
+- G8
+- I1
+- E6
+- G7
+- H8
+- G1
+- G5
+- H10
+- A4
+- B7
+- H4
+- H3
+- B10
+- E9
+- I6
+- G9
+- E3
+- J3
+- I3
+- G6
+- F6
+- F1
+- E1
+- I7
+- C1
+- J7
+- B3
+- A2
+- C4
+- B2
+- A10
+- B6
+- A9
+- H1
+- A1
+- D6
+- D3
+- B4
+- E4
+- A3
+- G2
+- D2
+:player2_targets: 
+- F3
+- F4
+- F5
+- J7
+- A6
+- C6
+- E4
+- C10
+- E10
+- I10
+- F7
+- C8
+- F1
+- G10
+- E8
+- H1
+- H2
+- I1
+- J1
+- G1
+- J3
+- F9
+- J5
+- J6
+- A4
+- F6
+- D5
+- B6
+- H9
+- H10
+- H8
+- H7
+- D9
+- E2
+- I9
+- I4
+- C1
+- E7
+- G8
+- G9
+- G7
+- G6
+- G5
+:winner: interferoman

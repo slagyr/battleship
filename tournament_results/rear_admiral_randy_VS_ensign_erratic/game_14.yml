@@ -1,0 +1,95 @@
+--- 
+:player1: Rear Admiral Randy
+:player1_placements: 
+  :patrolship: D10 vertical
+  :carrier: B2 vertical
+  :battleship: D7 vertical
+  :destroyer: A6 horizontal
+  :submarine: I2 horizontal
+:disqualification_reason: The player targeted an invalid sector.  Sector G11 has already been attacked.
+:player2_placements: 
+  :patrolship: H4 horizontal
+  :carrier: E6 horizontal
+  :battleship: G1 horizontal
+  :destroyer: A4 vertical
+  :submarine: A6 horizontal
+:player2: Ensign Erratic
+:player1_targets: 
+- B9
+- H2
+- H6
+- G9
+- G3
+- J9
+- C3
+- J6
+- J5
+- H8
+- G5
+- H3
+- E9
+- E2
+- B5
+- A5
+- E4
+- H10
+- C8
+- B10
+- D6
+- B6
+- F7
+- E6
+- I9
+- C4
+- H9
+- B1
+- J3
+- F8
+- D10
+- I4
+- H5
+- G8
+- G10
+- I2
+- A7
+- J1
+:player2_targets: 
+- B8
+- I2
+- I1
+- I3
+- I4
+- C5
+- C8
+- C3
+- E6
+- F3
+- F4
+- C7
+- E10
+- E2
+- E1
+- E3
+- D2
+- C2
+- B2
+- A2
+- F2
+- H9
+- I7
+- J2
+- D6
+- G1
+- F9
+- B6
+- G8
+- G2
+- G10
+- C10
+- I6
+- G6
+- J3
+- G7
+- G9
+- G11
+:winner: Rear Admiral Randy

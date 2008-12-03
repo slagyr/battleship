@@ -1,0 +1,88 @@
+--- 
+:player1: Ensign Erratic
+:player1_placements: 
+  :patrolship: B6 vertical
+  :carrier: D6 horizontal
+  :battleship: G2 horizontal
+  :destroyer: H6 vertical
+  :submarine: E9 vertical
+:disqualification_reason: 
+:player2_placements: 
+  :patrolship: E1 horizontal
+  :carrier: A1 horizontal
+  :battleship: B1 horizontal
+  :destroyer: C1 horizontal
+  :submarine: D1 horizontal
+:player2: Sonic Death Monkey
+:player1_targets: 
+- A5
+- A4
+- A3
+- A2
+- A1
+- D1
+- D2
+- D3
+- E4
+- A7
+- H6
+- C1
+- C2
+- C3
+- F1
+- G8
+- F8
+- G2
+- E8
+- E1
+- E2
+- H5
+- J5
+- J8
+- G6
+- D5
+- B9
+- I1
+- G3
+- D7
+- D6
+- B3
+- B2
+- B1
+- B4
+:player2_targets: 
+- A1
+- A2
+- A3
+- A4
+- A5
+- A6
+- A7
+- A8
+- A9
+- A10
+- B1
+- B2
+- B3
+- B4
+- B5
+- B6
+- B7
+- B8
+- B9
+- B10
+- C1
+- C2
+- C3
+- C4
+- C5
+- C6
+- C7
+- C8
+- C9
+- C10
+- D1
+- D2
+- D3
+- D4
+:winner: Ensign Erratic

@@ -1,0 +1,103 @@
+--- 
+:player1: joshua_son_of_nun
+:player1_placements: 
+  :patrolship: E1 horizontal
+  :carrier: I5 horizontal
+  :battleship: A7 horizontal
+  :destroyer: I1 horizontal
+  :submarine: A5 vertical
+:disqualification_reason: 
+:player2_placements: 
+  :patrolship: E8 vertical
+  :carrier: D2 horizontal
+  :battleship: A7 horizontal
+  :destroyer: A3 vertical
+  :submarine: A2 vertical
+:player2: interferoman
+:player1_targets: 
+- G7
+- I6
+- H8
+- F7
+- E5
+- G4
+- I3
+- J1
+- H2
+- C1
+- J2
+- H3
+- J4
+- H5
+- A3
+- A4
+- B3
+- C3
+- C2
+- C4
+- E1
+- F2
+- H1
+- B8
+- D9
+- B10
+- E3
+- F10
+- G8
+- I7
+- H7
+- J8
+- J3
+- A7
+- A8
+- A6
+- A9
+- A10
+- C6
+- J10
+- H6
+- F5
+:player2_targets: 
+- G8
+- H5
+- J3
+- D5
+- A6
+- F1
+- D3
+- H7
+- B1
+- D7
+- I6
+- I7
+- I8
+- I9
+- I10
+- I5
+- B5
+- B6
+- C5
+- B4
+- A5
+- C4
+- H9
+- F7
+- B7
+- A8
+- A9
+- A10
+- A7
+- D9
+- G4
+- I2
+- I3
+- I4
+- I1
+- E6
+- G10
+- J9
+- E2
+- E3
+- F2
+- E1
+:winner: interferoman

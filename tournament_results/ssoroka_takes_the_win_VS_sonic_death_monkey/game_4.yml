@@ -1,0 +1,118 @@
+--- 
+:player1: ssoroka takes the win
+:player1_placements: 
+  :patrolship: I3 horizontal
+  :carrier: G1 horizontal
+  :battleship: F8 vertical
+  :destroyer: C5 vertical
+  :submarine: B7 horizontal
+:disqualification_reason: 
+:player2_placements: 
+  :patrolship: E1 horizontal
+  :carrier: A1 horizontal
+  :battleship: B1 horizontal
+  :destroyer: C1 horizontal
+  :submarine: D1 horizontal
+:player2: Sonic Death Monkey
+:player1_targets: 
+- C10
+- F4
+- C7
+- C1
+- C2
+- C3
+- I9
+- A4
+- A3
+- A5
+- A2
+- A1
+- G5
+- G8
+- A9
+- I7
+- G1
+- D8
+- F6
+- E7
+- D6
+- C5
+- E3
+- H2
+- F9
+- J6
+- I3
+- J10
+- D4
+- J8
+- E1
+- E2
+- J1
+- B10
+- I4
+- A8
+- J5
+- B7
+- F10
+- H7
+- H10
+- F3
+- D1
+- D2
+- D3
+- I2
+- B2
+- B1
+- B3
+- B4
+:player2_targets: 
+- A1
+- A2
+- A3
+- A4
+- A5
+- A6
+- A7
+- A8
+- A9
+- A10
+- B1
+- B2
+- B3
+- B4
+- B5
+- B6
+- B7
+- B8
+- B9
+- B10
+- C1
+- C2
+- C3
+- C4
+- C5
+- C6
+- C7
+- C8
+- C9
+- C10
+- D1
+- D2
+- D3
+- D4
+- D5
+- D6
+- D7
+- D8
+- D9
+- D10
+- E1
+- E2
+- E3
+- E4
+- E5
+- E6
+- E7
+- E8
+- E9
+:winner: ssoroka takes the win

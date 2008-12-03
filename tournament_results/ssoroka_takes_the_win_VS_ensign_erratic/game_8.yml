@@ -1,0 +1,88 @@
+--- 
+:player1: ssoroka takes the win
+:player1_placements: 
+  :patrolship: I3 horizontal
+  :carrier: G1 horizontal
+  :battleship: F8 vertical
+  :destroyer: C5 vertical
+  :submarine: B7 horizontal
+:disqualification_reason: 
+:player2_placements: 
+  :patrolship: E6 vertical
+  :carrier: J6 horizontal
+  :battleship: E1 horizontal
+  :destroyer: C6 horizontal
+  :submarine: F10 vertical
+:player2: Ensign Erratic
+:player1_targets: 
+- H6
+- G2
+- A9
+- F6
+- F7
+- E6
+- G9
+- D2
+- I4
+- A1
+- J2
+- C3
+- I7
+- C7
+- C8
+- C6
+- F10
+- E10
+- G10
+- H10
+- B5
+- H1
+- J8
+- J9
+- J7
+- J10
+- J6
+- B9
+- F5
+- B1
+- D8
+- E4
+- E3
+- E2
+- E1
+:player2_targets: 
+- G2
+- G1
+- G3
+- G4
+- G5
+- E8
+- B7
+- B6
+- B8
+- B9
+- E1
+- D2
+- F8
+- F7
+- F9
+- G8
+- H8
+- I8
+- J3
+- C7
+- E5
+- E4
+- E6
+- D5
+- C5
+- F2
+- B1
+- H4
+- B5
+- J2
+- J9
+- F6
+- H9
+- C1
+:winner: ssoroka takes the win

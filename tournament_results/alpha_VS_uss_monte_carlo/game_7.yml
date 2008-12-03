@@ -1,0 +1,115 @@
+--- 
+:player1: alpha
+:player1_placements: 
+  :patrolship: H1 horizontal
+  :carrier: A2 vertical
+  :battleship: C8 vertical
+  :destroyer: E9 vertical
+  :submarine: J6 horizontal
+:disqualification_reason: 
+:player2_placements: 
+  :patrolship: D10 vertical
+  :carrier: J1 horizontal
+  :battleship: A3 horizontal
+  :destroyer: C4 horizontal
+  :submarine: D6 horizontal
+:player2: USS Monte Carlo
+:player1_targets: 
+- I4
+- B7
+- F6
+- D3
+- A8
+- E1
+- B6
+- I6
+- A1
+- H3
+- J1
+- J2
+- J3
+- J4
+- J5
+- G2
+- J8
+- J7
+- C9
+- G3
+- A2
+- D7
+- D8
+- D9
+- D10
+- E10
+- E8
+- H8
+- F7
+- C8
+- C5
+- C6
+- C7
+- C4
+- B1
+- B9
+- D1
+- F4
+- A7
+- C3
+- G8
+- D5
+- H4
+- I3
+- C1
+- G6
+- I2
+- J9
+:player2_targets: 
+- H7
+- I9
+- J10
+- B1
+- C2
+- B2
+- A2
+- C3
+- C1
+- D2
+- E2
+- I5
+- A6
+- B7
+- C10
+- F2
+- G4
+- D7
+- E9
+- E8
+- E7
+- E10
+- F9
+- G9
+- F8
+- G8
+- D8
+- C8
+- D9
+- G2
+- J3
+- B8
+- G10
+- H1
+- H2
+- B6
+- G3
+- H4
+- I7
+- B10
+- A7
+- E1
+- I3
+- J6
+- I6
+- J5
+- J7
+- J8
+:winner: USS Monte Carlo

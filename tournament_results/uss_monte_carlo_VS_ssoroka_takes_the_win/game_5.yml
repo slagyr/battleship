@@ -1,0 +1,103 @@
+--- 
+:player1: USS Monte Carlo
+:player1_placements: 
+  :patrolship: D2 vertical
+  :carrier: B5 horizontal
+  :battleship: I3 horizontal
+  :destroyer: C6 vertical
+  :submarine: G6 horizontal
+:disqualification_reason: 
+:player2_placements: 
+  :patrolship: I3 horizontal
+  :carrier: G1 horizontal
+  :battleship: F8 vertical
+  :destroyer: C5 vertical
+  :submarine: B7 horizontal
+:player2: ssoroka takes the win
+:player1_targets: 
+- F1
+- G4
+- G3
+- G2
+- G1
+- H4
+- F4
+- G5
+- J6
+- A7
+- D9
+- E10
+- H1
+- J2
+- C5
+- C6
+- C4
+- B5
+- D5
+- E5
+- G6
+- J7
+- A10
+- E1
+- F2
+- I5
+- C1
+- E2
+- H5
+- I8
+- I9
+- I7
+- H8
+- G8
+- F8
+- I3
+- J3
+- H3
+- I2
+- I4
+- J5
+- A8
+:player2_targets: 
+- E7
+- A1
+- F10
+- C6
+- C5
+- C7
+- B6
+- A6
+- D6
+- E6
+- B5
+- B4
+- B7
+- B8
+- B9
+- D2
+- C2
+- D3
+- D1
+- E2
+- H1
+- H5
+- G8
+- G9
+- H8
+- G7
+- G6
+- J4
+- A10
+- F4
+- I2
+- J10
+- I9
+- J3
+- I7
+- J9
+- G2
+- I3
+- H3
+- I4
+- I5
+- I6
+:winner: ssoroka takes the win

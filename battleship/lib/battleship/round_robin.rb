@@ -4,15 +4,10 @@ module Battleship
 
   class RoundRobin
 
-    def self.run(player_hash, ui)
+    def self.run(player_hash, ui, save_dir=nil)
       tourny = RoundRobin.new(player_hash.keys)
-      tourny.rounds.each do |round|
-        player1 = player_hash[round[0]]
-        player2 = player_hash[round[1]]
-        puts "# #{round[0]} vs #{round[1]}"
-        match = Match.new(11, player1, player2, ui)
-        match.begin
-      end
+      tourny.save_dir=(save_dir) unless save_dir.nil?
+      tourny.play(player_hash, ui)
     end
 
     attr_reader :players
@@ -23,6 +18,28 @@ module Battleship
       generate_rounds
       randomize_players
       randamize_rounds
+    end
+
+    def save_dir=(dir)
+      @save_dir = dir
+      Dir.mkdir(@save_dir)
+      rounds_file = File.join(@save_dir, "rounds.txt")
+      rounds_str = ""
+      rounds.each do |round|
+        rounds_str << "#{round[0]} VS #{round[1]}\n"
+      end
+      File.open(rounds_file, "w") { |file| file.write rounds_str }
+    end
+
+    def play(player_hash, ui)
+      rounds.each do |round|
+        player1 = player_hash[round[0]]
+        player2 = player_hash[round[1]]
+        puts "# #{round[0]} vs #{round[1]}"
+        match = Match.new(11, player1, player2, ui)
+        match.begin
+        match.save(@save_dir) if @save_dir
+      end
     end
 
     private ###############################################

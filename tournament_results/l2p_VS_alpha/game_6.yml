@@ -1,0 +1,101 @@
+--- 
+:player1: l2p
+:player1_placements: 
+  :patrolship: E1 horizontal
+  :carrier: A1 horizontal
+  :battleship: B1 horizontal
+  :destroyer: C1 horizontal
+  :submarine: D1 horizontal
+:disqualification_reason: 
+:player2_placements: 
+  :patrolship: A3 vertical
+  :carrier: H1 horizontal
+  :battleship: G6 horizontal
+  :destroyer: B2 vertical
+  :submarine: B1 vertical
+:player2: alpha
+:player1_targets: 
+- A1
+- A2
+- A3
+- A4
+- A5
+- A6
+- A7
+- A8
+- A9
+- A10
+- B1
+- B2
+- B3
+- B4
+- B5
+- B6
+- B7
+- B8
+- B9
+- B10
+- C1
+- C2
+- C3
+- C4
+- C5
+- C6
+- C7
+- C8
+- C9
+- C10
+- D1
+- D2
+- D3
+- D4
+- D5
+- D6
+- D7
+- D8
+- D9
+- D10
+- E1
+:player2_targets: 
+- J9
+- I5
+- B1
+- B2
+- B3
+- B4
+- C1
+- C2
+- C3
+- J3
+- C6
+- D1
+- D2
+- D3
+- D8
+- H8
+- C4
+- B7
+- J2
+- A6
+- F1
+- J5
+- H3
+- I9
+- H4
+- G8
+- G6
+- E1
+- E2
+- B6
+- E6
+- G7
+- H9
+- F7
+- G5
+- B9
+- A1
+- A2
+- A3
+- A4
+- A5
+:winner: alpha

@@ -1,0 +1,138 @@
+--- 
+:player1: interferoman
+:player1_placements: 
+  :patrolship: H5 vertical
+  :carrier: C4 horizontal
+  :battleship: F3 horizontal
+  :destroyer: H1 horizontal
+  :submarine: F8 vertical
+:disqualification_reason: 
+:player2_placements: 
+  :patrolship: E1 horizontal
+  :carrier: A1 horizontal
+  :battleship: B1 horizontal
+  :destroyer: C1 horizontal
+  :submarine: D1 horizontal
+:player2: l2p
+:player1_targets: 
+- A8
+- E8
+- H3
+- F9
+- J9
+- I8
+- J7
+- C6
+- D9
+- G6
+- B1
+- B2
+- B3
+- B4
+- F5
+- J1
+- E10
+- A2
+- A3
+- A4
+- A5
+- A6
+- A1
+- D7
+- I4
+- G8
+- I2
+- G2
+- H9
+- I6
+- D5
+- C10
+- C8
+- F1
+- D1
+- D2
+- D3
+- H5
+- F7
+- C4
+- B7
+- H1
+- J3
+- G4
+- A10
+- F3
+- E6
+- J5
+- B9
+- G10
+- H7
+- B5
+- I10
+- E2
+- E3
+- F2
+- E1
+- C3
+- C2
+- C1
+:player2_targets: 
+- A1
+- A2
+- A3
+- A4
+- A5
+- A6
+- A7
+- A8
+- A9
+- A10
+- B1
+- B2
+- B3
+- B4
+- B5
+- B6
+- B7
+- B8
+- B9
+- B10
+- C1
+- C2
+- C3
+- C4
+- C5
+- C6
+- C7
+- C8
+- C9
+- C10
+- D1
+- D2
+- D3
+- D4
+- D5
+- D6
+- D7
+- D8
+- D9
+- D10
+- E1
+- E2
+- E3
+- E4
+- E5
+- E6
+- E7
+- E8
+- E9
+- E10
+- F1
+- F2
+- F3
+- F4
+- F5
+- F6
+- F7
+- F8
+- F9
+:winner: interferoman

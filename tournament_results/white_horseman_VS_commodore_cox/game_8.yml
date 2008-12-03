@@ -1,0 +1,86 @@
+--- 
+:player1: White Horseman
+:player1_placements: 
+  :patrolship: J4 horizontal
+  :carrier: B10 vertical
+  :battleship: A2 vertical
+  :destroyer: H9 vertical
+  :submarine: E6 horizontal
+:disqualification_reason: 
+:player2_placements: 
+  :patrolship: F10 vertical
+  :carrier: C8 vertical
+  :battleship: A2 vertical
+  :destroyer: E2 vertical
+  :submarine: B7 vertical
+:player2: Commodore Cox
+:player1_targets: 
+- F6
+- E5
+- D7
+- E7
+- D6
+- C7
+- B7
+- G4
+- G8
+- F8
+- E8
+- D8
+- C8
+- C3
+- H5
+- D2
+- E2
+- F2
+- G2
+- D3
+- C2
+- B2
+- A2
+- H3
+- I7
+- B4
+- I2
+- C5
+- I9
+- B9
+- I4
+- G10
+- H10
+- F10
+:player2_targets: 
+- E8
+- D8
+- F8
+- E7
+- E6
+- A6
+- J3
+- F1
+- C1
+- C10
+- D10
+- E10
+- F10
+- G10
+- B10
+- H4
+- G8
+- C8
+- G7
+- D4
+- J6
+- I3
+- A4
+- E3
+- F7
+- G1
+- F6
+- D7
+- B1
+- H1
+- A7
+- D3
+- A8
+:winner: White Horseman

@@ -1,0 +1,73 @@
+--- 
+:player1: White Horseman
+:player1_placements: 
+  :patrolship: F7 horizontal
+  :carrier: E6 vertical
+  :battleship: J3 horizontal
+  :destroyer: A10 vertical
+  :submarine: H10 vertical
+:disqualification_reason: "The player targeted an invalid sector.  Invalid coordinates: 1."
+:player2_placements: 
+  :patrolship: G7 horizontal
+  :carrier: H5 horizontal
+  :battleship: A5 horizontal
+  :destroyer: H2 horizontal
+  :submarine: C8 vertical
+:player2: Ensign Erratic
+:player1_targets: 
+- F5
+- E6
+- D4
+- G7
+- F7
+- G6
+- G8
+- H4
+- H5
+- H6
+- H7
+- H8
+- H9
+- G4
+- H2
+- H3
+- G2
+- J2
+- C7
+- C3
+- D8
+- C8
+- B8
+- E8
+- E1
+- A6
+- A5
+:player2_targets: 
+- G4
+- I6
+- I5
+- I7
+- H6
+- G6
+- F6
+- E6
+- I9
+- E2
+- A8
+- H9
+- I4
+- F9
+- E4
+- J10
+- J2
+- J3
+- J4
+- J5
+- J6
+- I10
+- I2
+- I3
+- H1
+- J1
+- "1"
+:winner: White Horseman

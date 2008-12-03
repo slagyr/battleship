@@ -1,0 +1,69 @@
+--- 
+:player1: Cobra
+:player1_placements: 
+  :patrolship: E1 horizontal
+  :carrier: A1 horizontal
+  :battleship: B1 horizontal
+  :destroyer: C1 horizontal
+  :submarine: D1 horizontal
+:disqualification_reason: 
+:player2_placements: 
+  :patrolship: C1 horizontal
+  :carrier: I5 horizontal
+  :battleship: B6 horizontal
+  :destroyer: C6 horizontal
+  :submarine: D7 horizontal
+:player2: USS Monte Carlo
+:player1_targets: 
+- A1
+- A2
+- A3
+- A4
+- A5
+- A6
+- A7
+- A8
+- A9
+- A10
+- B1
+- B2
+- B3
+- B4
+- B5
+- B6
+- B7
+- B8
+- B9
+- B10
+- C1
+- C2
+- C3
+- C4
+- C5
+:player2_targets: 
+- F3
+- J6
+- A8
+- B9
+- C2
+- D2
+- E2
+- F2
+- B2
+- A2
+- A1
+- C1
+- C3
+- D3
+- D4
+- D1
+- E3
+- E1
+- B3
+- B4
+- B5
+- B1
+- A3
+- A4
+- A5
+:winner: USS Monte Carlo

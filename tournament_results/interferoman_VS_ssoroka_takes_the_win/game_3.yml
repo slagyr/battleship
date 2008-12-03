@@ -1,0 +1,111 @@
+--- 
+:player1: interferoman
+:player1_placements: 
+  :patrolship: B8 horizontal
+  :carrier: C2 vertical
+  :battleship: G3 horizontal
+  :destroyer: D1 vertical
+  :submarine: F7 horizontal
+:disqualification_reason: 
+:player2_placements: 
+  :patrolship: I3 horizontal
+  :carrier: G1 horizontal
+  :battleship: F8 vertical
+  :destroyer: C5 vertical
+  :submarine: B7 horizontal
+:player2: ssoroka takes the win
+:player1_targets: 
+- A8
+- B7
+- B8
+- B9
+- D5
+- D6
+- E5
+- F5
+- C5
+- G6
+- H5
+- E6
+- D9
+- H3
+- E4
+- F9
+- D7
+- F1
+- I2
+- D3
+- J1
+- A4
+- G10
+- G4
+- G5
+- G3
+- G2
+- G1
+- A10
+- F7
+- J7
+- F3
+- B3
+- I6
+- E8
+- J5
+- I4
+- I5
+- J4
+- I3
+- F10
+- H9
+- B10
+- I8
+- I9
+- J8
+:player2_targets: 
+- E9
+- F8
+- G8
+- F7
+- F6
+- F9
+- B4
+- I5
+- G1
+- C10
+- H6
+- G10
+- G4
+- H4
+- G5
+- G3
+- G2
+- G6
+- F2
+- E2
+- D2
+- C2
+- E4
+- I8
+- J4
+- A7
+- B8
+- B9
+- C6
+- J1
+- J10
+- D5
+- B1
+- J7
+- A3
+- I2
+- A10
+- D10
+- H9
+- E8
+- C1
+- A1
+- D3
+- F1
+- E1
+- D1
+:winner: ssoroka takes the win

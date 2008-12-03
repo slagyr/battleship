@@ -1,0 +1,68 @@
+--- 
+:player1: Ensign Erratic
+:player1_placements: 
+  :patrolship: B1 horizontal
+  :carrier: G5 horizontal
+  :battleship: I6 horizontal
+  :destroyer: I1 horizontal
+  :submarine: B7 horizontal
+:disqualification_reason: "The player targeted an invalid sector.  Invalid coordinates: 1."
+:player2_placements: 
+  :patrolship: A10 vertical
+  :carrier: H5 horizontal
+  :battleship: B4 vertical
+  :destroyer: G2 vertical
+  :submarine: B6 horizontal
+:player2: joshua_son_of_nun
+:player1_targets: 
+- J3
+- E2
+- J7
+- C1
+- E6
+- J8
+- I1
+- B6
+- B5
+- B7
+- B8
+- F6
+- I4
+- A5
+- A10
+- A2
+- A3
+- J1
+- B1
+- D1
+- E1
+- F1
+- G1
+- H1
+- "1"
+:player2_targets: 
+- C4
+- D6
+- B7
+- A7
+- B8
+- B6
+- B9
+- F2
+- G6
+- F6
+- G7
+- G5
+- G4
+- G8
+- G9
+- H1
+- E10
+- D9
+- G2
+- C10
+- J4
+- J9
+- E6
+- E1
+:winner: joshua_son_of_nun

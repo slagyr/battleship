@@ -1,0 +1,92 @@
+--- 
+:player1: Ensign Erratic
+:player1_placements: 
+  :patrolship: J5 horizontal
+  :carrier: D4 horizontal
+  :battleship: G5 horizontal
+  :destroyer: D2 vertical
+  :submarine: D10 vertical
+:disqualification_reason: 
+:player2_placements: 
+  :patrolship: E1 horizontal
+  :carrier: A1 horizontal
+  :battleship: B1 horizontal
+  :destroyer: C1 horizontal
+  :submarine: D1 horizontal
+:player2: Cobra
+:player1_targets: 
+- C1
+- C2
+- C3
+- G2
+- C4
+- G10
+- J9
+- D2
+- D1
+- D3
+- H1
+- B5
+- I7
+- F3
+- A7
+- B6
+- C5
+- C10
+- B3
+- B2
+- B1
+- B4
+- C6
+- F6
+- B10
+- I8
+- H10
+- G1
+- A2
+- A1
+- A3
+- A4
+- A5
+- F10
+- D7
+- E1
+- E2
+:player2_targets: 
+- A1
+- A2
+- A3
+- A4
+- A5
+- A6
+- A7
+- A8
+- A9
+- A10
+- B1
+- B2
+- B3
+- B4
+- B5
+- B6
+- B7
+- B8
+- B9
+- B10
+- C1
+- C2
+- C3
+- C4
+- C5
+- C6
+- C7
+- C8
+- C9
+- C10
+- D1
+- D2
+- D3
+- D4
+- D5
+- D6
+:winner: Ensign Erratic

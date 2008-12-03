@@ -1,0 +1,107 @@
+--- 
+:player1: Ensign Erratic
+:player1_placements: 
+  :patrolship: G9 horizontal
+  :carrier: A4 horizontal
+  :battleship: I4 horizontal
+  :destroyer: F1 vertical
+  :submarine: G6 horizontal
+:disqualification_reason: 
+:player2_placements: 
+  :patrolship: I8 horizontal
+  :carrier: C4 horizontal
+  :battleship: J1 horizontal
+  :destroyer: F8 horizontal
+  :submarine: E3 vertical
+:player2: joshua_son_of_nun
+:player1_targets: 
+- G6
+- G8
+- J7
+- D3
+- F6
+- A7
+- I7
+- C7
+- C6
+- C5
+- C4
+- C3
+- C8
+- D5
+- H5
+- F5
+- I5
+- J4
+- J3
+- J2
+- J1
+- G10
+- F9
+- F8
+- F7
+- F10
+- I10
+- G5
+- J5
+- E7
+- A4
+- A6
+- E10
+- F4
+- I4
+- B7
+- E8
+- H4
+- B9
+- H9
+- A1
+- H7
+- A3
+- J8
+:player2_targets: 
+- E5
+- J8
+- D2
+- G9
+- F9
+- G10
+- D6
+- J1
+- A6
+- A7
+- A5
+- A4
+- A3
+- A8
+- H4
+- I8
+- B5
+- G3
+- G7
+- F7
+- G8
+- G6
+- J2
+- F1
+- E1
+- F2
+- G1
+- H1
+- A10
+- I9
+- J9
+- I1
+- E9
+- I2
+- E6
+- B4
+- B3
+- H9
+- H5
+- I6
+- H6
+- I7
+- I5
+- I4
+:winner: joshua_son_of_nun

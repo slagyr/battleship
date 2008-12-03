@@ -1,0 +1,116 @@
+--- 
+:player1: Ensign Erratic
+:player1_placements: 
+  :patrolship: B7 horizontal
+  :carrier: G6 horizontal
+  :battleship: A3 horizontal
+  :destroyer: B5 vertical
+  :submarine: B10 vertical
+:disqualification_reason: 
+:player2_placements: 
+  :patrolship: B8 vertical
+  :carrier: G3 horizontal
+  :battleship: C2 vertical
+  :destroyer: D7 horizontal
+  :submarine: A2 horizontal
+:player2: USS Monte Carlo
+:player1_targets: 
+- C8
+- C7
+- C9
+- B8
+- D3
+- H7
+- B1
+- H1
+- E7
+- E4
+- H8
+- A6
+- J1
+- A2
+- A1
+- A3
+- A4
+- C4
+- G10
+- F5
+- B4
+- F4
+- G8
+- D5
+- A7
+- J3
+- I4
+- D10
+- G5
+- G4
+- G3
+- G2
+- G6
+- G7
+- H6
+- D4
+- D2
+- D1
+- D6
+- C2
+- B2
+- E2
+- F2
+- F7
+- A5
+- J4
+- D7
+- D8
+- D9
+:player2_targets: 
+- G1
+- I4
+- A9
+- B1
+- C2
+- D5
+- E5
+- C5
+- B5
+- F6
+- A1
+- B2
+- F7
+- G2
+- I6
+- C1
+- D2
+- I2
+- J4
+- A5
+- A6
+- A7
+- A4
+- A3
+- C6
+- D7
+- E9
+- J2
+- C8
+- E1
+- F2
+- D1
+- I3
+- D6
+- E8
+- J1
+- E6
+- H8
+- I10
+- B3
+- E3
+- G6
+- G7
+- G8
+- G9
+- G10
+- H3
+- I5
+:winner: Ensign Erratic

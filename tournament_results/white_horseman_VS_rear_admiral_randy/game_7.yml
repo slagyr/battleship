@@ -1,0 +1,124 @@
+--- 
+:player1: White Horseman
+:player1_placements: 
+  :patrolship: B2 horizontal
+  :carrier: F2 vertical
+  :battleship: C5 vertical
+  :destroyer: A8 horizontal
+  :submarine: J7 horizontal
+:disqualification_reason: 
+:player2_placements: 
+  :patrolship: I4 horizontal
+  :carrier: B9 vertical
+  :battleship: G5 horizontal
+  :destroyer: A8 horizontal
+  :submarine: H7 horizontal
+:player2: Rear Admiral Randy
+:player1_targets: 
+- F5
+- E6
+- D7
+- G4
+- H7
+- H6
+- G7
+- I7
+- G8
+- H8
+- F8
+- G9
+- H9
+- G6
+- G5
+- C4
+- E3
+- D2
+- B5
+- C9
+- C8
+- B9
+- D9
+- E9
+- F9
+- H3
+- I4
+- I5
+- B3
+- G1
+- A6
+- F2
+- C1
+- J8
+- J5
+- E10
+- A2
+- J2
+- I10
+- D4
+- A7
+- C10
+- C6
+- I2
+- A5
+- H1
+- B6
+- C5
+- E1
+- H10
+- A8
+- A10
+- A9
+:player2_targets: 
+- D1
+- A7
+- F2
+- D9
+- D7
+- E2
+- G3
+- E4
+- C3
+- H2
+- G7
+- D10
+- B8
+- F9
+- F10
+- J9
+- I1
+- A2
+- D4
+- H5
+- A4
+- D5
+- G9
+- D8
+- H9
+- B9
+- G8
+- D6
+- I10
+- B2
+- J1
+- I6
+- E6
+- C4
+- I3
+- I8
+- H6
+- F4
+- I9
+- F3
+- G5
+- C5
+- J5
+- H4
+- G10
+- D3
+- E9
+- A5
+- A1
+- F6
+- C6
+- G4
+:winner: White Horseman

@@ -1,0 +1,180 @@
+--- 
+:player1: Commodore Cox
+:player1_placements: 
+  :patrolship: A6 horizontal
+  :carrier: B4 horizontal
+  :battleship: F1 horizontal
+  :destroyer: J4 horizontal
+  :submarine: F6 horizontal
+:disqualification_reason: 
+:player2_placements: 
+  :patrolship: D8 horizontal
+  :carrier: E2 vertical
+  :battleship: B4 horizontal
+  :destroyer: B1 vertical
+  :submarine: I8 horizontal
+:player2: Rear Admiral Randy
+:player1_targets: 
+- A4
+- C5
+- E7
+- J10
+- C2
+- C1
+- D1
+- E1
+- B1
+- E8
+- H6
+- A9
+- J9
+- A6
+- J2
+- B10
+- H1
+- C6
+- A3
+- A8
+- C10
+- E9
+- G6
+- I1
+- J7
+- F2
+- F1
+- F3
+- G2
+- H2
+- I2
+- E2
+- J4
+- J8
+- B4
+- C4
+- B5
+- B6
+- B7
+- G8
+- D4
+- I7
+- C7
+- D7
+- A7
+- G7
+- I4
+- D3
+- I5
+- A5
+- G10
+- D10
+- E6
+- E3
+- B9
+- G9
+- I6
+- H5
+- E10
+- B3
+- I9
+- I8
+- I10
+- J6
+- D5
+- F5
+- J5
+- F10
+- A1
+- F7
+- C3
+- G1
+- G5
+- H9
+- I3
+- H8
+- J1
+- C9
+- D8
+- C8
+- D9
+:player2_targets: 
+- B3
+- I5
+- E4
+- E10
+- E5
+- A6
+- G5
+- J6
+- C5
+- E3
+- B2
+- F8
+- J1
+- D7
+- C10
+- A1
+- E6
+- G6
+- F7
+- D5
+- C1
+- F2
+- F9
+- J2
+- G4
+- I8
+- F4
+- E9
+- B10
+- B7
+- H1
+- A2
+- F3
+- I4
+- F5
+- C3
+- A7
+- A10
+- C2
+- A3
+- H8
+- G2
+- B6
+- I6
+- G10
+- D6
+- D1
+- J10
+- D10
+- I7
+- F6
+- H2
+- C6
+- C7
+- E7
+- G7
+- C4
+- D3
+- C9
+- D2
+- H10
+- J8
+- H3
+- H7
+- G1
+- H6
+- B9
+- A9
+- G3
+- G8
+- F1
+- B1
+- I9
+- F10
+- E1
+- A4
+- I2
+- I1
+- E8
+- J7
+:winner: Commodore Cox

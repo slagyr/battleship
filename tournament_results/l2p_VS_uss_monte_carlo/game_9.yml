@@ -1,0 +1,79 @@
+--- 
+:player1: l2p
+:player1_placements: 
+  :patrolship: E1 horizontal
+  :carrier: A1 horizontal
+  :battleship: B1 horizontal
+  :destroyer: C1 horizontal
+  :submarine: D1 horizontal
+:disqualification_reason: 
+:player2_placements: 
+  :patrolship: A7 vertical
+  :carrier: E1 horizontal
+  :battleship: C5 horizontal
+  :destroyer: F7 vertical
+  :submarine: F2 vertical
+:player2: USS Monte Carlo
+:player1_targets: 
+- A1
+- A2
+- A3
+- A4
+- A5
+- A6
+- A7
+- A8
+- A9
+- A10
+- B1
+- B2
+- B3
+- B4
+- B5
+- B6
+- B7
+- B8
+- B9
+- B10
+- C1
+- C2
+- C3
+- C4
+- C5
+- C6
+- C7
+- C8
+- C9
+- C10
+:player2_targets: 
+- E2
+- E3
+- E1
+- F4
+- A5
+- A6
+- A4
+- A3
+- A2
+- A1
+- D4
+- E5
+- H6
+- B7
+- C8
+- F1
+- I2
+- B5
+- G9
+- H10
+- B4
+- B3
+- B2
+- B1
+- C2
+- C1
+- D2
+- C3
+- D3
+- D1
+:winner: USS Monte Carlo

@@ -1,0 +1,115 @@
+--- 
+:player1: Rear Admiral Randy
+:player1_placements: 
+  :patrolship: I2 horizontal
+  :carrier: D4 horizontal
+  :battleship: A2 horizontal
+  :destroyer: H7 horizontal
+  :submarine: B8 horizontal
+:disqualification_reason: 
+:player2_placements: 
+  :patrolship: I4 horizontal
+  :carrier: C6 vertical
+  :battleship: D1 vertical
+  :destroyer: F8 horizontal
+  :submarine: F3 vertical
+:player2: Ensign Erratic
+:player1_targets: 
+- D2
+- I3
+- A4
+- F4
+- E3
+- H5
+- D10
+- G1
+- E6
+- C4
+- E7
+- I1
+- J10
+- B9
+- A9
+- D1
+- A6
+- D6
+- F8
+- G9
+- C5
+- A1
+- H9
+- G10
+- G2
+- J9
+- F6
+- E5
+- D3
+- F1
+- F10
+- J5
+- A5
+- G3
+- F9
+- J2
+- H2
+- H8
+- H10
+- D4
+- D5
+- B8
+- B5
+- J7
+- E10
+- C10
+- D9
+- B4
+:player2_targets: 
+- H1
+- B3
+- G5
+- B1
+- B9
+- B8
+- B7
+- B10
+- I6
+- A7
+- C5
+- C9
+- E5
+- H8
+- H7
+- H6
+- H9
+- F2
+- C4
+- I9
+- D1
+- G7
+- E3
+- E9
+- I8
+- D6
+- D5
+- D4
+- D3
+- D7
+- D8
+- D9
+- F5
+- F8
+- G1
+- H5
+- E10
+- E1
+- C1
+- J2
+- E2
+- I2
+- I1
+- I3
+- A5
+- A4
+- A3
+- A2
+:winner: Ensign Erratic

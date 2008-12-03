@@ -1,0 +1,104 @@
+--- 
+:player1: Commodore Cox
+:player1_placements: 
+  :patrolship: C10 vertical
+  :carrier: C3 horizontal
+  :battleship: F4 horizontal
+  :destroyer: H2 horizontal
+  :submarine: A5 horizontal
+:disqualification_reason: 
+:player2_placements: 
+  :patrolship: I3 horizontal
+  :carrier: G1 horizontal
+  :battleship: F8 vertical
+  :destroyer: C5 vertical
+  :submarine: B7 horizontal
+:player2: ssoroka takes the win
+:player1_targets: 
+- J5
+- C5
+- C4
+- C6
+- D5
+- E5
+- G9
+- C1
+- B7
+- C7
+- A7
+- B6
+- B8
+- B9
+- A8
+- G3
+- F3
+- H3
+- G4
+- G5
+- G6
+- G2
+- G1
+- F7
+- F5
+- D3
+- I6
+- E7
+- J3
+- H6
+- J7
+- F8
+- G8
+- H8
+- I8
+- F10
+- E2
+- A4
+- B3
+- J10
+- F4
+- I4
+- I3
+:player2_targets: 
+- F9
+- J1
+- A1
+- D4
+- C5
+- B5
+- C6
+- C7
+- C8
+- C4
+- C3
+- G7
+- G4
+- J9
+- E10
+- E3
+- J4
+- A10
+- G10
+- D9
+- B9
+- A3
+- E8
+- G1
+- E1
+- I3
+- E6
+- I6
+- B2
+- D2
+- H5
+- I8
+- C10
+- B10
+- D10
+- H2
+- I2
+- H3
+- H1
+- H4
+- F5
+- F6
+:winner: Commodore Cox

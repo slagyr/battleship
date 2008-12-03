@@ -1,0 +1,93 @@
+--- 
+:player1: Rear Admiral Randy
+:player1_placements: 
+  :patrolship: H3 horizontal
+  :carrier: F1 vertical
+  :battleship: G6 vertical
+  :destroyer: A8 vertical
+  :submarine: C1 vertical
+:disqualification_reason: 
+:player2_placements: 
+  :patrolship: I3 horizontal
+  :carrier: G1 horizontal
+  :battleship: F8 vertical
+  :destroyer: C5 vertical
+  :submarine: B7 horizontal
+:player2: ssoroka takes the win
+:player1_targets: 
+- D4
+- B1
+- F6
+- B9
+- C7
+- I5
+- F7
+- C2
+- E4
+- G1
+- H1
+- E8
+- G3
+- G4
+- J9
+- C6
+- F3
+- C10
+- D6
+- E6
+- A3
+- C4
+- I9
+- D9
+- C3
+- F8
+- A7
+- H4
+- F1
+- D5
+- I1
+- J6
+- G2
+- B10
+- A1
+- J8
+- D8
+:player2_targets: 
+- G5
+- D5
+- A4
+- I4
+- A2
+- I9
+- D2
+- H3
+- H2
+- G3
+- I3
+- H4
+- H8
+- E4
+- C10
+- J5
+- B8
+- A8
+- C8
+- F9
+- E1
+- F1
+- D1
+- C1
+- G1
+- H1
+- I1
+- J1
+- B3
+- J10
+- B7
+- B9
+- J6
+- J7
+- I6
+- H6
+- G6
+:winner: ssoroka takes the win

@@ -1,0 +1,114 @@
+--- 
+:player1: interferoman
+:player1_placements: 
+  :patrolship: G4 horizontal
+  :carrier: A5 vertical
+  :battleship: F4 horizontal
+  :destroyer: H5 horizontal
+  :submarine: E6 horizontal
+:disqualification_reason: 
+:player2_placements: 
+  :patrolship: E1 horizontal
+  :carrier: A1 horizontal
+  :battleship: B1 horizontal
+  :destroyer: C1 horizontal
+  :submarine: D1 horizontal
+:player2: Sonic Death Monkey
+:player1_targets: 
+- A10
+- E6
+- H9
+- I6
+- C6
+- J9
+- E4
+- G8
+- D9
+- I8
+- F5
+- I4
+- E8
+- H3
+- J1
+- J3
+- C2
+- C3
+- C4
+- C1
+- J5
+- F7
+- H1
+- B9
+- F1
+- E10
+- I10
+- E2
+- E3
+- F2
+- E1
+- G7
+- A7
+- B2
+- B3
+- B4
+- B5
+- B1
+- D1
+- D2
+- D3
+- D4
+- A5
+- A6
+- A4
+- A3
+- A2
+- A1
+:player2_targets: 
+- A1
+- A2
+- A3
+- A4
+- A5
+- A6
+- A7
+- A8
+- A9
+- A10
+- B1
+- B2
+- B3
+- B4
+- B5
+- B6
+- B7
+- B8
+- B9
+- B10
+- C1
+- C2
+- C3
+- C4
+- C5
+- C6
+- C7
+- C8
+- C9
+- C10
+- D1
+- D2
+- D3
+- D4
+- D5
+- D6
+- D7
+- D8
+- D9
+- D10
+- E1
+- E2
+- E3
+- E4
+- E5
+- E6
+- E7
+:winner: interferoman

@@ -1,0 +1,69 @@
+--- 
+:player1: interferoman
+:player1_placements: 
+  :patrolship: E2 vertical
+  :carrier: A5 horizontal
+  :battleship: F6 vertical
+  :destroyer: G7 vertical
+  :submarine: C8 vertical
+:disqualification_reason: "The player targeted an invalid sector.  Invalid coordinates: 7."
+:player2_placements: 
+  :patrolship: H7 vertical
+  :carrier: D5 vertical
+  :battleship: D3 vertical
+  :destroyer: B3 horizontal
+  :submarine: E8 vertical
+:player2: Ensign Erratic
+:player1_targets: 
+- D3
+- D4
+- E3
+- F3
+- G3
+- H3
+- B9
+- B1
+- I6
+- E10
+- B7
+- G4
+- E2
+- D7
+- C6
+- I10
+- H1
+- C4
+- E6
+- A8
+- J1
+- F7
+- C10
+- G2
+- J5
+:player2_targets: 
+- I8
+- F4
+- G9
+- H7
+- H6
+- H5
+- H8
+- G6
+- F6
+- E6
+- I6
+- A8
+- A7
+- A6
+- A5
+- A4
+- A9
+- F3
+- C5
+- F9
+- I7
+- I9
+- I10
+- J7
+- "7"
+:winner: interferoman

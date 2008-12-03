@@ -1,0 +1,118 @@
+--- 
+:player1: Ensign Erratic
+:player1_placements: 
+  :patrolship: D5 vertical
+  :carrier: F2 horizontal
+  :battleship: G4 horizontal
+  :destroyer: D1 horizontal
+  :submarine: G8 horizontal
+:disqualification_reason: The player targeted an invalid sector.  Sector A1 has already been attacked.
+:player2_placements: 
+  :patrolship: A9 vertical
+  :carrier: E1 vertical
+  :battleship: D6 horizontal
+  :destroyer: G10 vertical
+  :submarine: G5 horizontal
+:player2: joshua_son_of_nun
+:player1_targets: 
+- B10
+- F10
+- C7
+- C9
+- I5
+- C4
+- C6
+- J5
+- H3
+- C8
+- E9
+- A7
+- G8
+- C5
+- J8
+- F5
+- H8
+- E3
+- F2
+- G3
+- A10
+- J4
+- G2
+- I2
+- H9
+- H5
+- G10
+- G4
+- G5
+- G6
+- G7
+- C2
+- A9
+- A8
+- A11
+- J9
+- B9
+- I8
+- B1
+- J1
+- D7
+- D6
+- D5
+- D8
+- D9
+- D10
+- B4
+- F4
+- F3
+- A1
+:player2_targets: 
+- F4
+- E4
+- F5
+- F3
+- F2
+- F1
+- F6
+- G5
+- G6
+- G4
+- G3
+- G7
+- H6
+- I7
+- J8
+- B4
+- A5
+- J10
+- A8
+- E6
+- D7
+- C8
+- B9
+- A10
+- J6
+- H8
+- G9
+- G2
+- G8
+- G1
+- G10
+- F10
+- H5
+- F7
+- E8
+- D9
+- C10
+- I8
+- J9
+- C9
+- B8
+- A7
+- C6
+- B5
+- A4
+- C2
+- B3
+- B1
+- D3
+:winner: joshua_son_of_nun
