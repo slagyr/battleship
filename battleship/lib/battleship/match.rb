@@ -27,7 +27,14 @@ module Battleship
           @ui.update_stats "#{@player1_wins} : #{@player2_wins}"
           sleep(1)
         end
-        @winner = @player1_wins == @wins_required ? @player1 : @player2
+        if @player1_wins == @wins_required
+          @winner = @player1
+          @ui.match_winner @player1.name
+        else
+          @winner = @player2
+          @ui.match_winner @player2.name
+        end
+
       rescue Exception => e
         @ui.exception(e)
       end

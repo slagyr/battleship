@@ -1,3 +1,5 @@
+require 'battleship/match'
+
 module Battleship
 
   class RoundRobin

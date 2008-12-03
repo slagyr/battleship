@@ -5,7 +5,6 @@ require 'battleship/analyzers/flog_analyzer'
 require 'battleship/analyzers/coverage_analyzer'
 require 'battleship/analyzers/saikuro_analyzer'
 require 'battleship/analyzers/flay_analyzer'
-require 'limelight/string'
 require 'etc'
 
 module Battleship
@@ -28,7 +27,7 @@ module Battleship
             system_gem_path = `. ~/.profile && ruby -e "require 'rubygems'; puts Gem.path"`
           else
             system_gem_path = `ruby -e "require 'rubygems'; puts Gem.path"`
-          end        
+          end
           ENV['GEM_PATH'] = system_gem_path.strip
           Gem.clear_paths
           @gem_index = Gem.source_index
@@ -42,7 +41,7 @@ module Battleship
           if spec.summary[0..17] == "Battleship Player:"
             profiles << load_from_gem(spec)
           end
-        end                                   
+        end
         return profiles
       end
 
@@ -55,12 +54,20 @@ module Battleship
         options[:name] = spec.summary[18..-1]
         options[:author] = spec.author
         options[:description] = spec.description
-        options[:root_path] = spec.full_gem_path     
+        options[:root_path] = spec.full_gem_path
         return PlayerProfile.new(options)
       end
 
       def find_gem_spec(name)
-        return gem_index.latest_specs.find { |spec| spec.name == name }  
+        return gem_index.latest_specs.find { |spec| spec.name == name }
+      end
+
+      def player_hash
+        if @player_hash.nil?
+          @player_hash = {}
+          load_from_gems.each { |p| @player_hash[p.name] = p }
+        end
+        return @player_hash
       end
     end
 
@@ -154,4 +161,25 @@ module Battleship
 
   end
 
+end
+
+class String
+
+  def camalized(starting_case = :upper)
+    value = self.downcase.gsub(/[_| ][a-z]/) { |match| match[-1..-1].upcase }
+    value = value[0..0].upcase + value[1..-1] if starting_case == :upper
+    return value
+  end
+
+  def underscored
+    value = self[0..0].downcase + self[1..-1]
+    value = value.gsub(/[A-Z]/) { |cap| "_#{cap.downcase}" }
+    return value
+  end
+
+  def titleized(starting_case = :upper)
+    value = self.gsub(/[a-z0-9][A-Z]/) { |match| "#{match[0..0]} #{match[-1..-1]}" }
+    value = value.gsub(/[_| ][a-z]/) { |match| " #{match[-1..-1].upcase}" }
+    return value[0..0].upcase + value[1..-1]
+  end
 end

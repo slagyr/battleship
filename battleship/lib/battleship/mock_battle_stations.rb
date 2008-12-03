@@ -22,6 +22,11 @@ module Battleship
 
     def update_stats(stats)
       @stats = stats
+      puts stats
+    end
+
+    def match_winner(name)
+      puts "Match Winner: #{name}"
     end
   end
 

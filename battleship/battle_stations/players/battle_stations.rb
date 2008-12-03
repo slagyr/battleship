@@ -53,4 +53,8 @@ module BattleStations
     scene.stage.alert(e.to_s + "\n" + e.backtrace[0..10].join("\n") + "\n...")
   end
 
+  def match_winner(name)
+    
+  end
+
 end

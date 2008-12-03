@@ -50,10 +50,7 @@ module Welcome
     close_curtains
     begin
       require 'battleship/player_profile'
-      players = Battleship::PlayerProfile.load_from_gems
-      player_hash = {}
-      players.each { |p| player_hash[p.name] = p }
-      production.computer_players = player_hash
+      production.computer_players = Battleship::PlayerProfile.player_hash
 
       open_curtains
     rescue Exception => e
