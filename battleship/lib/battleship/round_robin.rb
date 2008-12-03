@@ -2,6 +2,17 @@ module Battleship
 
   class RoundRobin
 
+    def self.run(player_hash, ui)
+      tourny = RoundRobin.new(player_hash.keys)
+      tourny.rounds.each do |round|
+        player1 = player_hash[round[0]]
+        player2 = player_hash[round[1]]
+        puts "# #{round[0]} vs #{round[1]}"
+        match = Match.new(11, player1, player2, ui)
+        match.begin
+      end
+    end
+
     attr_reader :players
     attr_reader :rounds
 
