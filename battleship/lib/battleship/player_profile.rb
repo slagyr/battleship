@@ -48,14 +48,16 @@ module Battleship
       def load_from_gem(name_or_spec)
         spec = name_or_spec.is_a?(String) ? find_gem_spec(name_or_spec) : name_or_spec
         return if spec.nil?
-        options = {}
-        options[:filename] = spec.name
-        options[:classname] = spec.name.camalized
-        options[:name] = spec.summary[18..-1]
-        options[:author] = spec.author
-        options[:description] = spec.description
-        options[:root_path] = spec.full_gem_path
-        return PlayerProfile.new(options)
+        name = spec.summary[18..-1]
+        profile = Server.profile(name)
+        profile = PlayerProfile.new(:name => name) if profile.nil?
+        profile.filename = spec.name
+        profile.classname = spec.name.camalized
+        profile.name = spec.summary[18..-1]
+        profile.author = spec.author
+        profile.description = spec.description
+        profile.root_path = spec.full_gem_path
+        return profile
       end
 
       def find_gem_spec(name)
@@ -72,15 +74,15 @@ module Battleship
     end
 
 
-    attr_reader :name, :author, :description
-    attr_reader :filename, :classname, :root_path
-    attr_reader :flog_score, :flog_description
-    attr_reader :simplicity_score, :simplicity_description
-    attr_reader :coverage_score, :coverage_description
-    attr_reader :battle_score, :battle_description
-    attr_reader :saikuro_score, :saikuro_description
-    attr_reader :flay_score, :flay_description
-    attr_reader :games_played, :wins, :disqualifications
+    attr_accessor :name, :author, :description
+    attr_accessor :filename, :classname, :root_path
+    attr_accessor :flog_score, :flog_description
+    attr_accessor :simplicity_score, :simplicity_description
+    attr_accessor :coverage_score, :coverage_description
+    attr_accessor :battle_score, :battle_description
+    attr_accessor :saikuro_score, :saikuro_description
+    attr_accessor :flay_score, :flay_description
+    attr_accessor :games_played, :wins, :disqualifications
 
     def initialize(options={})
       @flog_score = 0
@@ -136,21 +138,27 @@ module Battleship
     def perform_analysis(observer)
       @battle_score, @battle_description = Analyzers::BattleAnalyzer.analyze(self)
       observer.update_battle_score(@battle_score, @battle_description)
+      Server.submit_score(self, "battle", @battle_score, @battle_description)
 
       @simplicity_score, @simplicity_description = Analyzers::SimplicityAnalyzer.analyze(self)
       observer.update_simplicity_score(@simplicity_score, @simplicity_description)
+      Server.submit_score(self, "simplicity", @simplicity_score, @simplicity_description)
 
       @coverage_score, @coverage_description = Analyzers::CoverageAnalyzer.analyze(self)
       observer.update_coverage_score(@coverage_score, @coverage_description)
+      Server.submit_score(self, "coverage", @coverage_score, @coverage_description)
 
       @flog_score, @flog_description = Analyzers::FlogAnalyzer.analyze(self)
       observer.update_flog_score(@flog_score, @flog_description)
+      Server.submit_score(self, "flog", @flog_score, @flog_description)
 
       @saikuro_score, @saikuro_description = Analyzers::SaikuroAnalyzer.analyze(self)
       observer.update_saikuro_score(@saikuro_score, @saikuro_description)
+      Server.submit_score(self, "saikuro", @saikuro_score, @saikuro_description)
 
       @flay_score, @flay_description = Analyzers::FlayAnalyzer.analyze(self)
       observer.update_flay_score(@flay_score, @flay_description)
+      Server.submit_score(self, "flay", @flay_score, @flay_description)
 
       observer.update_average_score(average_score)
     end

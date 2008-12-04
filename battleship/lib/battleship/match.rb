@@ -47,7 +47,6 @@ module Battleship
       begin
         @game.prepare
         @game.play
-#p @game.to_hash
         Server.submit_game(@game)
       rescue Exception => e
         @ui.exception(e)

@@ -8,7 +8,7 @@ module Battleship
       FAULT_REGEXP = /\(mass = (\d+)\)/
 
       def self.analyze(profile)
-        command = "/usr/bin/find '#{profile.lib_dir}' -name *.rb | /usr/bin/xargs flay" 
+        command = "/usr/bin/find '#{profile.lib_dir}' -name '*.rb' | /usr/bin/xargs flay"
         results = `#{command}`
 
         total_fault = 0
