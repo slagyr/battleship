@@ -9,7 +9,7 @@ Spec::Rake::SpecTask.new('spec') do |t|
 end
 
 PKG_NAME = "battleship_tournament"
-PKG_VERSION   = "1.0"
+PKG_VERSION   = "1.1"
 PKG_FILE_NAME = "#{PKG_NAME}-#{PKG_VERSION}"
 
 spec = Gem::Specification.new do |s|
@@ -29,6 +29,16 @@ spec = Gem::Specification.new do |s|
 
   s.add_dependency('sergeant_simple', ">= 1.0")
   s.add_dependency('rear_admiral_randy', ">= 1.0")
+  s.add_dependency('alpha', ">= 1.7")
+  s.add_dependency('cobra', ">= 1.0")
+  s.add_dependency('commodore_cox', ">= 1.0")
+  s.add_dependency('ensign_erritic', ">= 1.0.2")
+  s.add_dependency('joshua_son_of_nun', ">= 1.0")
+  s.add_dependency('l2p', ">= 1.0")
+  s.add_dependency('sonic_death_monkey', ">= 1.0")
+  s.add_dependency('ssoroka_takes_the_win', ">= 1.0")
+  s.add_dependency('uss_monte_carlo', ">= 2.0.2")
+  s.add_dependency('white_horseman', ">= 1.3")
 end
 
 Rake::GemPackageTask.new(spec) do |pkg|
@@ -47,6 +57,7 @@ end
 task :copy_player_gems do
   system "cp ../sergeant_simple/pkg/sergeant_simple-1.0.gem pkg"
   system "cp ../rear_admiral_randy/pkg/rear_admiral_randy-1.0.gem pkg"
+  system "cp submissions/*.gem pkg"
 end
 
 desc "Publish gem+tgz+zip on RubyForge. You must make sure lib/version.rb is aligned with the CHANGELOG file"
@@ -57,6 +68,17 @@ task :publish_packages => [:verify_user, :verify_password, :package, :copy_playe
     "pkg/#{PKG_FILE_NAME}.gem",
     "pkg/sergeant_simple-1.0.gem",
     "pkg/rear_admiral_randy-1.0.gem",
+    "pkg/alpha-1.7.gem",
+    "pkg/ensign_erratic-1.0.2.gem",
+    "pkg/l2p-1.0.gem",
+    "pkg/uss_monte_carlo-2.0.2.gem",
+    "pkg/cobra-1.0.gem",
+    "pkg/interferoman-1.2.gem",
+    "pkg/sonic_death_monkey-1.0.gem",
+    "pkg/white_horseman-1.3.gem",
+    "pkg/commodore_cox-1.0.gem",
+    "pkg/joshua_son_of_nun-1.0.gem",
+    "pkg/ssoroka_takes_the_win-1.0.gem"
   ]
 
   Rake::XForge::Release.new(MetaProject::Project::XForge::RubyForge.new("sparring")) do |xf|
