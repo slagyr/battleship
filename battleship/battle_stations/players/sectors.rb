@@ -11,17 +11,17 @@ module Sectors
     self.build do
       ship options
     end
-#    sleep(0.25)
+    sleep(0.25)
   end
 
   def miss(x, y)
     cell(x, y).color = "white"
-#    sleep(0.1)
+    sleep(0.25)
   end
 
   def hit(x, y)
     cell(x, y).color = "red"
-#    sleep(0.1)
+    sleep(0.25)
   end
 
   def reset

@@ -38,6 +38,7 @@ module Battleship
       def load_from_gems
         profiles = []
         gem_index.latest_specs.each do |spec|
+puts "spec.name: #{spec.name}"          
           if spec.summary[0..17] == "Battleship Player:"
             profiles << load_from_gem(spec)
           end

@@ -40,5 +40,5 @@ desc "Build the battleship.llp file and install in website dir"
 task :llp do
   system "rm battleship.llp"
   system "jruby -S limelight pack battleship"
-  system "mv battleship.llp website/battleship/"
+  system "cp battleship.llp website/battleship/"
 end

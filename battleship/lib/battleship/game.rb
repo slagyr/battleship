@@ -87,6 +87,7 @@ module Battleship
     end
 
     def get_next_target
+      return @current_attacker.next_target if @current_attacker.class == HumanPlayer
       @target = nil
       thread = Thread.new { @target = @current_attacker.next_target }
       result = thread.join(@max_move_duration)
@@ -180,10 +181,15 @@ module Battleship
     def place_ships_for(fleet, grid, player, placements)
       thread = Thread.new do
         placements[:carrier] = player.carrier_placement
+        grid.place(fleet[:carrier], placements[:carrier]) if player.class == HumanPlayer
         placements[:battleship] = player.battleship_placement
+        grid.place(fleet[:battleship], placements[:battleship]) if player.class == HumanPlayer
         placements[:destroyer] = player.destroyer_placement
+        grid.place(fleet[:destroyer], placements[:destroyer]) if player.class == HumanPlayer
         placements[:submarine] = player.submarine_placement
+        grid.place(fleet[:submarine], placements[:submarine]) if player.class == HumanPlayer
         placements[:patrolship] = player.patrolship_placement
+        grid.place(fleet[:patrolship], placements[:patrolship]) if player.class == HumanPlayer
       end
       result = thread.join(@max_move_duration * 5)
       if result.nil?
@@ -192,12 +198,14 @@ module Battleship
         return
       end
 
-      begin
-        [:carrier, :battleship, :destroyer, :submarine, :patrolship].each do |ship_type|
-          grid.place(fleet[ship_type], placements[ship_type])
+      unless player.class == HumanPlayer
+        begin
+          [:carrier, :battleship, :destroyer, :submarine, :patrolship].each do |ship_type|
+            grid.place(fleet[ship_type], placements[ship_type])
+          end
+        rescue BattleshipException => e
+          disqualify(player, "The player made an invalid ship placement.  #{e.message}.")
         end
-      rescue BattleshipException => e
-        disqualify(player, "The player made an invalid ship placement.  #{e.message}.")
       end
     end
 
