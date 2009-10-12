@@ -1,5 +1,5 @@
 options do
-  option :text => "Go to Locker Room", :on_mouse_clicked => "scene.load('locker_room').players = production.computer_players.values"
+  # option :text => "Go to Locker Room", :on_mouse_clicked => "scene.load('locker_room').players = production.computer_players.values"
 
   player_selections do
     player_selection do

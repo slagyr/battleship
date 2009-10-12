@@ -17,18 +17,19 @@ module Battleship
 
       def gem_index
         if @gem_index.nil?
-          if File.exists? File.expand_path("~/.gem_home")
-            system_gem_path = IO.read(File.expand_path("~/.gem_home")).strip
-          elsif File.exists? File.expand_path("~/gem_home.txt")
-            system_gem_path = IO.read(File.expand_path("~/gem_home.txt")).strip
-          elsif File.exists? File.expand_path("~/.bash_profile")
-            system_gem_path = `. ~/.profile && ruby -e "require 'rubygems'; puts Gem.path"`
-          elsif File.exists? File.expand_path("~/.profile")
-            system_gem_path = `. ~/.profile && ruby -e "require 'rubygems'; puts Gem.path"`
-          else
-            system_gem_path = `ruby -e "require 'rubygems'; puts Gem.path"`
-          end
-          ENV['GEM_PATH'] = system_gem_path.strip
+          # if File.exists? File.expand_path("~/.gem_home")
+          #   system_gem_path = IO.read(File.expand_path("~/.gem_home")).strip
+          # elsif File.exists? File.expand_path("~/gem_home.txt")
+          #   system_gem_path = IO.read(File.expand_path("~/gem_home.txt")).strip
+          # elsif File.exists? File.expand_path("~/.bash_profile")
+          #   system_gem_path = `. ~/.profile && ruby -e "require 'rubygems'; puts Gem.path"`
+          # elsif File.exists? File.expand_path("~/.profile")
+          #   system_gem_path = `. ~/.profile && ruby -e "require 'rubygems'; puts Gem.path"`
+          # else
+          #   system_gem_path = `ruby -e "require 'rubygems'; puts Gem.path"`
+          # end
+          # ENV['GEM_PATH'] = system_gem_path.strip
+          ENV['GEM_PATH'] = File.expand_path(File.dirname(__FILE__) + "/../../__resources/gems")
           Gem.clear_paths
           @gem_index = Gem.source_index
         end
@@ -38,7 +39,6 @@ module Battleship
       def load_from_gems
         profiles = []
         gem_index.latest_specs.each do |spec|
-puts "spec.name: #{spec.name}"          
           if spec.summary[0..17] == "Battleship Player:"
             profiles << load_from_gem(spec)
           end
