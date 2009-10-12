@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>File: README</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href=".././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+  <div id="fileHeader">
+    <h1>README</h1>
+    <table class="header-table">
+    <tr class="top-aligned-row">
+      <td><strong>Path:</strong></td>
+      <td>README
+      </td>
+    </tr>
+    <tr class="top-aligned-row">
+      <td><strong>Last Update:</strong></td>
+      <td>Sat Nov 08 09:07:04 -0500 2008</td>
+    </tr>
+    </table>
+  </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+    <div id="description">
+      <h1><a href="../classes/Battleship.html">Battleship</a> Tournament</h1>
+<p>
+A Ruby sparring tournament. Compete by building a computer AI for the
+classic <a href="../classes/Battleship.html">Battleship</a> game.
+</p>
+<h2>Participating</h2>
+<p>
+There are 4 simple steps to participate.
+</p>
+<p>
+1 Install the battleship_tournament gem
+</p>
+<pre>
+  sudo gem install battleship_tournament
+</pre>
+<p>
+2 Create a player (computer AI) with a creative and unique name
+</p>
+<pre>
+  generate_battleship_player &quot;Some Creative and Unique Name&quot;
+</pre>
+<p>
+3 Build and install your player&#8216;s ruby gem
+</p>
+<pre>
+  # Install the rspec gem if needed
+  # sudo gem install rspec
+  cd some_creative_and_unique_name
+  rake gem
+  sudo gem install pkg/some_creative_and_unique_name-1.0.gem
+</pre>
+<p>
+4 Enter data, choose password, and submit your player
+</p>
+<pre>
+  # Edit Rakefile and provide the information indicated.
+  rake submit
+</pre>
+<h2>Battle Your Player</h2>
+<p>
+You&#8216;ll need Limelight to watch your player battle.
+</p>
+<p>
+1 Download an installer from <a
+href="http://limelight.8thlight.com">limelight.8thlight.com</a> 2 Install 3
+Create a Limelight Link file
+</p>
+<pre>
+  echo &quot;http://sparring.rubyforge.org/battleship/battleship.llp&quot; &gt; ~/Desktop/battleship.lll
+</pre>
+<p>
+4 Go to your desktop and double click on battleship.llp
+</p>
+<p>
+You should see your player in the list along with Sergeant Simple and Rear
+Admiral Randy. Select a competator and begin the battle. Who will win?
+</p>
+<h2>Improve Your Player&#8216;s AI</h2>
+<p>
+The source code for your player is contained in one file:
+</p>
+<pre>
+  some_creative_and_unique_name/lib/some_creative_and_unique_name/some_creative_and_unique_name.rb
+</pre>
+<p>
+You&#8216;ll also find an lack of specs in the file:
+</p>
+<pre>
+  some_creative_and_unique_name/spec/some_creative_and_unique_name/some_creative_and_unique_name_spec.rb
+</pre>
+<p>
+Use of rSpec is required.
+</p>
+<p>
+There are plenty of comments in the generated source code. Go nuts! Add
+code. Change code. Add files. Turn your player into a masterfull battleship
+AI.
+</p>
+<p>
+Whe your player is ready, be sure to submit again. Make sure you remember
+your players password. You may submit as many times as you like. Each
+submission will overwrite the previous submission.
+</p>
+<pre>
+  rake submit
+</pre>
+<h2>Email List</h2>
+<p>
+Join the email list. Use it for questions and discussion about the
+tournament.
+</p>
+<p>
+Subscribe: <a
+href="http://rubyforge.org/mailman/listinfo/sparring-battleship">rubyforge.org/mailman/listinfo/sparring-battleship</a>
+Email: sparring-battleship@rubyforge.org
+</p>
+<h2>Rules</h2>
+<p>
+You have until November 30th, 2008 to submit your final solution. On
+December 1st, competition begins. Each player will be matched against every
+other player in round robin fashion. Each match it a best-of-21 games. The
+first player to win 11 games, wins the match. The Tournament Champion will
+be the player with the most match wins.
+</p>
+<p>
+However, there is a more prestegious title to which players should aspire.
+The Tournament Master. This coveted title is awarded not to the player who
+wins the most battles but to the player that also has the best source code.
+A series of metrics will be collected on your player&#8216;s source code
+and compiled into an all-round score. The player with the best all-round
+score will be honored as Tournament Master.
+</p>
+<p>
+The <a href="../classes/Battleship.html">Battleship</a> Limelight
+production provides a Locker Room scene where you can run some sample
+analysis on your player. This is just an example of the analysis that will
+be perfomed but it should give you an idea of what is expected.
+</p>
+<p>
+Solutions may NOT make use of ruby gems. The tournament is about crafting a
+complete solution.
+</p>
+<h3>Analysis Dependancies</h3>
+<p>
+To run full analysis, you will have to have the following gems, and their
+dependancies, installed:
+</p>
+<pre>
+ * flog
+ * rCov
+ * rSpec
+</pre>
+<h2>Terms for Disqualification</h2>
+<pre>
+ 1 Attempting to open or modify classes, modules, or objects in the Battleship engine.
+ 2 Tampering with the Battleship.Rakefile file.
+ 3 Providing invalid ship placements.
+ 4 Providing invalid targets.
+ 5 Attempting to open or modify opponent player's classes, modules, or objects.
+ 6 Making use of Kernel.set_trace_func
+ 7 Tampering or abusing tournament infractruscure and facilities
+</pre>
+<h2>Troubleshooting</h2>
+<p>
+&quot;None of the players are showing up in the player lists.&quot; First
+check that the player gems are installed. It&#8216;s likely that the <a
+href="../classes/Battleship.html">Battleship</a> engine cannot find them.
+We&#8216;ll have to tell it where it can find the gems. Mac:
+</p>
+<pre>
+  ruby -r &quot;rubygems&quot; -e &quot;File.open(File.expand_path('~/.gem_home'), 'w') { |f| f.write Gem.dir }&quot;
+</pre>
+<p>
+Windows: Find your gem directory. In you home directory (C:\Documents and
+Settings\Micah) create a file named &#8216;gem_home.txt&#8217; containing
+the path to your gem directory.
+</p>
+
+    </div>
+
+
+   </div>
+
+
+  </div>
+
+
+    <!-- if includes -->
+
+    <div id="section">
+
+
+
+
+
+      
+
+
+    <!-- if method_list -->
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>

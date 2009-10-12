@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class: Battleship::SimplePlayer</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href="../.././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+    <div id="classHeader">
+        <table class="header-table">
+        <tr class="top-aligned-row">
+          <td><strong>Class</strong></td>
+          <td class="class-name-in-header">Battleship::SimplePlayer</td>
+        </tr>
+        <tr class="top-aligned-row">
+            <td><strong>In:</strong></td>
+            <td>
+                <a href="../../files/battleship/lib/battleship/simple_player_rb.html">
+                battleship/lib/battleship/simple_player.rb
+                </a>
+        <br />
+            </td>
+        </tr>
+
+        <tr class="top-aligned-row">
+            <td><strong>Parent:</strong></td>
+            <td>
+                Object
+            </td>
+        </tr>
+        </table>
+    </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+    <div id="description">
+      <p>
+<a href="../Battleship.html">Battleship</a> Player
+</p>
+<p>
+<a href="../Battleship.html">Battleship</a> is board game between two
+players. See <a
+href="http://en.wikipedia.org/wiki/Battleship">en.wikipedia.org/wiki/Battleship</a>
+for more information and game rules.
+</p>
+<p>
+A player represents the conputer AI to play a game of <a
+href="../Battleship.html">Battleship</a>. It should know how to place ships
+and target the opponents ships.
+</p>
+<p>
+This version of <a href="../Battleship.html">Battleship</a> is played on a
+10 x 10 grid where rows are labled by the letters A - J and columns are
+labled by the numbers 1 - 10. At the start of the game, each player will be
+asked for ship placements. Once the ships are placed, play proceeeds by
+each player targeting one square on their opponents map. A player may only
+target one square, reguardless of whether it resulted in a hit or not,
+before changing turns with her opponent.
+</p>
+
+    </div>
+
+
+   </div>
+
+    <div id="method-list">
+      <h3 class="section-bar">Methods</h3>
+
+      <div class="name-list">
+      <a href="#M000003">battleship_placement</a>&nbsp;&nbsp;
+      <a href="#M000002">carrier_placement</a>&nbsp;&nbsp;
+      <a href="#M000004">destroyer_placement</a>&nbsp;&nbsp;
+      <a href="#M000009">enemy_targeting</a>&nbsp;&nbsp;
+      <a href="#M000010">game_over</a>&nbsp;&nbsp;
+      <a href="#M000001">new_game</a>&nbsp;&nbsp;
+      <a href="#M000007">next_target</a>&nbsp;&nbsp;
+      <a href="#M000006">patrolship_placement</a>&nbsp;&nbsp;
+      <a href="#M000005">submarine_placement</a>&nbsp;&nbsp;
+      <a href="#M000008">target_result</a>&nbsp;&nbsp;
+      </div>
+    </div>
+
+  </div>
+
+
+    <!-- if includes -->
+
+    <div id="section">
+
+
+    <div id="constants-list">
+      <h3 class="section-bar">Constants</h3>
+
+      <div class="name-list">
+        <table summary="Constants">
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">ROWS</td>
+          <td>=</td>
+          <td class="context-item-value">%w{ A B C D E F G H I J }</td>
+        </tr>
+        </table>
+      </div>
+    </div>
+
+
+
+      
+
+
+    <!-- if method_list -->
+    <div id="methods">
+      <h3 class="section-bar">Public Instance methods</h3>
+
+      <div id="method-M000003" class="method-detail">
+        <a name="M000003"></a>
+
+        <div class="method-heading">
+          <a href="#M000003" class="method-signature">
+          <span class="method-name">battleship_placement</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Returns the placement of the battleship. A battleship consumes 4 squares.
+</p>
+<p>
+See <a href="SimplePlayer.html#M000002">carrier_placement</a> for details
+on ship placement
+</p>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000003-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000003-source">
+<pre>
+    <span class="ruby-comment cmt"># File battleship/lib/battleship/simple_player.rb, line 59</span>
+59:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">battleship_placement</span>
+60:       <span class="ruby-keyword kw">return</span> <span class="ruby-value str">&quot;B1 horizontal&quot;</span>
+61:     <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000002" class="method-detail">
+        <a name="M000002"></a>
+
+        <div class="method-heading">
+          <a href="#M000002" class="method-signature">
+          <span class="method-name">carrier_placement</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Returns the placement of the carrier. A carrier consumes 5 squares.
+</p>
+<p>
+The return value is a string that describes the placements of the ship. The
+placement string must be in the following format:
+</p>
+<pre>
+  &quot;#{ROW}#{COL} #{ORIENTATION}&quot;
+</pre>
+<p>
+eg
+</p>
+<pre>
+  A1 horizontal # the ship will occupy A1, A2, A3, A4, and A5
+  A1 vertical # the ship will occupy A1, B1, C1, D1, and E1
+  F5 horizontal # the ship will occupy F5, F6, F7, F8, and F9
+  F5 vertical # the ship will occupy F5, G5, H5, I5, and J5
+</pre>
+<p>
+The ship must not fall off the edge of the map. For example, a carrier
+placement of &#8216;A8 horizontal&#8217; would not leave enough space in
+the A row to accomidate the carrier since it requires 5 squares.
+</p>
+<p>
+Ships may not overlap with other ships. For example a carrier placement of
+&#8216;A1 horizontal&#8217; and a submarine placement of &#8216;A1
+vertical&#8217; would be invalid because bothe ships are trying to occupy
+the square A1.
+</p>
+<p>
+Invalid ship placements will result in disqualification of the player.
+</p>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000002-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000002-source">
+<pre>
+    <span class="ruby-comment cmt"># File battleship/lib/battleship/simple_player.rb, line 51</span>
+51:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">carrier_placement</span>
+52:       <span class="ruby-keyword kw">return</span> <span class="ruby-value str">&quot;A1 horizontal&quot;</span>
+53:     <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000004" class="method-detail">
+        <a name="M000004"></a>
+
+        <div class="method-heading">
+          <a href="#M000004" class="method-signature">
+          <span class="method-name">destroyer_placement</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Returns the placement of the destroyer. A destroyer consumes 3 squares.
+</p>
+<p>
+See <a href="SimplePlayer.html#M000002">carrier_placement</a> for details
+on ship placement
+</p>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000004-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000004-source">
+<pre>
+    <span class="ruby-comment cmt"># File battleship/lib/battleship/simple_player.rb, line 67</span>
+67:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">destroyer_placement</span>
+68:       <span class="ruby-keyword kw">return</span> <span class="ruby-value str">&quot;C1 horizontal&quot;</span>
+69:     <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000009" class="method-detail">
+        <a name="M000009"></a>
+
+        <div class="method-heading">
+          <a href="#M000009" class="method-signature">
+          <span class="method-name">enemy_targeting</span><span class="method-args">(coordinates)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+<a href="SimplePlayer.html#M000009">enemy_targeting</a> is called by the
+system to inform a player of their apponents move. When the opponent
+targets a square, this method is called with the coordinates.
+</p>
+<p>
+Players may use this information to understand an opponents targeting
+strategy and place ships differently in subsequent games.
+</p>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000009-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000009-source">
+<pre>
+     <span class="ruby-comment cmt"># File battleship/lib/battleship/simple_player.rb, line 131</span>
+131:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">enemy_targeting</span>(<span class="ruby-identifier">coordinates</span>)
+132:       <span class="ruby-ivar">@enemy_targeted_sectors</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">coordinates</span>
+133:     <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000010" class="method-detail">
+        <a name="M000010"></a>
+
+        <div class="method-heading">
+          <a href="#M000010" class="method-signature">
+          <span class="method-name">game_over</span><span class="method-args">(result, disqualification_reason=nil)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Called by the system at the end of a game to inform the player of the
+results.
+</p>
+<pre>
+  result  : 1 of 3 possible values (:victory, :defeate, :disqualified)
+  disqualification_reason : nil unless the game ended as the result of a disqualification.  In the event of a
+    disqualification, this paramter will hold a string description of the reason for disqualification.  Both
+    players will be informed of the reason.
+
+  :victory # indicates the player won the game
+  :defeat # indicates the player lost the game
+  :disqualified # indicates the player was disqualified
+</pre>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000010-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000010-source">
+<pre>
+     <span class="ruby-comment cmt"># File battleship/lib/battleship/simple_player.rb, line 146</span>
+146:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">game_over</span>(<span class="ruby-identifier">result</span>, <span class="ruby-identifier">disqualification_reason</span>=<span class="ruby-keyword kw">nil</span>)
+147:       <span class="ruby-ivar">@result</span> = <span class="ruby-identifier">result</span>
+148:       <span class="ruby-ivar">@disqualification_reason</span> = <span class="ruby-identifier">disqualification_reason</span>
+149:     <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000001" class="method-detail">
+        <a name="M000001"></a>
+
+        <div class="method-heading">
+          <a href="#M000001" class="method-signature">
+          <span class="method-name">new_game</span><span class="method-args">(opponent_name)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+This method is called at the beginning of each game. A player may only be
+instantiated once and used to play many games. So <a
+href="SimplePlayer.html#M000001">new_game</a> should reset any internal
+state acquired in previous games so that it is prepared for a new game.
+</p>
+<p>
+The name of the opponent player is passed in. This allows for the
+possibility to learn opponent strategy and play the game differently based
+on the opponent.
+</p>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000001-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000001-source">
+<pre>
+    <span class="ruby-comment cmt"># File battleship/lib/battleship/simple_player.rb, line 24</span>
+24:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">new_game</span>(<span class="ruby-identifier">opponent_name</span>)
+25:       <span class="ruby-ivar">@opponent</span> = <span class="ruby-identifier">opponent_name</span>
+26:       <span class="ruby-identifier">reset</span>
+27:     <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000007" class="method-detail">
+        <a name="M000007"></a>
+
+        <div class="method-heading">
+          <a href="#M000007" class="method-signature">
+          <span class="method-name">next_target</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Returns the coordinates of the players next target. This method will be
+called once per turn. The player should return target coordinates as a
+string in the form of:
+</p>
+<pre>
+  &quot;#{ROW}#{COL}&quot;
+</pre>
+<p>
+eg
+</p>
+<pre>
+  A1 # the square in Row A and Column 1
+  F5 # the square in Row F and Column 5
+</pre>
+<p>
+Since the map contains only 10 rows and 10 columns, the ROW should be A, B,
+C, D, E, F, G H, I, or J. And the COL should be 1, 2, 3, 4, 5, 6, 7, 8, 9,
+or 10
+</p>
+<p>
+Returning coordinates outside the range or in an invalid format will result
+in the players disqualification.
+</p>
+<p>
+It is illegal to illegal to target a sector more than once. Doing so will
+also result in disqualification.
+</p>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000007-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000007-source">
+<pre>
+     <span class="ruby-comment cmt"># File battleship/lib/battleship/simple_player.rb, line 104</span>
+104:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">next_target</span>
+105:       <span class="ruby-identifier">target</span> = <span class="ruby-identifier">target_for_current_shot</span>
+106:       <span class="ruby-ivar">@shots_taken</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+107:       <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">target</span>
+108:     <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000006" class="method-detail">
+        <a name="M000006"></a>
+
+        <div class="method-heading">
+          <a href="#M000006" class="method-signature">
+          <span class="method-name">patrolship_placement</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Returns the placement of the patrolship. A patrolship consumes 2 squares.
+</p>
+<p>
+See <a href="SimplePlayer.html#M000002">carrier_placement</a> for details
+on ship placement
+</p>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000006-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000006-source">
+<pre>
+    <span class="ruby-comment cmt"># File battleship/lib/battleship/simple_player.rb, line 83</span>
+83:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">patrolship_placement</span>
+84:       <span class="ruby-keyword kw">return</span> <span class="ruby-value str">&quot;E1 horizontal&quot;</span>
+85:     <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000005" class="method-detail">
+        <a name="M000005"></a>
+
+        <div class="method-heading">
+          <a href="#M000005" class="method-signature">
+          <span class="method-name">submarine_placement</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Returns the placement of the submarine. A submarine consumes 3 squares.
+</p>
+<p>
+See <a href="SimplePlayer.html#M000002">carrier_placement</a> for details
+on ship placement
+</p>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000005-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000005-source">
+<pre>
+    <span class="ruby-comment cmt"># File battleship/lib/battleship/simple_player.rb, line 75</span>
+75:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">submarine_placement</span>
+76:       <span class="ruby-keyword kw">return</span> <span class="ruby-value str">&quot;D1 horizontal&quot;</span>
+77:     <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000008" class="method-detail">
+        <a name="M000008"></a>
+
+        <div class="method-heading">
+          <a href="#M000008" class="method-signature">
+          <span class="method-name">target_result</span><span class="method-args">(coordinates, was_hit, ship_sunk)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+<a href="SimplePlayer.html#M000008">target_result</a> will be called by the
+system after a call to <a href="SimplePlayer.html#M000007">next_target</a>.
+The paramters supplied inform the player of the results of the target.
+</p>
+<pre>
+  coordinates : string. The coordinates targeted.  It will be the same value returned by the previous call to next_target
+  was_hit     : boolean.  true if the target was occupied by a ship.  false otherwise.
+  ship_sunk   : symbol.  nil if the target did not result in the sinking of a ship.  If the target did result in
+    in the sinking of a ship, the ship type is supplied (:carrier, :battleship, :destroyer, :submarine, :patrolship).
+</pre>
+<p>
+An intelligent player will use the information to better play the game. For
+example, if the result indicates a hit, a player my choose to target
+neighboring squares to hit and sink the remainder of the ship.
+</p>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000008-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000008-source">
+<pre>
+     <span class="ruby-comment cmt"># File battleship/lib/battleship/simple_player.rb, line 121</span>
+121:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">target_result</span>(<span class="ruby-identifier">coordinates</span>, <span class="ruby-identifier">was_hit</span>, <span class="ruby-identifier">ship_sunk</span>)
+122:       <span class="ruby-ivar">@targets</span>[<span class="ruby-identifier">coordinates</span>] = [<span class="ruby-identifier">was_hit</span>, <span class="ruby-identifier">ship_sunk</span>]
+123:     <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>
